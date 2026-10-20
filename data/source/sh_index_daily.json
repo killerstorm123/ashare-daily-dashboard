@@ -1,4 +1,5 @@
 [
+  {"ts_code": "000001.SH", "trade_date": "20261020", "close": 3735.3704, "pct_chg": 0.1193, "amount": 699969753.7989},
   {"ts_code": "000001.SH", "trade_date": "20261019", "close": 3730.92, "pct_chg": 0.3938, "amount": 687009728.0359},
   {"ts_code": "000001.SH", "trade_date": "20261016", "close": 3716.2842, "pct_chg": 0.2376, "amount": 732475190.8664},
   {"ts_code": "000001.SH", "trade_date": "20261015", "close": 3707.476, "pct_chg": -1.5861, "amount": 774391973.4548},
