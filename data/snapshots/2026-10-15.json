@@ -1,0 +1,201 @@
+{
+  "snapshot_date": "2026-10-15",
+  "captured_at": "2026-10-15T11:50:00+08:00",
+  "session": "午盘",
+  "source": "A股午盘总结（ADG·打杂的小七）· 交易所 / 财联社 / 新华社",
+  "timezone": "Asia/Shanghai",
+  "metrics": [
+    {
+      "date": "2026-10-15",
+      "session": "midday",
+      "sh_close": 3692.65,
+      "sh_pct": -1.98,
+      "amount_yi": 9818,
+      "turnover_delta_yi": 150,
+      "limit_up": 33,
+      "limit_down": 12,
+      "zhaban": 12,
+      "up_count": 466,
+      "down_count": 5060,
+      "fengban_rate": 73,
+      "max_boards": 5,
+      "captured_at": "2026-10-15T11:50:00+08:00"
+    }
+  ],
+  "indices": [
+    {"code": "000001.SH", "name": "上证指数", "close": 3692.65, "pct": -1.98},
+    {"code": "399001.SZ", "name": "深证成指", "close": 11773.45, "pct": -2.78},
+    {"code": "399006.SZ", "name": "创业板指", "close": 2768.63, "pct": -3.42},
+    {"code": "000688.SH", "name": "科创50", "close": 1338.53, "pct": -3.02},
+    {"code": "899050.BJ", "name": "北证50", "close": null, "pct": -2.76},
+    {"code": "000300.SH", "name": "沪深300", "close": 4133.46, "pct": -2.0}
+  ],
+  "sentiment": {
+    "turnover_yi": 9818,
+    "turnover_delta_yi": 150,
+    "turnover_note": "半日成交，较昨日同期放量约150亿",
+    "up_count": 466,
+    "down_count": 5060,
+    "limit_up": 33,
+    "limit_down": 12,
+    "zhaban": 12,
+    "fengban_rate": 73,
+    "max_boards": 5,
+    "max_board_stock": "慈文传媒",
+    "context": "外围风险集中释放：美CPI超预期、亚太科技股重挫，沪指失守3700点；超5000股下跌但 PCB/AI漫剧/创新药/白酒逆势走强，资金高低切进行中"
+  },
+  "sectors": {
+    "up_industry": [
+      {"name": "PCB", "pct": 1.86},
+      {"name": "证券", "pct": 0.74},
+      {"name": "白酒", "pct": 0.62},
+      {"name": "国产软件", "pct": 0.43},
+      {"name": "创新药", "pct": 0.31},
+      {"name": "零售", "pct": 0.18}
+    ],
+    "up_concept": [
+      {"name": "AI漫剧/短剧", "pct": 4.32},
+      {"name": "创新药", "pct": 2.18},
+      {"name": "白酒", "pct": 1.65},
+      {"name": "国产软件", "pct": 1.42},
+      {"name": "PCB", "pct": 1.21},
+      {"name": "量子科技", "pct": 0.86}
+    ],
+    "down_industry": [
+      {"name": "半导体", "pct": -3.92},
+      {"name": "航运港口", "pct": -3.41},
+      {"name": "煤炭", "pct": -3.18},
+      {"name": "军工", "pct": -2.86},
+      {"name": "光刻机", "pct": -2.74},
+      {"name": "稀土", "pct": -2.51}
+    ],
+    "down_concept": [
+      {"name": "CPO/光通信", "pct": -5.32},
+      {"name": "可控核聚变", "pct": -4.18},
+      {"name": "存储芯片", "pct": -3.84},
+      {"name": "航运", "pct": -3.62},
+      {"name": "种业", "pct": -3.21},
+      {"name": "猪肉", "pct": -2.74}
+    ]
+  },
+  "mainlines": [
+    {"tier": "主线", "name": "PCB（业绩兑现主线）", "logic": "金禄电子Q3净利预增192.88%-218.92%、单季营收+95%-104%，算力/汽车/卫星通信需求共振，板块业绩验证兑现，涨停梯队完整", "stocks": "金禄电子（20cm）、崇达技术、骏亚科技（3日2板）、澳柯玛"},
+    {"tier": "主线", "name": "AI漫剧/短剧（题材新主线）", "logic": "腾讯微信端上线「绿泡泡短剧」小程序，免费+广告模式对标字节红果短剧（DAU近2亿），IP+渠道双轮共振", "stocks": "慈文传媒（5连板）、欢瑞世纪（5日3板）、读客文化（20cm）、掌阅科技"},
+    {"tier": "支线", "name": "创新药（政策催化支线）", "logic": "10/13医保局会议要求积极支持医药科技创新 + 上半年BD交易608亿美元（同比+129%），板块低位反弹", "stocks": "贝瑞基因、华北制药、百花医药、广生堂（20cm）、亚太药业（2板）"},
+    {"tier": "支线", "name": "白酒（防御回流支线）", "logic": "渠道库存去化加速（同比-10%~-20%），资金从科技切换流向高分红低估值大消费，估值修复进行中", "stocks": "皇台酒业（3日2板）、金种子酒（+7.32%）、金徽酒、迎驾贡酒、今世缘"},
+    {"tier": "轮动", "name": "国产软件（事件脉冲）", "logic": "消息刺激放量拉升但缺乏业绩催化，午后回落，定位为脉冲式轮动", "stocks": "久其软件、榕基软件、格尔软件"},
+    {"tier": "轮动", "name": "证券（业绩预期脉冲）", "logic": "业内人士预期券商前三季度盈利保持增长，板块盘中异动拉升，华林证券涨停，跟涨效应待观察", "stocks": "华林证券、锦龙股份、首创证券、中金公司"},
+    {"tier": "轮动", "name": "半导体设备（WFE上调脉冲）", "logic": "摩根大通上调2026全球WFE市场规模预期至1630亿美元（+31%）、2027年+35%，板块局部异动，持续性一般", "stocks": "东方嘉盛、至纯科技、京仪装备"}
+  ],
+  "themes": [
+    {"rank": 1, "name": "AI漫剧/短剧", "stars": 5, "status": "新", "stocks": "慈文传媒（5连板）、欢瑞世纪、读客文化（20cm）"},
+    {"rank": 2, "name": "PCB（业绩兑现）", "stars": 5, "status": "新", "stocks": "金禄电子（20cm）、崇达技术、骏亚科技"},
+    {"rank": 3, "name": "创新药（政策催化）", "stars": 4, "status": "新", "stocks": "贝瑞基因、华北制药、广生堂（20cm）"},
+    {"rank": 4, "name": "白酒（防御回流）", "stars": 4, "status": "旧", "stocks": "皇台酒业（3日2板）、金种子酒（+7.32%）、迎驾贡酒"},
+    {"rank": 5, "name": "证券（业绩预期）", "stars": 3, "status": "新", "stocks": "华林证券（涨停）、锦龙股份、中金公司"},
+    {"rank": 6, "name": "半导体设备（WFE）", "stars": 3, "status": "新", "stocks": "东方嘉盛、至纯科技、京仪装备"},
+    {"rank": 7, "name": "国产软件（消息面）", "stars": 2, "status": "旧", "stocks": "久其软件、榕基软件、格尔软件"},
+    {"rank": 8, "name": "半导体/存储/CPO", "stars": 1, "status": "退潮", "stocks": "澜起科技 -7.19%、兆易创新 -5.40%、新易盛 -5.84%"},
+    {"rank": 9, "name": "航运/煤炭", "stars": 1, "status": "退潮", "stocks": "招商南油（跌停）、中远海能（跌停）、郑州煤电（炸板）"}
+  ],
+  "ladder": [
+    {"category": "连板", "name": "慈文传媒", "boards": "5连板", "theme": "AI漫剧/短剧", "reason": "腾讯微信端上线「绿泡泡短剧」对标红果，IP+渠道双轮共振", "seal_yi": 1.43, "amount_yi": 4.9, "turnover_pct": 3.1, "time": ""},
+    {"category": "连板", "name": "欢瑞世纪", "boards": "5日3板", "theme": "AI漫剧/短剧", "reason": "AI漫剧题材龙头之二，IP储备+制作能力强", "seal_yi": 0.39, "amount_yi": 0.4, "turnover_pct": 1.2, "time": ""},
+    {"category": "连板", "name": "皇台酒业", "boards": "3日2板", "theme": "白酒", "reason": "渠道库存去化加速，资金回流高分红大消费", "seal_yi": 0.35, "amount_yi": 2.6, "turnover_pct": 11.8, "time": ""},
+    {"category": "连板", "name": "骏亚科技", "boards": "3日2板", "theme": "PCB", "reason": "金禄电子业绩兑现带动PCB板块超跌反弹", "seal_yi": 1.24, "amount_yi": 6.2, "turnover_pct": 12.5, "time": ""},
+    {"category": "连板", "name": "澳柯玛", "boards": "老妖/中军", "theme": "PCB", "reason": "PCB板块中军，年内累计涨幅超140%，续创历史新高", "seal_yi": 0.52, "amount_yi": 9.1, "turnover_pct": 3.4, "time": ""},
+    {"category": "首板", "name": "金禄电子", "boards": "首板", "theme": "PCB", "reason": "Q3净利预增192.88%-218.92%，单季营收翻倍，20cm一字", "seal_yi": 1.4, "amount_yi": 6.1, "turnover_pct": 3.9, "time": ""},
+    {"category": "首板", "name": "崇达技术", "boards": "首板", "theme": "PCB", "reason": "PCB板块超跌反弹，跟随金禄电子", "seal_yi": 0.54, "amount_yi": 7.2, "turnover_pct": 4.7, "time": ""},
+    {"category": "首板", "name": "贝瑞基因", "boards": "首板", "theme": "创新药", "reason": "医保局支持医药科技创新 + BD浪潮", "seal_yi": 0.3, "amount_yi": 3.5, "turnover_pct": 8.5, "time": ""},
+    {"category": "首板", "name": "华北制药", "boards": "首板", "theme": "创新药", "reason": "创新药板块整体反弹", "seal_yi": 0.1, "amount_yi": 2.7, "turnover_pct": 4.9, "time": ""},
+    {"category": "首板", "name": "百花医药", "boards": "首板", "theme": "创新药", "reason": "创新药板块低位补涨", "seal_yi": 0.1, "amount_yi": 1.9, "turnover_pct": 5.0, "time": ""},
+    {"category": "首板", "name": "广生堂", "boards": "首板", "theme": "创新药", "reason": "创新药+BD催化，20cm弹性标的", "seal_yi": 1.4, "amount_yi": 5.2, "turnover_pct": 8.0, "time": ""},
+    {"category": "首板", "name": "读客文化", "boards": "首板", "theme": "AI漫剧/短剧", "reason": "AI漫剧题材跟涨，20cm弹性补涨", "seal_yi": 0.4, "amount_yi": 4.8, "turnover_pct": 15.9, "time": ""},
+    {"category": "首板", "name": "华林证券", "boards": "首板", "theme": "证券", "reason": "券商业绩增长预期，板块盘中异动", "seal_yi": 0.2, "amount_yi": 3.6, "turnover_pct": 4.5, "time": ""},
+    {"category": "首板", "name": "东方嘉盛", "boards": "首板", "theme": "半导体设备", "reason": "摩根大通上调WFE预期，2026全球1630亿美元（+31%）", "seal_yi": 0.5, "amount_yi": 1.4, "turnover_pct": 4.3, "time": ""},
+    {"category": "首板", "name": "嘉元科技", "boards": "首板", "theme": "PCB", "reason": "PCB板块超跌跟随", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": ""},
+    {"category": "首板", "name": "宝鼎科技", "boards": "首板", "theme": "PCB", "reason": "PCB板块超跌跟随", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": ""},
+    {"category": "首板", "name": "超声电子", "boards": "首板", "theme": "PCB", "reason": "PCB板块超跌跟随", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": ""},
+    {"category": "首板", "name": "上海九百", "boards": "首板", "theme": "零售/大消费", "reason": "低位消费补涨", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": ""},
+    {"category": "首板", "name": "久其软件", "boards": "首板", "theme": "国产软件", "reason": "国产软件消息脉冲", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": ""},
+    {"category": "首板", "name": "榕基软件", "boards": "首板", "theme": "国产软件", "reason": "国产软件消息脉冲", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": ""},
+    {"category": "首板", "name": "格尔软件", "boards": "首板", "theme": "国产软件", "reason": "国产软件消息脉冲", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": ""},
+    {"category": "炸板", "name": "招商南油", "boards": "首板炸", "theme": "航运", "reason": "中东局势降温，航运板块集体调整", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": "10:15 炸板"},
+    {"category": "炸板", "name": "中远海能", "boards": "首板炸", "theme": "航运", "reason": "航运板块全线退潮", "seal_yi": null, "amount_yi": 4.8, "turnover_pct": null, "time": "10:32 炸板"},
+    {"category": "炸板", "name": "招商轮船", "boards": "首板炸", "theme": "航运", "reason": "触及涨停后回落，航运高位分歧", "seal_yi": null, "amount_yi": 12.5, "turnover_pct": null, "time": "10:48 炸板"},
+    {"category": "炸板", "name": "郑州煤电", "boards": "高位炸", "theme": "煤炭", "reason": "煤炭板块调整，前期龙头炸板", "seal_yi": null, "amount_yi": null, "turnover_pct": 18.0, "time": "11:02 炸板"}
+  ],
+  "high_risk": [
+    {"name": "慈文传媒", "note": "5板高位，公司公告提示短剧收入仅约50万元，题材热度与业绩脱节"},
+    {"name": "澳柯玛", "note": "年内累计涨幅超140%续创新高，获利盘+历史新高双重压力"},
+    {"name": "金禄电子", "note": "20cm一字板业绩兑现，需防「利好兑现即利空」"},
+    {"name": "长鑫科技", "note": "市值突破3万亿后巨量换手，半导体权重松动压制科创板块"}
+  ],
+  "promotions": {
+    "yesterday_lianban": 15,
+    "promoted": ["慈文传媒（4板→5板）", "百洋股份（4板→5板，收盘口径复核确认）", "冰山冷热（2板→3板）", "阳光乳业（2板→3板）", "富春染织（1板→2板）", "新华文轩（1板→2板）"],
+    "broken": ["新经典（4板，跌停拉红未回封）", "醋化股份（3板断板）", "荣丰控股/超声电子/路畅科技/星帅尔/金奥博/哈空调/航发科技/万里股份/龙江交通（断板）"],
+    "rate": 40.0,
+    "verify": "午盘时点仅慈文传媒可确认晋级；此处为收盘口径复核结果（TuShare limit_list_d 10-14 与 10-15 名单交叉验证）"
+  },
+  "hot_stocks": [
+    {"name": "长鑫科技", "code": "688256.SH", "pct": 4.12, "theme": "存储芯片", "note": "市值突破3万亿，盘中巨量分歧"},
+    {"name": "澜起科技", "code": "688008.SH", "pct": -7.19, "theme": "存储/CPO", "note": "前期强势股退潮补跌"},
+    {"name": "新易盛", "code": "300502.SZ", "pct": -5.84, "theme": "CPO/光模块", "note": "主力资金净卖出12亿"},
+    {"name": "兆易创新", "code": "603986.SH", "pct": -5.4, "theme": "存储芯片", "note": "半导体板块退潮"},
+    {"name": "至纯科技", "code": "603690.SH", "pct": -10.01, "theme": "半导体设备", "note": "前期涨停龙头跌停"},
+    {"name": "中远海能", "code": "600026.SH", "pct": -9.97, "theme": "航运", "note": "中东局势降温，跌停"},
+    {"name": "金种子酒", "code": "600199.SH", "pct": 7.32, "theme": "白酒", "note": "防御回流，低位放量"},
+    {"name": "工商银行", "code": "601398.SH", "pct": 0.86, "theme": "银行/防御", "note": "市值重回A股第一"},
+    {"name": "宁德时代", "code": "300750.SZ", "pct": -2.18, "theme": "锂电/权重", "note": "权重压制指数"}
+  ],
+  "movers": {
+    "stocks": [
+      {"name": "华林证券", "code": "002945.SZ", "theme": "证券", "action": "直线涨停", "note": "券商业绩增长预期，板块盘中异动拉升"},
+      {"name": "东方嘉盛", "code": "002889.SZ", "theme": "半导体设备", "action": "直线涨停", "note": "摩根大通上调WFE预期，板块异动带动"},
+      {"name": "金禄电子", "code": "301282.SZ", "theme": "PCB", "action": "20cm一字板", "note": "Q3业绩预增强化，开盘3分钟封板"},
+      {"name": "读客文化", "code": "301025.SZ", "theme": "AI漫剧/短剧", "action": "20cm涨停", "note": "腾讯「绿泡泡短剧」刷屏，板块弹性补涨"},
+      {"name": "新易盛", "code": "300502.SZ", "theme": "CPO/光模块", "action": "放量下跌", "note": "CPO板块领跌，主力资金净卖出12亿"},
+      {"name": "中远海能", "code": "600026.SH", "theme": "航运", "action": "跌停", "note": "中东局势降温，开盘下挫后封死跌停"}
+    ],
+    "sectors": [
+      {"name": "证券板块", "logic": "券商前三季度盈利有望保持增长，华林证券涨停，板块冲高", "stocks": "华林证券、锦龙股份、首创证券、中金公司、东方财富"},
+      {"name": "半导体设备", "logic": "摩根大通上调2026全球WFE预期至1630亿美元（+31%），板块盘中直线拉升", "stocks": "东方嘉盛、至纯科技、京仪装备、新莱应材"},
+      {"name": "白酒板块", "logic": "渠道库存去化信号 + 防御性配置需求，皇台酒业3日2板成龙头", "stocks": "皇台酒业、金种子酒、金徽酒、迎驾贡酒、今世缘"},
+      {"name": "航运板块", "logic": "局势降温冲击运价预期，前期强势股高位集体炸板回落", "stocks": "招商南油、中远海能、招商轮船"},
+      {"name": "煤炭板块", "logic": "前期抱团主线退潮，资金从防御向科技再平衡", "stocks": "郑州煤电、大有能源、云煤能源"},
+      {"name": "存储芯片", "logic": "美CPI超预期 + 外围科技股六连跌，板块持续杀跌", "stocks": "澜起科技、兆易创新、长鑫科技"}
+    ]
+  },
+  "midday_news": [
+    {"tag": "利空", "source": "财联社", "title": "美国9月CPI超预期，紧缩预期升温", "detail": "利率期货显示紧缩概率大幅上升；纳指、费城半导体连跌，外围风险集中释放，沪指失守3700点"},
+    {"tag": "事件", "source": "新华社", "title": "中东局势变化，航运运价预期生变", "detail": "事件冲击全球供应链预期，前期强势的航运股集体炸板回落，招商南油、中远海能跌停，招商轮船触及跌停"},
+    {"tag": "利空", "source": "财联社", "title": "韩国KOSPI盘中重挫触发熔断", "detail": "SK海力士大跌11%，三星电子跌近10%；日经225跌幅一度扩大至5%，A股科技板块开盘承压"},
+    {"tag": "催化", "source": "国家医保局", "title": "积极支持医药科技创新（10/13）", "detail": "探索医疗服务价格立项制度，支持医药新技术新产品加快进入临床；上半年中国创新药BD交易608亿美元，同比+129%"},
+    {"tag": "催化", "source": "财联社", "title": "腾讯上线「绿泡泡短剧」小程序", "detail": "内嵌微信生态，免费+广告模式对标字节红果短剧（DAU近2亿），引爆AI漫剧/短剧板块，慈文传媒5连板"},
+    {"tag": "催化", "source": "公司公告", "title": "金禄电子Q3净利预增192.88%-218.92%", "detail": "10/14晚公告，单季营收+95%-104%，净利+126%-142%；算力+汽车+卫星通信需求共振，20cm一字封板"},
+    {"tag": "催化", "source": "财联社", "title": "摩根大通上调2026全球WFE预期至1630亿美元", "detail": "同比+31%，2027年进一步+35%；半导体设备板块盘中异动，东方嘉盛涨停"},
+    {"tag": "数据", "source": "统计局", "title": "9月酒类价格同比下降3.1%", "detail": "行业量减价稳，渠道库存去化推进（部分头部降至1-2个月），白酒板块低位估值修复"},
+    {"tag": "风险", "source": "公司公告", "title": "慈文传媒：微短剧《开标之始》收入仅约50万元", "detail": "公司主动提示题材热度与业绩脱节，5连板高位需警惕情绪反噬"},
+    {"tag": "数据", "source": "财联社", "title": "猪价跌至10元/斤冰点，超半数猪企前三季仍在增产", "detail": "供给端持续承压，猪肉板块跌幅居前"}
+  ],
+  "ferment_news": [
+    {"tag": "提示", "source": "中金所", "title": "10/16为10月股指期货交割日", "detail": "移仓换月期间资金集中操作，权重股尾盘易出现异常波动，今日尾盘勿追高"},
+    {"tag": "催化", "source": "财联社", "title": "英伟达DLSS 5性能再提升2倍，模型规模缩减24%", "detail": "显存占用下降约20%，游戏板块盘中异动"},
+    {"tag": "数据", "source": "财联社", "title": "今日5家公司限售股解禁，合计市值6.1亿元", "detail": "整体解禁压力有限，注意个股节奏"},
+    {"tag": "催化", "source": "财联社", "title": "券商前三季度盈利有望保持增长，业绩分化加剧", "detail": "头部机构凭借专业化布局有望延续业绩高增，证券板块盘中异动拉升，华林证券涨停"},
+    {"tag": "数据", "source": "渠道调研", "title": "白酒渠道库存同比降10%-20%，去库周期加快", "detail": "河南/山东/广东经销商反馈部分头部库存已降至1-2个月，白酒估值修复进行中"},
+    {"tag": "风险", "source": "财联社", "title": "10/28-31三季报披露与解禁洪峰叠加（约2950亿元）", "detail": "西安创芯、中船特气等解禁占总市值比例超70%，注意规避解禁比例过高的个股"},
+    {"tag": "催化", "source": "瑞银证券", "title": "上半年中国创新药BD交易608亿美元，同比+129%", "detail": "BD热度持续升温，新价值锚点转向「基本盘驱动」，关注内生性营收与利润增长"}
+  ],
+  "watchpoints": [
+    {"idx": 1, "cat": "主线跟踪", "text": "PCB主线只看龙头——金禄电子一字持有，若炸板则全板块兑现离场"},
+    {"idx": 2, "cat": "主线跟踪", "text": "创新药低位补涨——百花医药、华北制药午后留意回封，避开高位标的"},
+    {"idx": 3, "cat": "只卖不买", "text": "慈文传媒——5板高位+公告收入仅50万，冲高是卖点"},
+    {"idx": 4, "cat": "只卖不买", "text": "半导体/存储/CPO——CPI未消化，杀跌中继未结束不抄底"},
+    {"idx": 5, "cat": "观望", "text": "白酒——皇台酒业已反映抱团逻辑，午后观察抱团是否扩散"},
+    {"idx": 6, "cat": "低吸观察", "text": "证券板块——华林证券稳住封单，则锦龙/首创/中金可跟进"},
+    {"idx": 7, "cat": "风险监控", "text": "13:00后量能若<1500亿/小时，存量博弈加剧分歧"},
+    {"idx": 8, "cat": "风险监控", "text": "明日股指期货交割日，今日尾盘权重股易异动，勿追高"}
+  ]
+}

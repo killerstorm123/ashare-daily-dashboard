@@ -1,0 +1,149 @@
+{
+  "snapshot_date": "2026-10-15",
+  "captured_at": "2026-10-16T12:02:30+08:00",
+  "session": "收盘",
+  "source": "TuShare 收盘数据（index_daily / limit_list_d / kpl_list / sw_daily）+ 网络复盘文章（证券时报·数据宝 / 东方财富 / 证券之星）自动归纳",
+  "timezone": "Asia/Shanghai",
+  "metrics": [
+    {
+      "date": "2026-10-15",
+      "session": "close",
+      "sh_close": 3707.48,
+      "sh_pct": -1.59,
+      "amount_yi": 16330,
+      "limit_up": 36,
+      "limit_down": 26,
+      "zhaban": 7,
+      "fengban_rate": 84,
+      "max_boards": 5,
+      "captured_at": "2026-10-16T12:02:30+08:00"
+    }
+  ],
+  "indices": [
+    {"code": "000001.SH", "name": "上证指数", "close": 3707.48, "pct": -1.59},
+    {"code": "399001.SZ", "name": "深证成指", "close": 11816.79, "pct": -2.43},
+    {"code": "399006.SZ", "name": "创业板指", "close": 2783.17, "pct": -2.92},
+    {"code": "000688.SH", "name": "科创50", "close": 1359.52, "pct": -1.5},
+    {"code": "899050.BJ", "name": "北证50", "close": 967.5, "pct": -3.44},
+    {"code": "000300.SH", "name": "沪深300", "close": 4166.01, "pct": -1.23}
+  ],
+  "sentiment": {
+    "turnover_yi": 16330,
+    "turnover_note": "全天成交约1.63万亿，较前一日放量约2200亿",
+    "limit_up": 36,
+    "limit_down": 26,
+    "zhaban": 7,
+    "fengban_rate": 84,
+    "max_boards": 5,
+    "max_board_stock": "慈文传媒/百洋股份",
+    "context": "全天缩幅收窄（午盘-1.98%→收盘-1.59%），权重与防御板块尾盘回稳；涨停36家对跌停26家，高位股加速抱团（慈文/百洋5板、澳弘电子19天11板），AI应用/短剧尾盘炸板集中（欢瑞/读客/掌阅/电魂/贝瑞），航运港口/焦炭/玻璃领跌"
+  },
+  "sectors": {
+    "up_industry": [
+      {"name": "白酒Ⅱ", "pct": 1.72},
+      {"name": "食品饮料", "pct": 0.72},
+      {"name": "保险Ⅱ", "pct": 0.71},
+      {"name": "白色家电", "pct": 0.53},
+      {"name": "证券Ⅱ", "pct": 0.51},
+      {"name": "银行", "pct": -0.16}
+    ],
+    "down_industry": [
+      {"name": "航海装备Ⅱ", "pct": -6.49},
+      {"name": "焦炭Ⅱ", "pct": -5.71},
+      {"name": "玻璃玻纤", "pct": -5.37},
+      {"name": "航运港口", "pct": -5.29},
+      {"name": "通信设备", "pct": -5.26},
+      {"name": "教育", "pct": -4.44}
+    ]
+  },
+  "mainlines": [
+    {"tier": "主线", "name": "传媒/AI应用（高位抱团）", "logic": "慈文传媒、百洋股份双双5连板，新华文轩尾盘回封（14天10板），内蒙新华/读者传媒首板跟进；但欢瑞世纪、读客文化、掌阅科技、电魂网络尾盘集中炸板，板块内部高位分歧显著放大", "stocks": "慈文传媒（5板）、百洋股份（5板）、新华文轩（2板）、内蒙新华、读者传媒"},
+    {"tier": "主线", "name": "PCB（业绩兑现+超跌反抽）", "logic": "全天5只PCB涨停：金禄电子、崇达技术一字，天津普林、骏亚科技、澳弘电子（19天11板续新高）跟进，Q3业绩预增+超跌反抽双击", "stocks": "金禄电子、崇达技术、天津普林、骏亚科技、澳弘电子"},
+    {"tier": "支线", "name": "医药（政策+BD催化）", "logic": "医保局支持医药科技创新+BD交易高增延续发酵，华北制药、百花医药、向日葵、尖峰集团首板；贝瑞基因炸板显示分歧", "stocks": "华北制药、百花医药、向日葵、尖峰集团"},
+    {"tier": "支线", "name": "白酒/食品（全天最强防御）", "logic": "白酒Ⅱ全天+1.72%为最强行业，渠道去化+防御资金回流；皇台酒业首板、五芳斋/阳光乳业（3板）跟进", "stocks": "皇台酒业、五芳斋、阳光乳业"},
+    {"tier": "轮动", "name": "物流（华为/跨境电商脉冲）", "logic": "东方嘉盛、上海雅仕、嘉诚国际涨停，中邮科技炸板；事件脉冲属性、持续性一般", "stocks": "东方嘉盛、上海雅仕、嘉诚国际"},
+    {"tier": "轮动", "name": "染料/固态电池/三季报增长", "logic": "万丰股份、世龙实业（染料），上海洗霸（固态电池），湖南发展/富春染织/远大控股（三季报增长）零星走强", "stocks": "万丰股份、世龙实业、上海洗霸、湖南发展"}
+  ],
+  "themes": [
+    {"rank": 1, "name": "PCB（业绩兑现）", "stars": 5, "status": "新", "stocks": "金禄电子、崇达技术、澳弘电子（19天11板）"},
+    {"rank": 2, "name": "AI应用/短剧", "stars": 4, "status": "分歧", "stocks": "慈文传媒（5板）、百洋股份（5板） vs 欢瑞/读客/掌阅炸板"},
+    {"rank": 3, "name": "医药（政策催化）", "stars": 4, "status": "新", "stocks": "华北制药、百花医药、向日葵"},
+    {"rank": 4, "name": "白酒/食品（防御）", "stars": 4, "status": "旧", "stocks": "皇台酒业、五芳斋、阳光乳业（3板）"},
+    {"rank": 5, "name": "文化传媒/版权", "stars": 3, "status": "新", "stocks": "新华文轩（14天10板）、内蒙新华（16天8板）、读者传媒"},
+    {"rank": 6, "name": "物流（华为/跨境）", "stars": 3, "status": "新", "stocks": "东方嘉盛、上海雅仕、嘉诚国际"},
+    {"rank": 7, "name": "染料/固态电池", "stars": 2, "status": "新", "stocks": "万丰股份、世龙实业、上海洗霸"},
+    {"rank": 8, "name": "航运/煤炭/军工", "stars": 1, "status": "退潮", "stocks": "航海装备 -6.49%、焦炭 -5.71%、航运港口 -5.29%"}
+  ],
+  "ladder": [
+    {"category": "连板", "name": "慈文传媒", "boards": "5连板", "theme": "AI应用/AI视频", "reason": "腾讯「绿泡泡短剧」催化总龙头，9:30一字未开，收盘封单约1.4亿", "seal_yi": 1.4, "amount_yi": null, "turnover_pct": null, "time": "09:30 封板"},
+    {"category": "连板", "name": "百洋股份", "boards": "5连板", "theme": "水产品/农业", "reason": "高位人气妖股续命，早盘秒板（盘中开板1次回封）", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": "09:30 封板"},
+    {"category": "连板", "name": "冰山冷热", "boards": "3连板", "theme": "冰雪产业/算力", "reason": "盘中开板多达12次尾盘回封，分歧巨大", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": "09:30 封板"},
+    {"category": "连板", "name": "阳光乳业", "boards": "3连板", "theme": "乳业/生育概念", "reason": "一字板（开盘啦：3连板，食品饮料）", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": "09:30 封板"},
+    {"category": "连板", "name": "富春染织", "boards": "2连板", "theme": "机器人/三季报增长", "reason": "三季报增长+机器人概念", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": "09:30 封板"},
+    {"category": "连板", "name": "新华文轩", "boards": "2连板", "theme": "版权/文化传媒", "reason": "14天10板人气股，尾盘14:49回封", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": "14:49 封板"},
+    {"category": "首板", "name": "崇达技术", "boards": "首板", "theme": "PCB", "reason": "PCB板块超跌反抽，竞价一字", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": "09:25 封板"},
+    {"category": "首板", "name": "远大控股", "boards": "首板", "theme": "农业/三季报增长", "reason": "三季报增长", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": "09:30 封板"},
+    {"category": "首板", "name": "读者传媒", "boards": "首板", "theme": "版权/文化传媒", "reason": "传媒板块情绪扩散", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": "09:31 封板"},
+    {"category": "首板", "name": "和泰机电", "boards": "首板", "theme": "专用设备/新型工业化", "reason": "专用设备跟涨", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": "09:31 封板"},
+    {"category": "首板", "name": "金禄电子", "boards": "首板", "theme": "PCB/通信", "reason": "Q3净利预增192.88%-218.92%，开盘3分钟封板", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": "09:33 封板"},
+    {"category": "首板", "name": "湖南发展", "boards": "首板", "theme": "绿电/水电", "reason": "三季报增长", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": "09:33 封板"},
+    {"category": "首板", "name": "天津普林", "boards": "首板", "theme": "PCB/通信", "reason": "PCB板块超跌反抽", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": "09:35 封板"},
+    {"category": "首板", "name": "广博股份", "boards": "首板", "theme": "文创/跨境支付", "reason": "文创产品+跨境支付", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": "09:35 封板"},
+    {"category": "首板", "name": "皇台酒业", "boards": "首板", "theme": "白酒", "reason": "白酒全天最强行业，3日2板龙头", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": "09:37 封板"},
+    {"category": "首板", "name": "万和电气", "boards": "首板", "theme": "热泵/家电", "reason": "热泵出口链", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": "09:38 封板"},
+    {"category": "首板", "name": "百花医药", "boards": "首板", "theme": "CRO/减肥药", "reason": "医药政策+BD催化", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": "09:40 封板"},
+    {"category": "首板", "name": "内蒙新华", "boards": "首板", "theme": "文化传媒/版权", "reason": "16天8板人气股", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": "09:45 封板"},
+    {"category": "首板", "name": "吉大正元", "boards": "首板", "theme": "AI安全/AI应用", "reason": "AI安全/AI应用分支（开盘啦：AI应用）", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": "09:49 封板"},
+    {"category": "首板", "name": "五芳斋", "boards": "首板", "theme": "食品饮料/供销社", "reason": "大消费防御（开盘啦：食品饮料、供销社）", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": "09:56 封板"},
+    {"category": "首板", "name": "向日葵", "boards": "首板", "theme": "医药/流感", "reason": "医药板块反弹（开盘啦：医药、流感）", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": "09:56 封板"},
+    {"category": "首板", "name": "骏亚科技", "boards": "首板", "theme": "PCB/通信", "reason": "PCB板块超跌反抽（开盘啦口径：3天2板）", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": "09:58 封板"},
+    {"category": "首板", "name": "华阳新材", "boards": "首板", "theme": "稀土/有色", "reason": "稀土永磁超跌反弹（开盘啦：3天2板，有色金属）", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": "10:00 封板"},
+    {"category": "首板", "name": "尖峰集团", "boards": "首板", "theme": "医药/基础建设", "reason": "医药板块反弹（开盘啦：医药、基础建设）", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": "10:06 封板"},
+    {"category": "首板", "name": "至纯科技", "boards": "首板", "theme": "半导体设备/大基金", "reason": "WFE上调预期+超跌反抽（早盘一度深跌后拉升回封）", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": "10:06 封板"},
+    {"category": "首板", "name": "澳弘电子", "boards": "首板", "theme": "PCB/通信", "reason": "19天11板续创历史新高，高位抱团标志", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": "10:08 封板"},
+    {"category": "首板", "name": "华北制药", "boards": "首板", "theme": "医药/眼科医疗", "reason": "医药政策催化（开盘啦口径：6天4板人气股）", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": "10:22 封板"},
+    {"category": "首板", "name": "东方嘉盛", "boards": "首板", "theme": "物流/华为概念", "reason": "物流+华为概念脉冲", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": "10:50 封板"},
+    {"category": "首板", "name": "华林证券", "boards": "首板", "theme": "证券/互联网金融", "reason": "券商业绩预期，盘中开板6次回封", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": "10:56 封板"},
+    {"category": "首板", "name": "嘉诚国际", "boards": "首板", "theme": "物流/跨境电商", "reason": "跨境电商物流", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": "11:10 封板"},
+    {"category": "首板", "name": "新宏泽", "boards": "首板", "theme": "烟草/病毒防治", "reason": "烟标+病毒防治", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": "11:10 封板"},
+    {"category": "首板", "name": "众望布艺", "boards": "首板", "theme": "服装家纺/抗病毒面料", "reason": "抗病毒面料题材", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": "11:18 封板"},
+    {"category": "首板", "name": "上海雅仕", "boards": "首板", "theme": "物流/中欧概念", "reason": "中欧班列物流", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": "13:15 封板"},
+    {"category": "首板", "name": "世龙实业", "boards": "首板", "theme": "染料/氯化亚砜", "reason": "染料涨价（开盘啦：3天2板，封单约1.55亿）", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": "13:34 封板"},
+    {"category": "首板", "name": "万丰股份", "boards": "首板", "theme": "染料/化工", "reason": "染料涨价（开盘啦：首板，封单约6073万）", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": "13:39 封板"},
+    {"category": "首板", "name": "上海洗霸", "boards": "首板", "theme": "固态电池/病毒防治", "reason": "固态电池题材", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": "14:12 封板"},
+    {"category": "炸板", "name": "惠天热电", "boards": "炸板", "theme": "热力/国有企业", "reason": "尾盘跳水未能回封", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": "炸板"},
+    {"category": "炸板", "name": "贝瑞基因", "boards": "炸板", "theme": "基因疗法/AI应用", "reason": "医药+AI应用高位分歧", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": "炸板"},
+    {"category": "炸板", "name": "欢瑞世纪", "boards": "炸板", "theme": "AI视频/AI应用", "reason": "AI漫剧高位分歧（午盘曾5日3板）", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": "炸板"},
+    {"category": "炸板", "name": "读客文化", "boards": "炸板", "theme": "版权/文创产品", "reason": "短剧概念分歧（午盘曾20cm涨停）", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": "炸板"},
+    {"category": "炸板", "name": "电魂网络", "boards": "炸板", "theme": "互动影游/游戏", "reason": "游戏板块冲高回落", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": "炸板"},
+    {"category": "炸板", "name": "掌阅科技", "boards": "炸板", "theme": "AI视频/AI应用", "reason": "短剧概念分歧", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": "炸板"},
+    {"category": "炸板", "name": "中邮科技", "boards": "炸板", "theme": "物流/新型工业化", "reason": "物流脉冲分歧", "seal_yi": null, "amount_yi": null, "turnover_pct": null, "time": "炸板"}
+  ],
+  "promotions": {
+    "yesterday_lianban": 15,
+    "promoted": ["慈文传媒（4板→5板）", "百洋股份（4板→5板）", "冰山冷热（2板→3板）", "阳光乳业（2板→3板）", "富春染织（1板→2板）", "新华文轩（1板→2板）"],
+    "broken": ["新经典（4板，跌停拉红未回封）", "醋化股份（3板断板）", "荣丰控股/超声电子/路畅科技/星帅尔/金奥博/哈空调/航发科技/万里股份/龙江交通（断板）"],
+    "rate": 40.0,
+    "verify": "收盘口径经 TuShare limit_list_d（10-14 与 10-15 涨停名单 limit_times 交叉验证）；与东方财富「连板晋级率近三成」报道相互印证（口径差异源于连板定义）"
+  },
+  "close_news": [
+    {"tag": "数据", "source": "证券时报·数据宝", "title": "揭秘涨停：封板率72%，慈文传媒、百洋股份5连板", "detail": "封死涨停个股居前行业为电子、交通运输、传媒；连续涨停数量最多为慈文传媒、百洋股份（5板）"},
+    {"tag": "催化", "source": "东方财富", "title": "连板股晋级率近三成，资金抱团高位股", "detail": "澳弘电子19天11板续创新高，新华文轩14天10板，内蒙新华16天8板，慈文传媒晋级5连板；新经典从跌停拉红"},
+    {"tag": "催化", "source": "证券时报", "title": "AI漫剧概念反复走强，多只白酒股大涨", "detail": "腾讯「绿泡泡短剧」以免费模式对标红果短剧；读客文化一度20cm涨停后回落，白酒板块全天领涨"},
+    {"tag": "数据", "source": "证券之星", "title": "慈文传媒涨停收盘8.91元，封单1.4亿元", "detail": "9点30分涨停未打开，封单资金占流通市值约3%"},
+    {"tag": "数据", "source": "申万行业", "title": "全天仅白酒/食品/保险/白电/证券收红", "detail": "白酒Ⅱ+1.72%、食品饮料+0.72%、保险Ⅱ+0.71%、白色家电+0.53%、证券Ⅱ+0.51%；航海装备-6.49%、焦炭Ⅱ-5.71%、玻璃玻纤-5.37%、航运港口-5.29%领跌"},
+    {"tag": "风险", "source": "盘面复盘", "title": "AI应用/短剧尾盘炸板集中，高位分歧放大", "detail": "欢瑞世纪、读客文化、掌阅科技、电魂网络、贝瑞基因午盘封板、尾盘全部炸板，题材内部兑现压力显现"},
+    {"tag": "提示", "source": "中金所", "title": "10/16为10月股指期货交割日", "detail": "移仓换月资金集中操作，开盘与尾盘权重股易现异常波动"},
+    {"tag": "数据", "source": "TuShare", "title": "全天两市成交约1.63万亿元，较前日放量约2200亿", "detail": "沪指收盘3707.48点（-1.59%），较午盘-1.98%明显收窄，尾盘权重回稳"}
+  ],
+  "watchpoints": [
+    {"idx": 1, "cat": "风险监控", "text": "今日为股指期货交割日，开盘权重股易异动，勿追高"},
+    {"idx": 2, "cat": "主线跟踪", "text": "高位抱团盯断板：慈文/百洋5板、澳弘电子19天11板，断板即退潮确认"},
+    {"idx": 3, "cat": "只卖不买", "text": "AI应用/短剧炸板股（欢瑞/读客/掌阅/电魂）早盘无力回封则兑现"},
+    {"idx": 4, "cat": "主线跟踪", "text": "PCB主线看金禄电子竞价承接，维持强势则梯队续强"},
+    {"idx": 5, "cat": "低吸观察", "text": "白酒全天最强（+1.72%），观察防御风格是否继续扩散"},
+    {"idx": 6, "cat": "观望", "text": "航运港口/焦炭/玻璃领跌未企稳，左侧不接"},
+    {"idx": 7, "cat": "数据", "text": "晋级率回升至40%（6/15），今日若延续≥50%则为情绪修复信号"},
+    {"idx": 8, "cat": "风险监控", "text": "全天成交1.63万亿放量约2200亿，若今日缩量则分歧加剧"}
+  ]
+}
