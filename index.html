@@ -523,7 +523,7 @@ pre {
       <div>
         <h1>A股盘面每日跟踪看板</h1>
         <p class="subtitle">午盘/收盘双快照 · 情绪周期 · 主线梯队 · 复盘清单</p>
-        <p class="freshness" id="dataFreshness">最新数据：2026-10-21（午盘） | 收盘总结待更新 | 生成：2026-10-21T11:59:45+08:00 | 指数与涨跌停历史：TuShare（收盘口径，涨跌停统计不含ST） | 仅供研究，不构成投资建议</p>
+        <p class="freshness" id="dataFreshness">最新数据：2026-10-21（收盘） | 全部快照已生成 | 生成：2026-10-21T20:17:04+08:00 | 指数与涨跌停历史：TuShare（收盘口径，涨跌停统计不含ST） | 仅供研究，不构成投资建议</p>
       </div>
       <div class="controls" aria-label="Dashboard time controls">
         <span class="range-label" id="activeRangeLabel"></span>
@@ -565,7 +565,7 @@ pre {
   <main class="dashboard-shell">
     <nav class="session-tabs" aria-label="Session">
       <button data-session-tab="mid" class="active"><strong>午盘总结</strong><small>午盘 · 截至 11:30 · 11:55 生成</small></button>
-<button data-session-tab="close"><strong>收盘总结</strong><small>待更新 · 写入快照后自动生成</small></button>
+<button data-session-tab="close"><strong>收盘总结</strong><small>收盘 · 截至 15:00 · 20:13 生成</small></button>
     </nav>
     
   <div class="session-page" data-session-page="mid">
@@ -838,19 +838,423 @@ pre {
     </section>
   </div>
   </div>
-  <div class="session-page" data-session-page="close" hidden>
-    <section class="panel-grid">
-    <section class="dashboard-note" data-span="6" id="note-empty-0_close">
-      <strong>收盘总结尚未生成</strong>
-      <span>当前最新交易日仅写入午盘快照。收盘数据通常在 18:30-19:30 后可得（TuShare 收盘口径更新），或当日收盘复盘完成后，把 session=&quot;收盘&quot; 的快照写入 data/snapshots/ 并重新运行 python3 dashboard.py，本页会自动渲染与午盘一致的完整面板。</span>
+  <div class="session-page" data-session-page="close">
+    <section class="kpi-grid">
+    <section class="kpi-tile" id="kpi-sh">
+      <p>上证指数</p>
+      <strong>3,713.03</strong>
+      <span class="delta down">-0.60%</span>
+      <small>昨收 3,735.37</small>
     </section>
     
 
-    <section class="dashboard-note" data-span="6" id="note-empty-1_close">
-      <strong>午盘与收盘的分工</strong>
-      <span>午盘快照（截至 11:30）用于盘中应对：盯主线龙头、炸板风险、量能节奏与尾盘异动；收盘快照（截至 15:00）用于当日复盘：全天量能与涨跌停终值、晋级率验证、板块全天强弱与次日计划。同一交易日两份快照共存，在顶部 Session 标签间切换，各自独立成页、互不覆盖。</span>
+    <section class="kpi-tile" id="kpi-sz">
+      <p>深证成指</p>
+      <strong>11,704.35</strong>
+      <span class="delta down">-0.82%</span>
+      <small>深市锚点</small>
+    </section>
+    
+
+    <section class="kpi-tile" id="kpi-cyb">
+      <p>创业板指</p>
+      <strong>2,694.71</strong>
+      <span class="delta down">-1.62%</span>
+      <small>两市最弱宽基</small>
+    </section>
+    
+
+    <section class="kpi-tile" id="kpi-kc">
+      <p>科创50</p>
+      <strong>1,343.28</strong>
+      <span class="delta down">+0.06%</span>
+      <small>北证50 -0.72% · 沪深300 4,111.93 (-0.97%)</small>
+    </section>
+    
+
+    <section class="kpi-tile" id="kpi-amt">
+      <p>成交额</p>
+      <strong>14,293 亿</strong>
+      <span class="delta ">全天口径</span>
+      <small>量能对照见趋势图</small>
+    </section>
+    
+
+    <section class="kpi-tile" id="kpi-breadth">
+      <p>涨跌家数</p>
+      <strong>待接入</strong>
+      <span class="delta ">广度分项跳过</span>
+      <small>连板梯队 16 家参与评分</small>
+    </section>
+    
+
+    <section class="kpi-tile" id="kpi-limit">
+      <p>涨停 / 跌停</p>
+      <strong>50 / 5</strong>
+      <span class="delta ">封板率 72%</span>
+      <small>炸板 19 家 · 炸板率 28%</small>
+    </section>
+    
+
+    <section class="kpi-tile" id="kpi-phase">
+      <p>情绪周期</p>
+      <strong>发酵 · 主升期</strong>
+      <span class="delta ">71.2 / 100</span>
+      <small>最高 4 板（东安动力/大业股份/海洋王）</small>
     </section>
     </section>
+    <nav class="content-tabs" aria-label="内容维度"><button data-content-tab="overview" class="active">总览</button>
+<button data-content-tab="sectors">板块与主线</button>
+<button data-content-tab="ladder">涨停梯队</button>
+<button data-content-tab="stocks">个股与异动</button>
+<button data-content-tab="news">消息与盯盘</button></nav>
+    <div class="tab-page" data-content-page="overview">
+    <section class="panel-grid">
+    <section class="dashboard-panel chart-panel" data-span="12" id="panel-indexTrend_close">
+      <header>
+        <div>
+          <h2>指数与量能趋势</h2>
+          <p>上证收盘（左轴）与两市成交额（右轴），最新一日为快照口径</p>
+        </div>
+        
+    <div class="chart-actions">
+      
+        <div class="edit-panel" id="edit-indexTrend_close">
+          <label for="select-indexTrend_close">Type</label>
+          <select id="select-indexTrend_close" onchange="setChartType('indexTrend_close', this.value)">
+            <option value="line" selected>line</option>
+<option value="bar">bar</option>
+          </select>
+        </div>
+        
+      <div class="toolbox">
+        <button class="tool-button" aria-label="Panel actions" onclick="toggleMenu('indexTrend_close')"><span class="dot"></span><span class="dot"></span><span class="dot"></span></button>
+        <div class="menu" id="menu-indexTrend_close">
+          <button onclick="toggleEdit('indexTrend_close')">Edit</button>
+          <button onclick="viewSource('indexTrend_close')">View Data Source</button>
+        </div>
+      </div>
+    </div>
+    
+      </header>
+      <div class="chart" id="indexTrend_close" role="img" aria-label="指数与量能趋势"></div>
+      <footer>点 / 亿元 | 来源：TuShare index_daily（000001.SH + 399106.SZ）</footer>
+    </section>
+    
+    <section class="dashboard-panel chart-panel" data-span="6" id="panel-sentimentTrend_close">
+      <header>
+        <div>
+          <h2>涨跌停与炸板结构</h2>
+          <p>近 7 个交易日涨停/炸板/跌停家数，观察情绪周期拐点</p>
+        </div>
+        
+    <div class="chart-actions">
+      
+        <div class="edit-panel" id="edit-sentimentTrend_close">
+          <label for="select-sentimentTrend_close">Type</label>
+          <select id="select-sentimentTrend_close" onchange="setChartType('sentimentTrend_close', this.value)">
+            <option value="bar" selected>bar</option>
+<option value="line">line</option>
+          </select>
+        </div>
+        
+      <div class="toolbox">
+        <button class="tool-button" aria-label="Panel actions" onclick="toggleMenu('sentimentTrend_close')"><span class="dot"></span><span class="dot"></span><span class="dot"></span></button>
+        <div class="menu" id="menu-sentimentTrend_close">
+          <button onclick="toggleEdit('sentimentTrend_close')">Edit</button>
+          <button onclick="viewSource('sentimentTrend_close')">View Data Source</button>
+        </div>
+      </div>
+    </div>
+    
+      </header>
+      <div class="chart" id="sentimentTrend_close" role="img" aria-label="涨跌停与炸板结构"></div>
+      <footer>家 | 来源：TuShare limit_list_d 逐日统计（不含ST）+ 当日快照</footer>
+    </section>
+    
+    <section class="dashboard-panel chart-panel" data-span="6" id="panel-sentimentGauge_close">
+      <header>
+        <div>
+          <h2>情绪温度计</h2>
+          <p>五分项加权：净涨停/封板质量/连板高度/广度/量能</p>
+        </div>
+        
+    <div class="chart-actions">
+      
+      <div class="toolbox">
+        <button class="tool-button" aria-label="Panel actions" onclick="toggleMenu('sentimentGauge_close')"><span class="dot"></span><span class="dot"></span><span class="dot"></span></button>
+        <div class="menu" id="menu-sentimentGauge_close">
+          
+          <button onclick="viewSource('sentimentGauge_close')">View Data Source</button>
+        </div>
+      </div>
+    </div>
+    
+      </header>
+      <div class="chart" id="sentimentGauge_close" role="img" aria-label="情绪温度计"></div>
+      <footer>0-100 综合分 | 评分公式见「View Data Source」；阶段：冰点/回暖/分歧/发酵/高潮</footer>
+    </section>
+    
+    <section class="dashboard-note" data-span="12" id="note-phase_close">
+      <strong>情绪周期定位：发酵 · 主升期（71.2/100）</strong>
+      <span>涨停50家 / 跌停5家，最高 4 板（东安动力/大业股份/海洋王）；封板率 72%。分项评分与阶段判定见「View Data Source」；主线叙事与盯盘计划见「板块与主线」「消息与盯盘」页。情绪五阶段：冰点 → 回暖 → 分歧 → 发酵 → 高潮，连板晋级率与炸板结构是拐点的先行信号。</span>
+    </section>
+    
+    <section class="dashboard-note" data-span="6" id="note-methodology_close">
+      <strong>看板方法论（四步复盘）</strong>
+      <span>① 量能对照：成交额与放量方向，确认存量/增量博弈；② 情绪温度：涨跌停比、封板率、炸板率、连板高度、涨跌家数广度，映射冰点/回暖/分歧/发酵/高潮五阶段；③ 主线判定：主线&gt;支线&gt;轮动按资金强度排序，题材标注新旧与强弱星级；④ 风险清单：高位分歧提示、解禁与交割日、「只卖不买」标记。每个交易日追加一份快照，趋势图自动延伸。</span>
+    </section>
+    
+    <section class="dashboard-note" data-span="6" id="note-automation_close">
+      <strong>每日更新方式</strong>
+      <span>将当日复盘写入 data/snapshots/YYYY-MM-DD.json（午盘或收盘口径，含 metrics 指标行），再运行 python3 dashboard.py 重新生成看板；指数与涨跌停历史由 TuShare 接口（data/source/）补充，同一日期以更新的 captured_at 覆盖（午盘→收盘自动替换）。</span>
+    </section>
+    </section>
+  </div><div class="tab-page" data-content-page="sectors" hidden>
+    <section class="panel-grid">
+    <section class="dashboard-panel chart-panel" data-span="6" id="panel-sectorInd_close">
+      <header>
+        <div>
+          <h2>行业涨跌对比</h2>
+          <p>领涨 vs 领跌行业（红涨绿跌，A股配色惯例）</p>
+        </div>
+        
+    <div class="chart-actions">
+      
+      <div class="toolbox">
+        <button class="tool-button" aria-label="Panel actions" onclick="toggleMenu('sectorInd_close')"><span class="dot"></span><span class="dot"></span><span class="dot"></span></button>
+        <div class="menu" id="menu-sectorInd_close">
+          
+          <button onclick="viewSource('sectorInd_close')">View Data Source</button>
+        </div>
+      </div>
+    </div>
+    
+      </header>
+      <div class="chart" id="sectorInd_close" role="img" aria-label="行业涨跌对比"></div>
+      <footer>% | 来源：快照板块涨跌（申万行业口径）</footer>
+    </section>
+    
+    <section class="dashboard-panel chart-panel" data-span="6" id="panel-sectorCon_close">
+      <header>
+        <div>
+          <h2>概念板块涨跌</h2>
+          <p>题材概念维度涨跌幅，观察资金聚焦方向</p>
+        </div>
+        
+    <div class="chart-actions">
+      
+      <div class="toolbox">
+        <button class="tool-button" aria-label="Panel actions" onclick="toggleMenu('sectorCon_close')"><span class="dot"></span><span class="dot"></span><span class="dot"></span></button>
+        <div class="menu" id="menu-sectorCon_close">
+          
+          <button onclick="viewSource('sectorCon_close')">View Data Source</button>
+        </div>
+      </div>
+    </div>
+    
+      </header>
+      <div class="chart" id="sectorCon_close" role="img" aria-label="概念板块涨跌"></div>
+      <footer>% | 来源：快照板块涨跌（概念口径），与行业维度互为印证</footer>
+    </section>
+    
+    <section class="dashboard-panel table-panel" data-span="12" id="panel-mainlines_close">
+      <header>
+        <div>
+          <h2>领涨主线划分</h2>
+          <p>按资金强度排序：主线 &gt; 支线 &gt; 轮动</p>
+        </div>
+        <div class="toolbox">
+          <button class="tool-button" aria-label="Panel actions" onclick="toggleMenu('mainlines_close')"><span class="dot"></span><span class="dot"></span><span class="dot"></span></button>
+          <div class="menu" id="menu-mainlines_close">
+            <button onclick="viewSource('mainlines_close')">View Data Source</button>
+          </div>
+        </div>
+      </header>
+      <div class="table-scroll">
+        <table id="mainlinesTable_close">
+          <thead><tr><th>层级</th><th>方向</th><th>核心逻辑</th><th>代表股</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <footer>来源：快照主线划分</footer>
+    </section>
+    
+    <section class="dashboard-panel table-panel" data-span="6" id="panel-themes_close">
+      <header>
+        <div>
+          <h2>热门题材强弱排序</h2>
+          <p>新=首日/新催化，旧=高位/分歧，退潮题材谨慎参与</p>
+        </div>
+        <div class="toolbox">
+          <button class="tool-button" aria-label="Panel actions" onclick="toggleMenu('themes_close')"><span class="dot"></span><span class="dot"></span><span class="dot"></span></button>
+          <div class="menu" id="menu-themes_close">
+            <button onclick="viewSource('themes_close')">View Data Source</button>
+          </div>
+        </div>
+      </header>
+      <div class="table-scroll">
+        <table id="themesTable_close">
+          <thead><tr><th>#</th><th>题材</th><th>强度</th><th>新旧</th><th>代表股</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <footer>来源：快照题材强弱</footer>
+    </section>
+    </section>
+  </div><div class="tab-page" data-content-page="ladder" hidden>
+    <section class="panel-grid">
+    <section class="dashboard-panel chart-panel" data-span="6" id="panel-ladderDist_close">
+      <header>
+        <div>
+          <h2>涨停梯队结构</h2>
+          <p>首板/连板高度分布与炸板数，判断梯队完整性</p>
+        </div>
+        
+    <div class="chart-actions">
+      
+        <div class="edit-panel" id="edit-ladderDist_close">
+          <label for="select-ladderDist_close">Type</label>
+          <select id="select-ladderDist_close" onchange="setChartType('ladderDist_close', this.value)">
+            <option value="bar" selected>bar</option>
+<option value="pie">pie</option>
+          </select>
+        </div>
+        
+      <div class="toolbox">
+        <button class="tool-button" aria-label="Panel actions" onclick="toggleMenu('ladderDist_close')"><span class="dot"></span><span class="dot"></span><span class="dot"></span></button>
+        <div class="menu" id="menu-ladderDist_close">
+          <button onclick="toggleEdit('ladderDist_close')">Edit</button>
+          <button onclick="viewSource('ladderDist_close')">View Data Source</button>
+        </div>
+      </div>
+    </div>
+    
+      </header>
+      <div class="chart" id="ladderDist_close" role="img" aria-label="涨停梯队结构"></div>
+      <footer>家 | 来源：快照代表性个股摘录，非全市场口径（全市场涨停33家）</footer>
+    </section>
+    
+    <section class="dashboard-note" data-span="12" id="note-promotions_close">
+      <strong>连板晋级率：114.3%（14 家中 16 家晋级）</strong>
+      <span>晋级：东安动力（3板→4板）、大业股份（3板→4板）、海洋王（3板→4板）、润建股份（2板→3板）、永达股份（1板→2板）、星光股份（1板→2板）、粤传媒（1板→2板）、九阳股份（1板→2板）、日海智能（1板→2板）、泰尔股份（1板→2板）、百洋股份（1板→2板）、同为股份（1板→2板）、三峡新材（1板→2板）、移远通信（1板→2板）、南威软件（1板→2板）、安记食品（1板→2板）；断板：吉大正元（4板断板，午后冲高回落）、长春一东（3板断板）、京城股份（3板断板）、慕思股份（2板断板）、宁波东力（2板断板）、凡拓数创（2板断板）、海正药业（2板断板）、浙江荣泰（2板断板）、科森科技（2板断板）、福莱新材（2板，盘中冲高炸板）、豪鹏科技/运机集团/信通电子/鲁阳节能/爱仕达/富春环保/海南瑞泽/美格智能/昂利康（炸板）/长盈精密/迪安诊断/赛摩智能/昂立教育/博通集成/龙旗科技/日出东方/骏亚科技/华之杰/长裕集团/春光科技/晶华新材/瑞芯微/东亚药业/长龄液压/博汇科技/恒玄科技/嘉晨智能/格利尔（昨日首板未续板）。晋级率与炸板结构是情绪周期拐点的量化验证。口径：收盘口径经 TuShare limit_list_d（10-20 与 10-21 涨停名单 limit_times 交叉验证）：晋级16家（含12家首板晋级）/昨日连板14家=114.3%（任务口径，含首板晋级致大于100%）；财联社同日报道口径为「连板股晋级率28.57%」，即昨日连板14家中仅4家续板（东安动力/大业股份/海洋王/润建股份），口径差异源于是否计入首板晋级。</span>
+    </section>
+    
+    <section class="dashboard-panel table-panel" data-span="12" id="panel-lianban_close">
+      <header>
+        <div>
+          <h2>连板股清单</h2>
+          <p>连续涨停个股：封板质量与题材纯度是核心</p>
+        </div>
+        <div class="toolbox">
+          <button class="tool-button" aria-label="Panel actions" onclick="toggleMenu('lianban_close')"><span class="dot"></span><span class="dot"></span><span class="dot"></span></button>
+          <div class="menu" id="menu-lianban_close">
+            <button onclick="viewSource('lianban_close')">View Data Source</button>
+          </div>
+        </div>
+      </header>
+      <div class="table-scroll">
+        <table id="lianbanTable_close">
+          <thead><tr><th>股票</th><th>高度</th><th>题材</th><th>涨停逻辑</th><th>封单(亿)</th><th>成交(亿)</th><th>换手</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <footer>封单/成交单位：亿元，换手：%；来源：快照连板清单</footer>
+    </section>
+    
+    <section class="dashboard-panel table-panel" data-span="12" id="panel-shouban_close">
+      <header>
+        <div>
+          <h2>首板股清单</h2>
+          <p>当日首次涨停，按题材聚合观察扩散方向</p>
+        </div>
+        <div class="toolbox">
+          <button class="tool-button" aria-label="Panel actions" onclick="toggleMenu('shouban_close')"><span class="dot"></span><span class="dot"></span><span class="dot"></span></button>
+          <div class="menu" id="menu-shouban_close">
+            <button onclick="viewSource('shouban_close')">View Data Source</button>
+          </div>
+        </div>
+      </header>
+      <div class="table-scroll">
+        <table id="shoubanTable_close">
+          <thead><tr><th>股票</th><th>题材</th><th>涨停逻辑</th><th>封单(亿)</th><th>成交(亿)</th><th>换手</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <footer>封单/成交单位：亿元，换手：%；来源：快照首板清单</footer>
+    </section>
+    
+    <section class="dashboard-panel table-panel" data-span="12" id="panel-zhaban_close">
+      <header>
+        <div>
+          <h2>炸板股清单</h2>
+          <p>触及涨停后回落：分歧与承接力度的风向标</p>
+        </div>
+        <div class="toolbox">
+          <button class="tool-button" aria-label="Panel actions" onclick="toggleMenu('zhaban_close')"><span class="dot"></span><span class="dot"></span><span class="dot"></span></button>
+          <div class="menu" id="menu-zhaban_close">
+            <button onclick="viewSource('zhaban_close')">View Data Source</button>
+          </div>
+        </div>
+      </header>
+      <div class="table-scroll">
+        <table id="zhabanTable_close">
+          <thead><tr><th>股票</th><th>高度</th><th>题材</th><th>炸板时间</th><th>炸板原因</th><th>成交(亿)</th><th>换手</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <footer>成交单位：亿元，换手：%；来源：快照炸板清单</footer>
+    </section>
+    </section>
+  </div><div class="tab-page" data-content-page="stocks" hidden>
+    <section class="panel-grid"></section>
+  </div><div class="tab-page" data-content-page="news" hidden>
+    <section class="panel-grid">
+    <section class="dashboard-panel table-panel" data-span="12" id="panel-newsMidday_close">
+      <header>
+        <div>
+          <h2>收盘消息面</h2>
+          <p>影响盘面的关键资讯，按 利空/催化/数据/事件/风险/提示 标注</p>
+        </div>
+        <div class="toolbox">
+          <button class="tool-button" aria-label="Panel actions" onclick="toggleMenu('newsMidday_close')"><span class="dot"></span><span class="dot"></span><span class="dot"></span></button>
+          <div class="menu" id="menu-newsMidday_close">
+            <button onclick="viewSource('newsMidday_close')">View Data Source</button>
+          </div>
+        </div>
+      </header>
+      <div class="table-scroll">
+        <table id="newsMiddayTable_close">
+          <thead><tr><th>标签</th><th>来源</th><th>标题</th><th>要点</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <footer>来源：财联社 / 新华社 / 证券时报 / 东方财富 / 公司公告等（快照摘录）</footer>
+    </section>
+    
+    <section class="dashboard-panel table-panel" data-span="12" id="panel-watchpoints_close">
+      <header>
+        <div>
+          <h2>次日盯盘重点</h2>
+          <p>关键观察与前瞻方向</p>
+        </div>
+        <div class="toolbox">
+          <button class="tool-button" aria-label="Panel actions" onclick="toggleMenu('watchpoints_close')"><span class="dot"></span><span class="dot"></span><span class="dot"></span></button>
+          <div class="menu" id="menu-watchpoints_close">
+            <button onclick="viewSource('watchpoints_close')">View Data Source</button>
+          </div>
+        </div>
+      </header>
+      <div class="table-scroll">
+        <table id="watchpointsTable_close">
+          <thead><tr><th>#</th><th>类型</th><th>要点</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <footer>来源：快照盯盘重点</footer>
+    </section>
+    </section>
+  </div>
   </div>
   </main>
   <div id="modalBackdrop" class="modal-backdrop" role="dialog" aria-modal="true">
@@ -1176,7 +1580,7 @@ var Fr={},Gr={};var Wr,Hr=function(){function t(t,e,n){var i=this;this._sleepAft
   };
 })();
 </script>
-  <script>const dashboardPayload = {"title":"A股盘面每日跟踪看板","subtitle":"午盘/收盘双快照 · 情绪周期 · 主线梯队 · 复盘清单","timezone":"Asia/Shanghai","tradeDate":"2026-10-21","generatedAt":"2026-10-21T11:59:45+08:00","freshness":{"latestDataDate":"2026-10-21","latestCapturedAt":"2026-10-21T11:55:00+08:00","primarySession":"午盘","missingSessions":["收盘总结"]},"availableDates":["2026-09-10","2026-09-11","2026-09-14","2026-09-15","2026-09-16","2026-09-17","2026-09-18","2026-09-21","2026-09-22","2026-09-23","2026-09-24","2026-09-28","2026-09-29","2026-09-30","2026-10-08","2026-10-09","2026-10-12","2026-10-13","2026-10-14","2026-10-15","2026-10-16","2026-10-19","2026-10-20","2026-10-21"],"defaultRange":"ALL","sessionKeys":["mid"],"sessions":{"mid":{"key":"mid","label":"午盘总结","sessionLabel":"午盘","snapshotDate":"2026-10-21","capturedAt":"2026-10-21T11:55:00+08:00","cutoff":"11:30","sentiment":{"score":75.7,"phase":"发酵 · 主升期","breadth":null,"net_limit":100.0,"seal":null,"height":57.1,"volume":51.9},"stats":{"lu":44,"ld":0,"zb":null,"mb":4,"stock":"海洋王/东安动力"},"kpis":[{"id":"kpi-sh","label":"上证指数","value":"3,723.95","delta":"-0.31%","delta_class":"down","detail":"昨收 3,735.37"},{"id":"kpi-sz","label":"深证成指","value":"11,764.97","delta":"-0.31%","delta_class":"down","detail":"深市锚点"},{"id":"kpi-cyb","label":"创业板指","value":"2,709.96","delta":"-1.07%","delta_class":"down","detail":"两市最弱宽基"},{"id":"kpi-kc","label":"科创50","value":"1,349.54","delta":"+0.53%","delta_class":"down","detail":"沪深300 4,125.22 (-0.65%)"},{"id":"kpi-amt","label":"成交额","value":"9,393 亿","delta":"较昨同期 +58 亿","delta_class":"","detail":"放量但普跌 · 存量博弈"},{"id":"kpi-breadth","label":"涨跌家数","value":"待接入","delta":"广度分项跳过","delta_class":"","detail":"连板梯队 0 家参与评分"},{"id":"kpi-limit","label":"涨停 / 跌停","value":"44 / 0","delta":"封板率待收盘补全","delta_class":"","detail":"炸板家数午间未披露"},{"id":"kpi-phase","label":"情绪周期","value":"发酵 · 主升期","delta":"75.7 / 100","delta_class":"","detail":"最高 4 板（海洋王/东安动力）"}]}},"datasets":{"history":[{"date":"2026-09-10","session":"close","sh_close":3934.4,"sh_pct":-0.43,"amount_yi":16471,"captured_at":"2026-10-15T12:30:00+08:00"},{"date":"2026-09-11","session":"close","sh_close":3888.11,"sh_pct":-1.18,"amount_yi":19719,"captured_at":"2026-10-15T12:30:00+08:00"},{"date":"2026-09-14","session":"close","sh_close":3885.33,"sh_pct":-0.07,"amount_yi":16292,"captured_at":"2026-10-15T12:30:00+08:00"},{"date":"2026-09-15","session":"close","sh_close":3864.28,"sh_pct":-0.54,"amount_yi":16127,"captured_at":"2026-10-15T12:30:00+08:00"},{"date":"2026-09-16","session":"close","sh_close":3891.6,"sh_pct":0.71,"amount_yi":18391,"captured_at":"2026-10-15T12:30:00+08:00"},{"date":"2026-09-17","session":"close","sh_close":3875.6,"sh_pct":-0.41,"amount_yi":18231,"captured_at":"2026-10-15T12:30:00+08:00"},{"date":"2026-09-18","session":"close","sh_close":3911.87,"sh_pct":0.94,"amount_yi":20771,"captured_at":"2026-10-15T12:30:00+08:00"},{"date":"2026-09-21","session":"close","sh_close":3949.91,"sh_pct":0.97,"amount_yi":20315,"captured_at":"2026-10-15T12:30:00+08:00"},{"date":"2026-09-22","session":"close","sh_close":3952.13,"sh_pct":0.06,"amount_yi":21356,"captured_at":"2026-10-15T12:30:00+08:00"},{"date":"2026-09-23","session":"close","sh_close":3936.52,"sh_pct":-0.39,"amount_yi":17650,"captured_at":"2026-10-15T12:30:00+08:00"},{"date":"2026-09-24","session":"close","sh_close":3888.37,"sh_pct":-1.22,"amount_yi":16534,"captured_at":"2026-10-15T12:30:00+08:00"},{"date":"2026-09-28","session":"close","sh_close":3823.62,"sh_pct":-1.67,"amount_yi":17028,"captured_at":"2026-10-15T12:30:00+08:00"},{"date":"2026-09-29","session":"close","sh_close":3830.45,"sh_pct":0.18,"amount_yi":14092,"captured_at":"2026-10-15T12:30:00+08:00"},{"date":"2026-09-30","session":"close","sh_close":3842.19,"sh_pct":0.31,"amount_yi":14380,"captured_at":"2026-10-15T12:30:00+08:00"},{"date":"2026-10-08","session":"close","sh_close":3811.9,"sh_pct":-0.79,"amount_yi":16821,"captured_at":"2026-10-15T12:30:00+08:00","limit_up":43,"limit_down":16,"zhaban":32},{"date":"2026-10-09","session":"close","sh_close":3813.79,"sh_pct":0.05,"amount_yi":19005,"captured_at":"2026-10-15T12:30:00+08:00","limit_up":71,"limit_down":8,"zhaban":14},{"date":"2026-10-12","session":"close","sh_close":3797.24,"sh_pct":-0.43,"amount_yi":15378,"captured_at":"2026-10-15T12:30:00+08:00","limit_up":46,"limit_down":19,"zhaban":24},{"date":"2026-10-13","session":"close","sh_close":3800.86,"sh_pct":0.1,"amount_yi":16759,"captured_at":"2026-10-15T12:30:00+08:00","limit_up":68,"limit_down":8,"zhaban":19},{"date":"2026-10-14","session":"close","sh_close":3767.23,"sh_pct":-0.89,"amount_yi":14144,"captured_at":"2026-10-15T12:30:00+08:00","limit_up":37,"limit_down":11,"zhaban":24},{"date":"2026-10-15","session":"close","sh_close":3707.48,"sh_pct":-1.59,"amount_yi":16330,"captured_at":"2026-10-15T12:30:00+08:00","limit_up":36,"limit_down":26,"zhaban":7},{"date":"2026-10-16","session":"close","sh_close":3716.28,"sh_pct":0.24,"amount_yi":15554,"captured_at":"2026-10-15T12:30:00+08:00","limit_up":61,"limit_down":10,"zhaban":49},{"date":"2026-10-19","session":"close","sh_close":3730.92,"sh_pct":0.39,"amount_yi":14375,"captured_at":"2026-10-15T12:30:00+08:00","limit_up":46,"limit_down":22,"zhaban":21},{"date":"2026-10-20","session":"close","sh_close":3735.37,"sh_pct":0.12,"amount_yi":14561,"captured_at":"2026-10-15T12:30:00+08:00","limit_up":54,"limit_down":6,"zhaban":29},{"date":"2026-10-21","session":"midday","sh_close":3723.95,"sh_pct":-0.31,"amount_yi":9393,"turnover_delta_yi":58,"limit_up":44,"limit_down":0,"max_boards":4,"max_board_stock":"海洋王/东安动力","captured_at":"2026-10-21T11:55:00+08:00"}],"mid:mainlines":[{"tier":"主线","name":"数据要素（国家数据集团催化）","logic":"10月20日国家数据集团有限公司在河北雄安新区成立（新华社），位列央企名录第28位，以数据资源开发利用为主责主业，定位数据要素服务国家队、数据基础设施互联互通引领者，填补数据领域国资主体空白；板块早盘批量涨停后反复活跃，南威软件已发股价异动公告","stocks":"南威软件（4天3板）、星光股份（4天3板）、海量数据（涨停）、天威视讯（涨停）、太极股份（触板）、慧辰股份（20cm涨停）、深桑达A、电科数字、榕基软件、久远银海","date":"2026-10-21"},{"tier":"主线","name":"AI漫剧/文化传媒（延续）","logic":"AI漫剧概念反复走强（界面新闻），文化传媒板块活跃（人民财讯）：粤传媒晋级2连板、文投控股涨停、出版传媒4天2板涨停、兆讯传媒/凡拓数创涨超10%，昨日首板今日晋级确认题材延续性","stocks":"粤传媒（2连板）、文投控股（涨停）、出版传媒（4天2板）、兆讯传媒、凡拓数创","date":"2026-10-21"},{"tier":"支线","name":"创新药（活跃回升）","logic":"创新药板块活跃（人民财讯），莱美药业20cm涨停，昂利康晋级2连板，西点药业、海正药业、百济神州跟涨，医药方向连续两日出现涨停梯队","stocks":"莱美药业（20cm涨停）、昂利康（2连板）、西点药业、海正药业、百济神州","date":"2026-10-21"},{"tier":"支线","name":"猪肉（反包走强）","logic":"猪肉概念走强（人民财讯），东瑞股份昨日炸板今日反包涨停，养殖板块低位补涨","stocks":"东瑞股份（涨停）","date":"2026-10-21"},{"tier":"轮动","name":"福建本地股（区域情绪脉冲）","logic":"早盘福建本地股异动拉升（证券时报e公司/财联社），平潭发展10:09触及涨停、封单超120万手；未见明确公开消息面催化，定位区域情绪轮动，持续性待观察","stocks":"平潭发展（涨停）、福建水泥（7天3板）、安记食品（2连板）、海峡创新（一度涨超14%）、路桥信息（涨超11%）、福建金森、漳州发展","date":"2026-10-21"},{"tier":"轮动","name":"AI硬件/端侧AI（冲高回落分歧）","logic":"昨日主线今日冲高回落（腾讯财经/今日播报）：新易盛、中际旭创、罗博特科盘中冲高后回落；科创50早盘一度涨1.13%后收窄，科技硬件内部高低切换","stocks":"新易盛、中际旭创、罗博特科（均冲高回落）","date":"2026-10-21"},{"tier":"轮动","name":"电池/能源金属（业绩杀退潮）","logic":"宁德时代Q3增收不增利（净利212.46亿元同比+14.54%、环比-5.77%，毛利率20.69%创2022Q4以来新低），A/H股大跌超10%（上证报/证券时报），瑞银下调目标价至730港元；电池、能源金属、美容护理、教育板块走弱（人民财讯/新浪）","stocks":"宁德时代（跌超10%）","date":"2026-10-21"}],"mid:themes":[{"rank":1,"name":"数据要素（国家数据集团）","stars":5,"status":"新","stocks":"南威软件（4天3板）、星光股份（4天3板）、海量数据、天威视讯、慧辰股份（20cm）","stars_label":"★★★★★","date":"2026-10-21"},{"rank":2,"name":"AI漫剧/文化传媒","stars":4,"status":"延续","stocks":"粤传媒（2连板）、文投控股、出版传媒（4天2板）、兆讯传媒","stars_label":"★★★★☆","date":"2026-10-21"},{"rank":3,"name":"创新药","stars":4,"status":"延续","stocks":"莱美药业（20cm）、昂利康（2连板）、西点药业、百济神州","stars_label":"★★★★☆","date":"2026-10-21"},{"rank":4,"name":"猪肉（反包）","stars":3,"status":"新","stocks":"东瑞股份（涨停）","stars_label":"★★★☆☆","date":"2026-10-21"},{"rank":5,"name":"福建本地股","stars":3,"status":"新","stocks":"平潭发展、福建水泥（7天3板）、安记食品（2连板）、海峡创新","stars_label":"★★★☆☆","date":"2026-10-21"},{"rank":6,"name":"高位连板梯队","stars":3,"status":"延续","stocks":"海洋王（4连板）、东安动力（4连板）、润建股份（3连板）、三峡新材（5天3板）、华瓷股份（6天3板）","stars_label":"★★★☆☆","date":"2026-10-21"},{"rank":7,"name":"AI硬件/端侧AI","stars":2,"status":"分歧","stocks":"新易盛、中际旭创、罗博特科冲高回落","stars_label":"★★☆☆☆","date":"2026-10-21"},{"rank":8,"name":"电池/锂电（宁德时代）","stars":1,"status":"退潮","stocks":"宁德时代跌超10%，教育/美容护理/能源金属走弱","stars_label":"★☆☆☆☆","date":"2026-10-21"}],"mid:newsMidday":[{"tag":"数据","source":"证券时报·人民财讯/新浪财经","title":"三大指数半日集体收跌","detail":"早盘高开后震荡走低：上证指数跌0.31%报3723.95点，深证成指跌0.31%报11764.97点，创业板指跌1.07%报2709.96点","date":"2026-10-21"},{"tag":"数据","source":"财联社","title":"半日成交9393亿，较昨同期放量58亿","detail":"沪深两市半日成交额9393亿元，较上个交易日放量58亿；全市场超2800只个股上涨","date":"2026-10-21"},{"tag":"催化","source":"新华社/新浪财经","title":"国家数据集团10月20日雄安成立，数据要素批量涨停","detail":"新央企位列名录第28位，以数据资源开发利用为主责主业，定位数据要素服务国家队；南威软件、星光股份4天3板，海量数据、天威视讯涨停，太极股份触板","date":"2026-10-21"},{"tag":"利空","source":"上海证券报/证券时报","title":"宁德时代Q3增收不增利，A/H股大跌超10%","detail":"Q3营收1652.21亿元（+58.58%）但归母净利212.46亿元仅+14.54%、环比-5.77%，毛利率20.69%创2022Q4以来新低；瑞银下调目标价至730港元；电池板块走弱拖累创业板指","date":"2026-10-21"},{"tag":"数据","source":"界面新闻","title":"午间44只涨停、0只跌停","detail":"连板股：海洋王、东安动力等4连板，福建水泥7天3板、华瓷股份6天3板、三峡新材5天3板、润建股份3连板、出版传媒/亚星化学4天2板、天洋新材3天2板、昂利康2连板","date":"2026-10-21"},{"tag":"主线","source":"界面新闻/腾讯财经","title":"数据要素+AI漫剧双主线走强","detail":"数据要素概念批量涨停（南威软件、星光股份4天3板）；AI漫剧反复走强，粤传媒2连板、文投控股涨停","date":"2026-10-21"},{"tag":"数据","source":"证券时报·人民财讯","title":"猪肉走强、创新药活跃、文化传媒上扬","detail":"东瑞股份涨停；莱美药业20cm涨停、昂利康2连板；出版传媒涨停、兆讯传媒/凡拓数创涨超10%；互联网保险、数字乡村、通信服务、软件开发涨幅居前","date":"2026-10-21"},{"tag":"事件","source":"证券时报e公司","title":"福建本地股异动，平潭发展封单超120万手","detail":"平潭发展10:09触及涨停，福建水泥此前涨停，海峡创新一度涨超14%、路桥信息涨超11%，福建金森、漳州发展、厦门信达、厦门港务跟涨","date":"2026-10-21"},{"tag":"风险","source":"界面新闻（连板名单比对）","title":"昨日高位板未获晋级明示","detail":"午间连板名单最高4连板（海洋王、东安动力），昨日最高板吉大正元（4板）未见5连板表述，大业股份/京城股份等3板梯队未见于名单，高位分歧信号待收盘复核","date":"2026-10-21"}],"mid:watchpoints":[{"idx":1,"cat":"主线跟踪","text":"数据要素午后分歧测试：南威软件/海量数据封单若稳住可看太极股份、电科数字补涨；批量涨停次日（明日）才是真正考验","date":"2026-10-21"},{"idx":2,"cat":"主线跟踪","text":"AI漫剧看粤传媒2连板能否晋级定题材高度，文投控股/出版传媒跟随；2板晋级失败则降级为脉冲","date":"2026-10-21"},{"idx":3,"cat":"只卖不买","text":"宁德时代业绩利空+机构下调目标价，电池链反抽视为减仓机会，不接飞刀","date":"2026-10-21"},{"idx":4,"cat":"只卖不买","text":"昨日3-4板梯队（吉大正元、大业股份、京城股份）未获晋级明示，高位股冲高即兑现","date":"2026-10-21"},{"idx":5,"cat":"观望","text":"福建本地股未见公开消息面支撑，纯情绪脉冲（平潭发展封单强），不追高等分歧","date":"2026-10-21"},{"idx":6,"cat":"低吸观察","text":"创新药昂利康2连板+莱美药业20cm，午后若板块扩散可关注低位医药补涨（海正药业方向）","date":"2026-10-21"},{"idx":7,"cat":"风险监控","text":"创业板指半日-1.07%受宁德拖累，午后宁德止跌企稳则指数修复，反之防补跌扩散至新能源链","date":"2026-10-21"},{"idx":8,"cat":"数据","text":"半日放量58亿+超2800股上涨但指数翻绿，量价背离；收盘复核44家涨停的封板率与炸板数","date":"2026-10-21"}]}};
+  <script>const dashboardPayload = {"title":"A股盘面每日跟踪看板","subtitle":"午盘/收盘双快照 · 情绪周期 · 主线梯队 · 复盘清单","timezone":"Asia/Shanghai","tradeDate":"2026-10-21","generatedAt":"2026-10-21T20:17:04+08:00","freshness":{"latestDataDate":"2026-10-21","latestCapturedAt":"2026-10-21T20:13:10+08:00","primarySession":"收盘","missingSessions":[]},"availableDates":["2026-09-10","2026-09-11","2026-09-14","2026-09-15","2026-09-16","2026-09-17","2026-09-18","2026-09-21","2026-09-22","2026-09-23","2026-09-24","2026-09-28","2026-09-29","2026-09-30","2026-10-08","2026-10-09","2026-10-12","2026-10-13","2026-10-14","2026-10-15","2026-10-16","2026-10-19","2026-10-20","2026-10-21"],"defaultRange":"ALL","sessionKeys":["mid","close"],"sessions":{"mid":{"key":"mid","label":"午盘总结","sessionLabel":"午盘","snapshotDate":"2026-10-21","capturedAt":"2026-10-21T11:55:00+08:00","cutoff":"11:30","sentiment":{"score":75.7,"phase":"发酵 · 主升期","breadth":null,"net_limit":100.0,"seal":null,"height":57.1,"volume":51.9},"stats":{"lu":44,"ld":0,"zb":null,"mb":4,"stock":"海洋王/东安动力"},"kpis":[{"id":"kpi-sh","label":"上证指数","value":"3,723.95","delta":"-0.31%","delta_class":"down","detail":"昨收 3,735.37"},{"id":"kpi-sz","label":"深证成指","value":"11,764.97","delta":"-0.31%","delta_class":"down","detail":"深市锚点"},{"id":"kpi-cyb","label":"创业板指","value":"2,709.96","delta":"-1.07%","delta_class":"down","detail":"两市最弱宽基"},{"id":"kpi-kc","label":"科创50","value":"1,349.54","delta":"+0.53%","delta_class":"down","detail":"沪深300 4,125.22 (-0.65%)"},{"id":"kpi-amt","label":"成交额","value":"9,393 亿","delta":"较昨同期 +58 亿","delta_class":"","detail":"放量但普跌 · 存量博弈"},{"id":"kpi-breadth","label":"涨跌家数","value":"待接入","delta":"广度分项跳过","delta_class":"","detail":"连板梯队 0 家参与评分"},{"id":"kpi-limit","label":"涨停 / 跌停","value":"44 / 0","delta":"封板率待收盘补全","delta_class":"","detail":"炸板家数午间未披露"},{"id":"kpi-phase","label":"情绪周期","value":"发酵 · 主升期","delta":"75.7 / 100","delta_class":"","detail":"最高 4 板（海洋王/东安动力）"}]},"close":{"key":"close","label":"收盘总结","sessionLabel":"收盘","snapshotDate":"2026-10-21","capturedAt":"2026-10-21T20:13:10+08:00","cutoff":"15:00","sentiment":{"score":71.2,"phase":"发酵 · 主升期","breadth":null,"net_limit":81.8,"seal":72,"height":57.1,"volume":null},"stats":{"lu":50,"ld":5,"zb":19,"mb":4,"stock":"东安动力/大业股份/海洋王"},"kpis":[{"id":"kpi-sh","label":"上证指数","value":"3,713.03","delta":"-0.60%","delta_class":"down","detail":"昨收 3,735.37"},{"id":"kpi-sz","label":"深证成指","value":"11,704.35","delta":"-0.82%","delta_class":"down","detail":"深市锚点"},{"id":"kpi-cyb","label":"创业板指","value":"2,694.71","delta":"-1.62%","delta_class":"down","detail":"两市最弱宽基"},{"id":"kpi-kc","label":"科创50","value":"1,343.28","delta":"+0.06%","delta_class":"down","detail":"北证50 -0.72% · 沪深300 4,111.93 (-0.97%)"},{"id":"kpi-amt","label":"成交额","value":"14,293 亿","delta":"全天口径","delta_class":"","detail":"量能对照见趋势图"},{"id":"kpi-breadth","label":"涨跌家数","value":"待接入","delta":"广度分项跳过","delta_class":"","detail":"连板梯队 16 家参与评分"},{"id":"kpi-limit","label":"涨停 / 跌停","value":"50 / 5","delta":"封板率 72%","delta_class":"","detail":"炸板 19 家 · 炸板率 28%"},{"id":"kpi-phase","label":"情绪周期","value":"发酵 · 主升期","delta":"71.2 / 100","delta_class":"","detail":"最高 4 板（东安动力/大业股份/海洋王）"}]}},"datasets":{"history":[{"date":"2026-09-10","session":"close","sh_close":3934.4,"sh_pct":-0.43,"amount_yi":16471,"captured_at":"2026-10-15T12:30:00+08:00"},{"date":"2026-09-11","session":"close","sh_close":3888.11,"sh_pct":-1.18,"amount_yi":19719,"captured_at":"2026-10-15T12:30:00+08:00"},{"date":"2026-09-14","session":"close","sh_close":3885.33,"sh_pct":-0.07,"amount_yi":16292,"captured_at":"2026-10-15T12:30:00+08:00"},{"date":"2026-09-15","session":"close","sh_close":3864.28,"sh_pct":-0.54,"amount_yi":16127,"captured_at":"2026-10-15T12:30:00+08:00"},{"date":"2026-09-16","session":"close","sh_close":3891.6,"sh_pct":0.71,"amount_yi":18391,"captured_at":"2026-10-15T12:30:00+08:00"},{"date":"2026-09-17","session":"close","sh_close":3875.6,"sh_pct":-0.41,"amount_yi":18231,"captured_at":"2026-10-15T12:30:00+08:00"},{"date":"2026-09-18","session":"close","sh_close":3911.87,"sh_pct":0.94,"amount_yi":20771,"captured_at":"2026-10-15T12:30:00+08:00"},{"date":"2026-09-21","session":"close","sh_close":3949.91,"sh_pct":0.97,"amount_yi":20315,"captured_at":"2026-10-15T12:30:00+08:00"},{"date":"2026-09-22","session":"close","sh_close":3952.13,"sh_pct":0.06,"amount_yi":21356,"captured_at":"2026-10-15T12:30:00+08:00"},{"date":"2026-09-23","session":"close","sh_close":3936.52,"sh_pct":-0.39,"amount_yi":17650,"captured_at":"2026-10-15T12:30:00+08:00"},{"date":"2026-09-24","session":"close","sh_close":3888.37,"sh_pct":-1.22,"amount_yi":16534,"captured_at":"2026-10-15T12:30:00+08:00"},{"date":"2026-09-28","session":"close","sh_close":3823.62,"sh_pct":-1.67,"amount_yi":17028,"captured_at":"2026-10-15T12:30:00+08:00"},{"date":"2026-09-29","session":"close","sh_close":3830.45,"sh_pct":0.18,"amount_yi":14092,"captured_at":"2026-10-15T12:30:00+08:00"},{"date":"2026-09-30","session":"close","sh_close":3842.19,"sh_pct":0.31,"amount_yi":14380,"captured_at":"2026-10-15T12:30:00+08:00"},{"date":"2026-10-08","session":"close","sh_close":3811.9,"sh_pct":-0.79,"amount_yi":16821,"captured_at":"2026-10-15T12:30:00+08:00","limit_up":43,"limit_down":16,"zhaban":32},{"date":"2026-10-09","session":"close","sh_close":3813.79,"sh_pct":0.05,"amount_yi":19005,"captured_at":"2026-10-15T12:30:00+08:00","limit_up":71,"limit_down":8,"zhaban":14},{"date":"2026-10-12","session":"close","sh_close":3797.24,"sh_pct":-0.43,"amount_yi":15378,"captured_at":"2026-10-15T12:30:00+08:00","limit_up":46,"limit_down":19,"zhaban":24},{"date":"2026-10-13","session":"close","sh_close":3800.86,"sh_pct":0.1,"amount_yi":16759,"captured_at":"2026-10-15T12:30:00+08:00","limit_up":68,"limit_down":8,"zhaban":19},{"date":"2026-10-14","session":"close","sh_close":3767.23,"sh_pct":-0.89,"amount_yi":14144,"captured_at":"2026-10-15T12:30:00+08:00","limit_up":37,"limit_down":11,"zhaban":24},{"date":"2026-10-15","session":"close","sh_close":3707.48,"sh_pct":-1.59,"amount_yi":16330,"captured_at":"2026-10-15T12:30:00+08:00","limit_up":36,"limit_down":26,"zhaban":7},{"date":"2026-10-16","session":"close","sh_close":3716.28,"sh_pct":0.24,"amount_yi":15554,"captured_at":"2026-10-15T12:30:00+08:00","limit_up":61,"limit_down":10,"zhaban":49},{"date":"2026-10-19","session":"close","sh_close":3730.92,"sh_pct":0.39,"amount_yi":14375,"captured_at":"2026-10-15T12:30:00+08:00","limit_up":46,"limit_down":22,"zhaban":21},{"date":"2026-10-20","session":"close","sh_close":3735.37,"sh_pct":0.12,"amount_yi":14561,"captured_at":"2026-10-15T12:30:00+08:00","limit_up":54,"limit_down":6,"zhaban":29},{"date":"2026-10-21","session":"close","sh_close":3713.03,"sh_pct":-0.6,"amount_yi":14293,"captured_at":"2026-10-21T20:13:10+08:00","limit_up":50,"limit_down":5,"zhaban":19,"fengban_rate":72,"max_boards":4,"max_board_stock":"东安动力/大业股份/海洋王"}],"mid:mainlines":[{"tier":"主线","name":"数据要素（国家数据集团催化）","logic":"10月20日国家数据集团有限公司在河北雄安新区成立（新华社），位列央企名录第28位，以数据资源开发利用为主责主业，定位数据要素服务国家队、数据基础设施互联互通引领者，填补数据领域国资主体空白；板块早盘批量涨停后反复活跃，南威软件已发股价异动公告","stocks":"南威软件（4天3板）、星光股份（4天3板）、海量数据（涨停）、天威视讯（涨停）、太极股份（触板）、慧辰股份（20cm涨停）、深桑达A、电科数字、榕基软件、久远银海","date":"2026-10-21"},{"tier":"主线","name":"AI漫剧/文化传媒（延续）","logic":"AI漫剧概念反复走强（界面新闻），文化传媒板块活跃（人民财讯）：粤传媒晋级2连板、文投控股涨停、出版传媒4天2板涨停、兆讯传媒/凡拓数创涨超10%，昨日首板今日晋级确认题材延续性","stocks":"粤传媒（2连板）、文投控股（涨停）、出版传媒（4天2板）、兆讯传媒、凡拓数创","date":"2026-10-21"},{"tier":"支线","name":"创新药（活跃回升）","logic":"创新药板块活跃（人民财讯），莱美药业20cm涨停，昂利康晋级2连板，西点药业、海正药业、百济神州跟涨，医药方向连续两日出现涨停梯队","stocks":"莱美药业（20cm涨停）、昂利康（2连板）、西点药业、海正药业、百济神州","date":"2026-10-21"},{"tier":"支线","name":"猪肉（反包走强）","logic":"猪肉概念走强（人民财讯），东瑞股份昨日炸板今日反包涨停，养殖板块低位补涨","stocks":"东瑞股份（涨停）","date":"2026-10-21"},{"tier":"轮动","name":"福建本地股（区域情绪脉冲）","logic":"早盘福建本地股异动拉升（证券时报e公司/财联社），平潭发展10:09触及涨停、封单超120万手；未见明确公开消息面催化，定位区域情绪轮动，持续性待观察","stocks":"平潭发展（涨停）、福建水泥（7天3板）、安记食品（2连板）、海峡创新（一度涨超14%）、路桥信息（涨超11%）、福建金森、漳州发展","date":"2026-10-21"},{"tier":"轮动","name":"AI硬件/端侧AI（冲高回落分歧）","logic":"昨日主线今日冲高回落（腾讯财经/今日播报）：新易盛、中际旭创、罗博特科盘中冲高后回落；科创50早盘一度涨1.13%后收窄，科技硬件内部高低切换","stocks":"新易盛、中际旭创、罗博特科（均冲高回落）","date":"2026-10-21"},{"tier":"轮动","name":"电池/能源金属（业绩杀退潮）","logic":"宁德时代Q3增收不增利（净利212.46亿元同比+14.54%、环比-5.77%，毛利率20.69%创2022Q4以来新低），A/H股大跌超10%（上证报/证券时报），瑞银下调目标价至730港元；电池、能源金属、美容护理、教育板块走弱（人民财讯/新浪）","stocks":"宁德时代（跌超10%）","date":"2026-10-21"}],"mid:themes":[{"rank":1,"name":"数据要素（国家数据集团）","stars":5,"status":"新","stocks":"南威软件（4天3板）、星光股份（4天3板）、海量数据、天威视讯、慧辰股份（20cm）","stars_label":"★★★★★","date":"2026-10-21"},{"rank":2,"name":"AI漫剧/文化传媒","stars":4,"status":"延续","stocks":"粤传媒（2连板）、文投控股、出版传媒（4天2板）、兆讯传媒","stars_label":"★★★★☆","date":"2026-10-21"},{"rank":3,"name":"创新药","stars":4,"status":"延续","stocks":"莱美药业（20cm）、昂利康（2连板）、西点药业、百济神州","stars_label":"★★★★☆","date":"2026-10-21"},{"rank":4,"name":"猪肉（反包）","stars":3,"status":"新","stocks":"东瑞股份（涨停）","stars_label":"★★★☆☆","date":"2026-10-21"},{"rank":5,"name":"福建本地股","stars":3,"status":"新","stocks":"平潭发展、福建水泥（7天3板）、安记食品（2连板）、海峡创新","stars_label":"★★★☆☆","date":"2026-10-21"},{"rank":6,"name":"高位连板梯队","stars":3,"status":"延续","stocks":"海洋王（4连板）、东安动力（4连板）、润建股份（3连板）、三峡新材（5天3板）、华瓷股份（6天3板）","stars_label":"★★★☆☆","date":"2026-10-21"},{"rank":7,"name":"AI硬件/端侧AI","stars":2,"status":"分歧","stocks":"新易盛、中际旭创、罗博特科冲高回落","stars_label":"★★☆☆☆","date":"2026-10-21"},{"rank":8,"name":"电池/锂电（宁德时代）","stars":1,"status":"退潮","stocks":"宁德时代跌超10%，教育/美容护理/能源金属走弱","stars_label":"★☆☆☆☆","date":"2026-10-21"}],"mid:newsMidday":[{"tag":"数据","source":"证券时报·人民财讯/新浪财经","title":"三大指数半日集体收跌","detail":"早盘高开后震荡走低：上证指数跌0.31%报3723.95点，深证成指跌0.31%报11764.97点，创业板指跌1.07%报2709.96点","date":"2026-10-21"},{"tag":"数据","source":"财联社","title":"半日成交9393亿，较昨同期放量58亿","detail":"沪深两市半日成交额9393亿元，较上个交易日放量58亿；全市场超2800只个股上涨","date":"2026-10-21"},{"tag":"催化","source":"新华社/新浪财经","title":"国家数据集团10月20日雄安成立，数据要素批量涨停","detail":"新央企位列名录第28位，以数据资源开发利用为主责主业，定位数据要素服务国家队；南威软件、星光股份4天3板，海量数据、天威视讯涨停，太极股份触板","date":"2026-10-21"},{"tag":"利空","source":"上海证券报/证券时报","title":"宁德时代Q3增收不增利，A/H股大跌超10%","detail":"Q3营收1652.21亿元（+58.58%）但归母净利212.46亿元仅+14.54%、环比-5.77%，毛利率20.69%创2022Q4以来新低；瑞银下调目标价至730港元；电池板块走弱拖累创业板指","date":"2026-10-21"},{"tag":"数据","source":"界面新闻","title":"午间44只涨停、0只跌停","detail":"连板股：海洋王、东安动力等4连板，福建水泥7天3板、华瓷股份6天3板、三峡新材5天3板、润建股份3连板、出版传媒/亚星化学4天2板、天洋新材3天2板、昂利康2连板","date":"2026-10-21"},{"tag":"主线","source":"界面新闻/腾讯财经","title":"数据要素+AI漫剧双主线走强","detail":"数据要素概念批量涨停（南威软件、星光股份4天3板）；AI漫剧反复走强，粤传媒2连板、文投控股涨停","date":"2026-10-21"},{"tag":"数据","source":"证券时报·人民财讯","title":"猪肉走强、创新药活跃、文化传媒上扬","detail":"东瑞股份涨停；莱美药业20cm涨停、昂利康2连板；出版传媒涨停、兆讯传媒/凡拓数创涨超10%；互联网保险、数字乡村、通信服务、软件开发涨幅居前","date":"2026-10-21"},{"tag":"事件","source":"证券时报e公司","title":"福建本地股异动，平潭发展封单超120万手","detail":"平潭发展10:09触及涨停，福建水泥此前涨停，海峡创新一度涨超14%、路桥信息涨超11%，福建金森、漳州发展、厦门信达、厦门港务跟涨","date":"2026-10-21"},{"tag":"风险","source":"界面新闻（连板名单比对）","title":"昨日高位板未获晋级明示","detail":"午间连板名单最高4连板（海洋王、东安动力），昨日最高板吉大正元（4板）未见5连板表述，大业股份/京城股份等3板梯队未见于名单，高位分歧信号待收盘复核","date":"2026-10-21"}],"mid:watchpoints":[{"idx":1,"cat":"主线跟踪","text":"数据要素午后分歧测试：南威软件/海量数据封单若稳住可看太极股份、电科数字补涨；批量涨停次日（明日）才是真正考验","date":"2026-10-21"},{"idx":2,"cat":"主线跟踪","text":"AI漫剧看粤传媒2连板能否晋级定题材高度，文投控股/出版传媒跟随；2板晋级失败则降级为脉冲","date":"2026-10-21"},{"idx":3,"cat":"只卖不买","text":"宁德时代业绩利空+机构下调目标价，电池链反抽视为减仓机会，不接飞刀","date":"2026-10-21"},{"idx":4,"cat":"只卖不买","text":"昨日3-4板梯队（吉大正元、大业股份、京城股份）未获晋级明示，高位股冲高即兑现","date":"2026-10-21"},{"idx":5,"cat":"观望","text":"福建本地股未见公开消息面支撑，纯情绪脉冲（平潭发展封单强），不追高等分歧","date":"2026-10-21"},{"idx":6,"cat":"低吸观察","text":"创新药昂利康2连板+莱美药业20cm，午后若板块扩散可关注低位医药补涨（海正药业方向）","date":"2026-10-21"},{"idx":7,"cat":"风险监控","text":"创业板指半日-1.07%受宁德拖累，午后宁德止跌企稳则指数修复，反之防补跌扩散至新能源链","date":"2026-10-21"},{"idx":8,"cat":"数据","text":"半日放量58亿+超2800股上涨但指数翻绿，量价背离；收盘复核44家涨停的封板率与炸板数","date":"2026-10-21"}],"close:sectors":[{"date":"2026-10-21","grp":"行业","dir":"领涨","name":"养殖业","pct":2.97},{"date":"2026-10-21","grp":"行业","dir":"领涨","name":"电视广播Ⅱ","pct":2.47},{"date":"2026-10-21","grp":"行业","dir":"领涨","name":"农林牧渔","pct":1.95},{"date":"2026-10-21","grp":"行业","dir":"领涨","name":"渔业","pct":1.88},{"date":"2026-10-21","grp":"行业","dir":"领涨","name":"出版","pct":1.81},{"date":"2026-10-21","grp":"行业","dir":"领涨","name":"IT服务Ⅱ","pct":1.69},{"date":"2026-10-21","grp":"行业","dir":"领跌","name":"电池","pct":-7.56},{"date":"2026-10-21","grp":"行业","dir":"领跌","name":"电力设备","pct":-3.67},{"date":"2026-10-21","grp":"行业","dir":"领跌","name":"商用车","pct":-2.44},{"date":"2026-10-21","grp":"行业","dir":"领跌","name":"乘用车","pct":-2.23},{"date":"2026-10-21","grp":"行业","dir":"领跌","name":"白色家电","pct":-2.21},{"date":"2026-10-21","grp":"行业","dir":"领跌","name":"煤炭开采","pct":-2.0}],"close:concepts":[],"close:ladderDist":[{"date":"2026-10-21","label":"首板","count":34},{"date":"2026-10-21","label":"2板","count":16},{"date":"2026-10-21","label":"炸板","count":19}],"close:lianban":[{"category":"连板","name":"东安动力","boards":"4连板","theme":"汽车零部件/军工","reason":"竞价封单、9:30回封（开盘1次），高位晋级总龙头","seal_yi":1.6,"amount_yi":6.09,"turnover_pct":9.57,"time":"09:25 封板","date":"2026-10-21","seal_label":"1.60","amt_label":"6.1","rate_label":"9.6%"},{"category":"连板","name":"大业股份","boards":"4连板","theme":"通用设备/金属制品","reason":"一字板，封单4.01亿居两市第二（证券之星）","seal_yi":4.01,"amount_yi":0.74,"turnover_pct":1.64,"time":"09:25 封板","date":"2026-10-21","seal_label":"4.01","amt_label":"0.7","rate_label":"1.6%"},{"category":"连板","name":"海洋王","boards":"4连板","theme":"照明设备","reason":"一字板，封单2亿居两市第三（证券之星）","seal_yi":2.0,"amount_yi":0.47,"turnover_pct":0.82,"time":"09:25 封板","date":"2026-10-21","seal_label":"2.00","amt_label":"0.5","rate_label":"0.8%"},{"category":"连板","name":"润建股份","boards":"3连板","theme":"通信服务/算力","reason":"AI硬件/算力主线，9:35首封9:38回封（开板1次）","seal_yi":1.46,"amount_yi":10.58,"turnover_pct":8.86,"time":"09:35 封板","date":"2026-10-21","seal_label":"1.46","amt_label":"10.6","rate_label":"8.9%"},{"category":"连板","name":"永达股份","boards":"2连板","theme":"工程机械","reason":"9:30封板、10:36回封（开板1次），换手24%；龙虎榜机构3日净卖出569万（证券之星）","seal_yi":0.28,"amount_yi":3.98,"turnover_pct":24.14,"time":"09:30 封板","date":"2026-10-21","seal_label":"0.28","amt_label":"4.0","rate_label":"24.1%"},{"category":"连板","name":"星光股份","boards":"2连板","theme":"数据要素/照明设备","reason":"数据要素概念4天3板（媒体口径），竞价一字","seal_yi":1.38,"amount_yi":1.41,"turnover_pct":5.53,"time":"09:30 封板","date":"2026-10-21","seal_label":"1.38","amt_label":"1.4","rate_label":"5.5%"},{"category":"连板","name":"粤传媒","boards":"2连板","theme":"出版/AI漫剧","reason":"AI漫剧概念活跃（央广网），9:31封板未开","seal_yi":1.89,"amount_yi":6.0,"turnover_pct":4.82,"time":"09:31 封板","date":"2026-10-21","seal_label":"1.89","amt_label":"6.0","rate_label":"4.8%"},{"category":"连板","name":"九阳股份","boards":"2连板","theme":"小家电","reason":"13天8板高位人气股（财联社），尾盘14:24封板（开板4次）","seal_yi":0.4,"amount_yi":30.89,"turnover_pct":18.86,"time":"14:24 封板","date":"2026-10-21","seal_label":"0.40","amt_label":"30.9","rate_label":"18.9%"},{"category":"连板","name":"日海智能","boards":"2连板","theme":"通信设备/AI硬件","reason":"AI硬件/物联网模组，竞价一字","seal_yi":0.95,"amount_yi":0.65,"turnover_pct":1.78,"time":"09:25 封板","date":"2026-10-21","seal_label":"0.95","amt_label":"0.7","rate_label":"1.8%"},{"category":"连板","name":"泰尔股份","boards":"2连板","theme":"通用设备","reason":"竞价一字，通用设备跟涨","seal_yi":1.19,"amount_yi":0.91,"turnover_pct":2.53,"time":"09:25 封板","date":"2026-10-21","seal_label":"1.19","amt_label":"0.9","rate_label":"2.5%"},{"category":"连板","name":"百洋股份","boards":"2连板","theme":"饲料/水产养殖","reason":"农业养殖板块领涨带动（养殖业+2.97%），9:36封板未开","seal_yi":0.87,"amount_yi":5.34,"turnover_pct":15.63,"time":"09:36 封板","date":"2026-10-21","seal_label":"0.87","amt_label":"5.3","rate_label":"15.6%"},{"category":"连板","name":"同为股份","boards":"2连板","theme":"计算机设备","reason":"9:25封板、9:35回封（开板1次）","seal_yi":0.81,"amount_yi":2.15,"turnover_pct":10.84,"time":"09:25 封板","date":"2026-10-21","seal_label":"0.81","amt_label":"2.1","rate_label":"10.8%"},{"category":"连板","name":"三峡新材","boards":"2连板","theme":"玻璃玻纤","reason":"一字板，封单4.99亿居两市第一（证券之星；东方财富口径6天3板）","seal_yi":4.99,"amount_yi":0.14,"turnover_pct":0.26,"time":"09:25 封板","date":"2026-10-21","seal_label":"4.99","amt_label":"0.1","rate_label":"0.3%"},{"category":"连板","name":"移远通信","boards":"2连板","theme":"通信设备/物联网模组","reason":"AI硬件/光通信活跃（上证报），9:46封板盘中开板17次，成交44.5亿巨量换手","seal_yi":0.08,"amount_yi":44.48,"turnover_pct":13.31,"time":"09:46 封板","date":"2026-10-21","seal_label":"0.08","amt_label":"44.5","rate_label":"13.3%"},{"category":"连板","name":"南威软件","boards":"2连板","theme":"IT服务/数据要素","reason":"数据要素4天3板（媒体口径），11:04封板；同日收上交所监管警示（AI短剧信披）","seal_yi":0.71,"amount_yi":8.42,"turnover_pct":15.92,"time":"11:04 封板","date":"2026-10-21","seal_label":"0.71","amt_label":"8.4","rate_label":"15.9%"},{"category":"连板","name":"安记食品","boards":"2连板","theme":"调味发酵","reason":"10:00封板、10:03回封（开板1次）","seal_yi":0.48,"amount_yi":3.98,"turnover_pct":11.73,"time":"10:00 封板","date":"2026-10-21","seal_label":"0.48","amt_label":"4.0","rate_label":"11.7%"}],"close:shouban":[{"category":"首板","name":"四环生物","boards":"首板","theme":"生物制品","reason":"医药个股活跃，11:13封板（开板2次）","seal_yi":0.02,"amount_yi":24.24,"turnover_pct":6.64,"time":"11:13 封板","date":"2026-10-21","seal_label":"0.02","amt_label":"24.2","rate_label":"6.6%"},{"category":"首板","name":"北大医药","boards":"首板","theme":"化学制药","reason":"医药个股活跃，13:06回封（开板1次）","seal_yi":0.47,"amount_yi":3.31,"turnover_pct":9.71,"time":"13:06 封板","date":"2026-10-21","seal_label":"0.47","amt_label":"3.3","rate_label":"9.7%"},{"category":"首板","name":"东瑞股份","boards":"首板","theme":"养殖业/生猪","reason":"养殖业+2.97%领涨，生猪养殖+3.13%","seal_yi":0.34,"amount_yi":2.46,"turnover_pct":7.47,"time":"09:52 封板","date":"2026-10-21","seal_label":"0.34","amt_label":"2.5","rate_label":"7.5%"},{"category":"首板","name":"华瓷股份","boards":"首板","theme":"家居用品","reason":"家居/日用瓷出口，9:54封板未开","seal_yi":0.65,"amount_yi":6.31,"turnover_pct":10.59,"time":"09:54 封板","date":"2026-10-21","seal_label":"0.65","amt_label":"6.3","rate_label":"10.6%"},{"category":"首板","name":"东方海洋","boards":"首板","theme":"水产养殖/农产品加工","reason":"渔业+1.88%领涨，9:32封板（开板3次10:15回封）","seal_yi":0.29,"amount_yi":6.66,"turnover_pct":17.77,"time":"09:32 封板","date":"2026-10-21","seal_label":"0.29","amt_label":"6.7","rate_label":"17.8%"},{"category":"首板","name":"三变科技","boards":"首板","theme":"电网设备","reason":"电网设备/变压器，13:41封板未开","seal_yi":0.61,"amount_yi":4.46,"turnover_pct":12.11,"time":"13:41 封板","date":"2026-10-21","seal_label":"0.61","amt_label":"4.5","rate_label":"12.1%"},{"category":"首板","name":"天威视讯","boards":"首板","theme":"电视广播/数据要素","reason":"数据要素梯队批量封板（证券日报），电视广播Ⅱ+2.47%","seal_yi":0.46,"amount_yi":2.22,"turnover_pct":3.8,"time":"10:31 封板","date":"2026-10-21","seal_label":"0.46","amt_label":"2.2","rate_label":"3.8%"},{"category":"首板","name":"太极股份","boards":"首板","theme":"IT服务/信创","reason":"信创方向同步走强（21世纪经济报道）","seal_yi":0.49,"amount_yi":7.53,"turnover_pct":8.61,"time":"11:19 封板","date":"2026-10-21","seal_label":"0.49","amt_label":"7.5","rate_label":"8.6%"},{"category":"首板","name":"顺灏股份","boards":"首板","theme":"包装印刷","reason":"包装印刷跟涨，9:31封板未开","seal_yi":0.88,"amount_yi":3.87,"turnover_pct":4.35,"time":"09:31 封板","date":"2026-10-21","seal_label":"0.88","amt_label":"3.9","rate_label":"4.3%"},{"category":"首板","name":"恒大高新","boards":"首板","theme":"化学制品/数据要素","reason":"数据要素梯队（证券日报），9:34封板（开板2次）","seal_yi":0.47,"amount_yi":2.5,"turnover_pct":16.49,"time":"09:34 封板","date":"2026-10-21","seal_label":"0.47","amt_label":"2.5","rate_label":"16.5%"},{"category":"首板","name":"雪人集团","boards":"首板","theme":"通用设备/制冷","reason":"制冷空调设备+2.22%，10:03封板未开","seal_yi":1.95,"amount_yi":11.99,"turnover_pct":12.48,"time":"10:03 封板","date":"2026-10-21","seal_label":"1.95","amt_label":"12.0","rate_label":"12.5%"},{"category":"首板","name":"通宇通讯","boards":"首板","theme":"通信设备/天线","reason":"AI硬件/光通信活跃，9:52封板（开板多达8次）","seal_yi":0.61,"amount_yi":15.16,"turnover_pct":14.23,"time":"09:52 封板","date":"2026-10-21","seal_label":"0.61","amt_label":"15.2","rate_label":"14.2%"},{"category":"首板","name":"郑中设计","boards":"首板","theme":"装修装饰","reason":"装修装饰Ⅱ+0.67%，10:04封板（开板2次）","seal_yi":0.65,"amount_yi":5.06,"turnover_pct":7.63,"time":"10:04 封板","date":"2026-10-21","seal_label":"0.65","amt_label":"5.1","rate_label":"7.6%"},{"category":"首板","name":"莱美药业","boards":"首板","theme":"化学制药","reason":"20cm涨停，机构净买9272万+深股通净买8146万（证券时报龙虎榜）","seal_yi":1.04,"amount_yi":19.5,"turnover_pct":21.27,"time":"09:44 封板","date":"2026-10-21","seal_label":"1.04","amt_label":"19.5","rate_label":"21.3%"},{"category":"首板","name":"利亚德","boards":"首板","theme":"光学光电/物理AI/数据要素","reason":"物理AI概念午后走强，开盘4分钟直线20cm涨停、封单超31万手（智慧生活报/21世纪经济报道）","seal_yi":1.79,"amount_yi":16.21,"turnover_pct":13.17,"time":"13:03 封板","date":"2026-10-21","seal_label":"1.79","amt_label":"16.2","rate_label":"13.2%"},{"category":"首板","name":"兆讯传媒","boards":"首板","theme":"广告营销/数据要素","reason":"数据要素20cm涨停主力之一（证券日报），9:32封板（开板3次14:54回封）","seal_yi":0.19,"amount_yi":3.98,"turnover_pct":8.8,"time":"09:32 封板","date":"2026-10-21","seal_label":"0.19","amt_label":"4.0","rate_label":"8.8%"},{"category":"首板","name":"三维天地","boards":"首板","theme":"软件开发/数据要素","reason":"数据要素20cm涨停主力之一（21世纪经济报道），11:21封板未开","seal_yi":0.43,"amount_yi":2.72,"turnover_pct":14.42,"time":"11:21 封板","date":"2026-10-21","seal_label":"0.43","amt_label":"2.7","rate_label":"14.4%"},{"category":"首板","name":"哈空调","boards":"首板","theme":"通用设备/制冷","reason":"制冷空调设备+2.22%，10:04封板（开板多达6次）","seal_yi":0.12,"amount_yi":3.06,"turnover_pct":14.69,"time":"10:04 封板","date":"2026-10-21","seal_label":"0.12","amt_label":"3.1","rate_label":"14.7%"},{"category":"首板","name":"中恒集团","boards":"首板","theme":"中药","reason":"医药个股活跃，9:33封板（开板2次）","seal_yi":0.24,"amount_yi":6.25,"turnover_pct":8.36,"time":"09:33 封板","date":"2026-10-21","seal_label":"0.24","amt_label":"6.2","rate_label":"8.4%"},{"category":"首板","name":"航天信息","boards":"首板","theme":"IT服务/数据要素","reason":"数据要素梯队（证券日报），11:17封板未开","seal_yi":0.64,"amount_yi":2.43,"turnover_pct":1.82,"time":"11:17 封板","date":"2026-10-21","seal_label":"0.64","amt_label":"2.4","rate_label":"1.8%"},{"category":"首板","name":"文投控股","boards":"首板","theme":"游戏/文化传媒","reason":"传媒股表现活跃（上证报），9:32封板（开板2次）","seal_yi":0.22,"amount_yi":3.49,"turnover_pct":6.63,"time":"09:32 封板","date":"2026-10-21","seal_label":"0.22","amt_label":"3.5","rate_label":"6.6%"},{"category":"首板","name":"福建水泥","boards":"首板","theme":"水泥","reason":"水泥+0.45%，9:41封板未开","seal_yi":0.04,"amount_yi":3.94,"turnover_pct":12.48,"time":"09:41 封板","date":"2026-10-21","seal_label":"0.04","amt_label":"3.9","rate_label":"12.5%"},{"category":"首板","name":"上海九百","boards":"首板","theme":"一般零售","reason":"零售个股脉冲，9:45封板（开板2次）","seal_yi":0.07,"amount_yi":3.02,"turnover_pct":8.38,"time":"09:45 封板","date":"2026-10-21","seal_label":"0.07","amt_label":"3.0","rate_label":"8.4%"},{"category":"首板","name":"九牧王","boards":"首板","theme":"服装家纺","reason":"服装家纺跟涨，9:41封板未开","seal_yi":0.63,"amount_yi":2.61,"turnover_pct":4.56,"time":"09:41 封板","date":"2026-10-21","seal_label":"0.63","amt_label":"2.6","rate_label":"4.6%"},{"category":"首板","name":"出版传媒","boards":"首板","theme":"出版/文化传媒","reason":"传媒股活跃、读者传媒/出版传媒涨停（上证报），9:30封板未开","seal_yi":0.87,"amount_yi":1.38,"turnover_pct":3.24,"time":"09:30 封板","date":"2026-10-21","seal_label":"0.87","amt_label":"1.4","rate_label":"3.2%"},{"category":"首板","name":"海量数据","boards":"首板","theme":"IT服务/数据要素","reason":"数据要素概念开盘即涨停（21世纪经济报道）","seal_yi":0.88,"amount_yi":2.34,"turnover_pct":5.31,"time":"09:30 封板","date":"2026-10-21","seal_label":"0.88","amt_label":"2.3","rate_label":"5.3%"},{"category":"首板","name":"天洋新材","boards":"首板","theme":"塑料/胶粘剂","reason":"化工材料跟涨，9:37封板（开板4次）","seal_yi":0.34,"amount_yi":6.5,"turnover_pct":16.15,"time":"09:37 封板","date":"2026-10-21","seal_label":"0.34","amt_label":"6.5","rate_label":"16.1%"},{"category":"首板","name":"苏州龙杰","boards":"首板","theme":"化学纤维","reason":"化学纤维板块全天持平（0.0%），个股独立涨停，9:30一字","seal_yi":0.58,"amount_yi":0.47,"turnover_pct":1.73,"time":"09:30 封板","date":"2026-10-21","seal_label":"0.58","amt_label":"0.5","rate_label":"1.7%"},{"category":"首板","name":"利通电子","boards":"首板","theme":"消费电子/算力","reason":"AI硬件端活跃度上升（上证报），9:54封板（开板5次14:50回封）","seal_yi":1.4,"amount_yi":38.3,"turnover_pct":11.72,"time":"09:54 封板","date":"2026-10-21","seal_label":"1.40","amt_label":"38.3","rate_label":"11.7%"},{"category":"首板","name":"中广天择","boards":"首板","theme":"影视院线/传媒","reason":"AI漫剧概念尾盘回封，14:40封板未开","seal_yi":0.27,"amount_yi":2.43,"turnover_pct":9.44,"time":"14:40 封板","date":"2026-10-21","seal_label":"0.27","amt_label":"2.4","rate_label":"9.4%"},{"category":"首板","name":"读者传媒","boards":"首板","theme":"出版/文化传媒","reason":"传媒股活跃（上证报；证券日报口径5天3板），13:06封板未开","seal_yi":0.7,"amount_yi":4.8,"turnover_pct":11.65,"time":"13:06 封板","date":"2026-10-21","seal_label":"0.70","amt_label":"4.8","rate_label":"11.7%"},{"category":"首板","name":"均瑶健康","boards":"首板","theme":"饮料乳品","reason":"食品饮料个股脉冲，10:13封板（开板2次）","seal_yi":0.48,"amount_yi":1.94,"turnover_pct":4.54,"time":"10:13 封板","date":"2026-10-21","seal_label":"0.48","amt_label":"1.9","rate_label":"4.5%"},{"category":"首板","name":"敏芯股份","boards":"首板","theme":"半导体/传感器","reason":"存储芯片/半导体表现（上证报口径AI硬件），13:25封板（开板2次）","seal_yi":0.11,"amount_yi":6.22,"turnover_pct":15.91,"time":"13:25 封板","date":"2026-10-21","seal_label":"0.11","amt_label":"6.2","rate_label":"15.9%"},{"category":"首板","name":"慧辰股份","boards":"首板","theme":"IT服务/数据要素","reason":"数据要素20cm涨停主力之一（21世纪经济报道），11:27封板（开板1次）","seal_yi":0.26,"amount_yi":2.94,"turnover_pct":11.17,"time":"11:27 封板","date":"2026-10-21","seal_label":"0.26","amt_label":"2.9","rate_label":"11.2%"}],"close:zhaban":[{"category":"炸板","name":"深桑达Ａ","boards":"炸板","theme":"专业工程/数据要素","reason":"数据要素概念盘中触及涨停后炸板（21世纪经济报道）","seal_yi":null,"amount_yi":null,"turnover_pct":null,"time":"炸板","date":"2026-10-21","seal_label":"—","amt_label":"—","rate_label":"—"},{"category":"炸板","name":"久远银海","boards":"炸板","theme":"IT服务/数据要素","reason":"数据要素概念盘中触及涨停后炸板（21世纪经济报道）","seal_yi":null,"amount_yi":null,"turnover_pct":null,"time":"炸板","date":"2026-10-21","seal_label":"—","amt_label":"—","rate_label":"—"},{"category":"炸板","name":"税友股份","boards":"炸板","theme":"IT服务","reason":"信创/财税信息化冲高回落","seal_yi":null,"amount_yi":null,"turnover_pct":null,"time":"炸板","date":"2026-10-21","seal_label":"—","amt_label":"—","rate_label":"—"},{"category":"炸板","name":"福莱新材","boards":"炸板","theme":"塑料/功能材料","reason":"昨日2连板今盘中冲高炸板，断板","seal_yi":null,"amount_yi":null,"turnover_pct":null,"time":"炸板","date":"2026-10-21","seal_label":"—","amt_label":"—","rate_label":"—"},{"category":"炸板","name":"昂利康","boards":"炸板","theme":"化学制药","reason":"医药分歧，昨日涨停今炸板","seal_yi":null,"amount_yi":null,"turnover_pct":null,"time":"炸板","date":"2026-10-21","seal_label":"—","amt_label":"—","rate_label":"—"},{"category":"炸板","name":"威尔药业","boards":"炸板","theme":"化学制药","reason":"医药分歧冲高回落","seal_yi":null,"amount_yi":null,"turnover_pct":null,"time":"炸板","date":"2026-10-21","seal_label":"—","amt_label":"—","rate_label":"—"},{"category":"炸板","name":"致尚科技","boards":"炸板","theme":"消费电子","reason":"消费电子冲高回落，收+17.12%未封住","seal_yi":null,"amount_yi":null,"turnover_pct":null,"time":"炸板","date":"2026-10-21","seal_label":"—","amt_label":"—","rate_label":"—"},{"category":"炸板","name":"杰瑞股份","boards":"炸板","theme":"专用设备/油服","reason":"油服设备冲高回落，收+5.08%","seal_yi":null,"amount_yi":null,"turnover_pct":null,"time":"炸板","date":"2026-10-21","seal_label":"—","amt_label":"—","rate_label":"—"},{"category":"炸板","name":"凯美特气","boards":"炸板","theme":"化学制品","reason":"化工个股冲高回落，收+4.11%","seal_yi":null,"amount_yi":null,"turnover_pct":null,"time":"炸板","date":"2026-10-21","seal_label":"—","amt_label":"—","rate_label":"—"},{"category":"炸板","name":"钧达股份","boards":"炸板","theme":"光伏设备","reason":"光伏电池冲高回落，收+4.18%","seal_yi":null,"amount_yi":null,"turnover_pct":null,"time":"炸板","date":"2026-10-21","seal_label":"—","amt_label":"—","rate_label":"—"},{"category":"炸板","name":"亚星化学","boards":"炸板","theme":"化学原料","reason":"化工个股冲高回落，收+7.35%","seal_yi":null,"amount_yi":null,"turnover_pct":null,"time":"炸板","date":"2026-10-21","seal_label":"—","amt_label":"—","rate_label":"—"},{"category":"炸板","name":"兴民智通","boards":"炸板","theme":"汽车零部件","reason":"汽车零部件冲高回落，收+6.06%","seal_yi":null,"amount_yi":null,"turnover_pct":null,"time":"炸板","date":"2026-10-21","seal_label":"—","amt_label":"—","rate_label":"—"},{"category":"炸板","name":"盛洋科技","boards":"炸板","theme":"光学光电","reason":"光学光电子冲高回落，收+4.67%","seal_yi":null,"amount_yi":null,"turnover_pct":null,"time":"炸板","date":"2026-10-21","seal_label":"—","amt_label":"—","rate_label":"—"},{"category":"炸板","name":"永吉股份","boards":"炸板","theme":"包装印刷","reason":"包装印刷冲高回落，收+3.09%","seal_yi":null,"amount_yi":null,"turnover_pct":null,"time":"炸板","date":"2026-10-21","seal_label":"—","amt_label":"—","rate_label":"—"},{"category":"炸板","name":"四通股份","boards":"炸板","theme":"家居用品","reason":"家居用品冲高回落，收+7.38%","seal_yi":null,"amount_yi":null,"turnover_pct":null,"time":"炸板","date":"2026-10-21","seal_label":"—","amt_label":"—","rate_label":"—"},{"category":"炸板","name":"奇精机械","boards":"炸板","theme":"家电零部件","reason":"家电零部件冲高回落，收+4.26%","seal_yi":null,"amount_yi":null,"turnover_pct":null,"time":"炸板","date":"2026-10-21","seal_label":"—","amt_label":"—","rate_label":"—"},{"category":"炸板","name":"平潭发展","boards":"炸板","theme":"林业","reason":"林业个股冲高回落，收+7.47%","seal_yi":null,"amount_yi":null,"turnover_pct":null,"time":"炸板","date":"2026-10-21","seal_label":"—","amt_label":"—","rate_label":"—"},{"category":"炸板","name":"林州重机","boards":"炸板","theme":"专用设备","reason":"煤机设备冲高回落，收+2.88%","seal_yi":null,"amount_yi":null,"turnover_pct":null,"time":"炸板","date":"2026-10-21","seal_label":"—","amt_label":"—","rate_label":"—"},{"category":"炸板","name":"毅昌科技","boards":"炸板","theme":"综合","reason":"个股脉冲冲高回落，收+2.41%","seal_yi":null,"amount_yi":null,"turnover_pct":null,"time":"炸板","date":"2026-10-21","seal_label":"—","amt_label":"—","rate_label":"—"}],"close:mainlines":[{"tier":"主线","name":"数据要素/信创（国家数据集团揭牌）","logic":"国家数据集团雄安揭牌，数据要素市场化配置改革进入国家级主体运营阶段；板块内12股封板：利亚德、三维天地、慧辰股份、兆讯传媒20cm涨停，海量数据开盘即涨停，南威软件/星光股份4天3板，天威视讯/太极股份/航天信息/恒大高新跟板；但深桑达A、久远银海、税友股份盘中炸板，首日批量涨停后分歧已现","stocks":"南威软件（2板）、海量数据、天威视讯、太极股份、航天信息、三维天地、慧辰股份、兆讯传媒、利亚德、星光股份（2板）","date":"2026-10-21"},{"tier":"主线","name":"AI硬件（光通信/存储/物联网模组）","logic":"AI硬件端活跃度上升，光通信、存储芯片均有表现；移远通信2连板（成交44.5亿、盘中开板17次）、润建股份3连板、日海智能2连板一字、通宇通讯涨停，通信设备全天+0.95%","stocks":"移远通信（2板）、润建股份（3板）、日海智能（2板）、通宇通讯","date":"2026-10-21"},{"tier":"支线","name":"传媒/出版（AI漫剧+版权）","logic":"AI漫剧概念走势活跃，出版+1.81%、电视广播Ⅱ+2.47%；粤传媒2连板、读者传媒、出版传媒涨停，中广天择尾盘14:40回封","stocks":"粤传媒（2板）、读者传媒、出版传媒、中广天择","date":"2026-10-21"},{"tier":"支线","name":"农业/养殖（猪周期防御）","logic":"养殖业+2.97%领涨两市、生猪养殖+3.13%，防御资金回流农业；东瑞股份、东方海洋涨停，百洋股份2连板（水产/饲料）","stocks":"东瑞股份、东方海洋、百洋股份（2板）","date":"2026-10-21"},{"tier":"支线","name":"医药（个股活跃）","logic":"医药生物整体-0.11%但个股活跃：莱美药业20cm涨停（机构净买9272万+深股通净买8145万），四环生物、北大医药、中恒集团跟板；昂利康、威尔药业炸板显分歧","stocks":"莱美药业、四环生物、北大医药、中恒集团","date":"2026-10-21"},{"tier":"轮动","name":"家电/家居高位人气股","logic":"白色家电行业-2.21%背景下九阳股份走出13天8板（2连板）、永达股份2连板、华瓷股份涨停，属筹码/人气属性独立行情","stocks":"九阳股份（2板）、永达股份（2板）、华瓷股份","date":"2026-10-21"}],"close:themes":[{"rank":1,"name":"数据要素/信创","stars":5,"status":"新","stocks":"南威软件（2板）、海量数据、三维天地、慧辰股份、兆讯传媒、利亚德、天威视讯、太极股份、航天信息","stars_label":"★★★★★","date":"2026-10-21"},{"rank":2,"name":"AI硬件/物联网模组","stars":4,"status":"延续","stocks":"移远通信（2板）、润建股份（3板）、日海智能（2板）、通宇通讯","stars_label":"★★★★☆","date":"2026-10-21"},{"rank":3,"name":"传媒/出版/AI漫剧","stars":4,"status":"新","stocks":"粤传媒（2板）、读者传媒、出版传媒、中广天择","stars_label":"★★★★☆","date":"2026-10-21"},{"rank":4,"name":"农业/养殖","stars":3,"status":"新","stocks":"东瑞股份、东方海洋、百洋股份（2板）","stars_label":"★★★☆☆","date":"2026-10-21"},{"rank":5,"name":"医药","stars":3,"status":"轮动","stocks":"莱美药业（20cm）、四环生物、北大医药、中恒集团","stars_label":"★★★☆☆","date":"2026-10-21"},{"rank":6,"name":"高位人气/家电家居","stars":2,"status":"分歧","stocks":"九阳股份（2板/13天8板）、永达股份（2板）、海洋王（4板）","stars_label":"★★☆☆☆","date":"2026-10-21"},{"rank":7,"name":"电池/新能源链","stars":1,"status":"退潮","stocks":"宁德时代-12%、电池板块-7.56%、时代万恒/上海洗霸跌停","stars_label":"★☆☆☆☆","date":"2026-10-21"}],"close:newsMidday":[{"tag":"数据","source":"东方财富","title":"10月21日涨停复盘：50股涨停，成交1.43万亿缩量268亿","detail":"沪指-0.6%、深成指-0.82%、创业板指-1.62%；全天成交1.43万亿元较上日缩量267.64亿，另有25股盘中一度触及涨停","date":"2026-10-21"},{"tag":"数据","source":"证券之星","title":"揭秘涨停：2股封单超4亿元，海洋王/东安动力/大业股份4连板","detail":"收盘封死涨停50股，连续涨停数量居前为海洋王、东安动力、大业股份（4板）；封单居前三峡新材4.99亿、大业股份4.01亿、海洋王2亿","date":"2026-10-21"},{"tag":"数据","source":"财联社","title":"连板股晋级率不足三成，九阳股份走出13天8板","detail":"50股涨停、连板股16只、三连板及以上4只，上一交易日连板股14只，连板股晋级率28.57%（不含ST）；全市场超3300只个股下跌","date":"2026-10-21"},{"tag":"催化","source":"21世纪经济报道","title":"国家级数据运营主体就位，数据要素板块批量封板","detail":"国家数据集团雄安揭牌，数据要素概念12股封板：利亚德、慧辰股份、三维天地、兆讯传媒20cm涨停，海量数据开盘即涨停，南威软件4天3板，信创同步走强","date":"2026-10-21"},{"tag":"风险","source":"证券之星/新浪财经","title":"宁德时代突遭重挫，A、H股大跌超10%","detail":"Q3营收1652亿同比+58.6%，但归母净利212.46亿同比+14.54%、环比-5.8%，毛利率20.7%连续三季走低；A股跌破240元创2025年7月底以来新低，市值蒸发超千亿，拖累电池板块-7.56%","date":"2026-10-21"},{"tag":"数据","source":"上海证券报","title":"A股震荡调整，数据要素概念活跃","detail":"上证指数收3713.03点（-0.60%），沪深北三市成交14421亿；传媒股活跃、读者传媒/出版传媒涨停；AI硬件端活跃度上升，光通信、存储芯片有所表现；电池产业链走弱","date":"2026-10-21"},{"tag":"催化","source":"智慧生活报/21世纪经济报道","title":"物理AI概念午后走强，利亚德4分钟直线20cm涨停","detail":"利亚德午后开盘4分钟封板，收+20.04%报5.63元、市值超153亿、封单超31万手；凡拓数创涨超10%，凌云光、鼎捷数智跟涨","date":"2026-10-21"},{"tag":"风险","source":"上海证券交易所","title":"南威软件及有关责任人被监管警示","detail":"因AI短剧业务等信披问题收监管警示（上证公监函〔2026〕0173号），公司股价10/16、10/20、10/21连续涨停","date":"2026-10-21"},{"tag":"风险","source":"21世纪经济报道","title":"电池消费税与出口退税改革或透支明年需求","detail":"行业研究员指出政策调整或使部分需求提前释放，叠加宁德时代三季报业绩扰动，电池板块全天-7.56%领跌、电力设备-3.67%","date":"2026-10-21"}],"close:watchpoints":[{"idx":1,"cat":"主线跟踪","text":"数据要素批量涨停后首日分歧：盯南威软件（监管警示+4天3板）与海量数据竞价承接，高开低走则板块退潮","date":"2026-10-21"},{"idx":2,"cat":"主线跟踪","text":"连板高度4板（海洋王/东安动力/大业股份）三只全断板则情绪周期确认退潮，重点看竞价封单","date":"2026-10-21"},{"idx":3,"cat":"风险监控","text":"宁德时代-12%后观察电池链是否止跌，创业板-1.62%受其拖累，权重未稳则指数继续承压","date":"2026-10-21"},{"idx":4,"cat":"只卖不买","text":"数据要素炸板股（深桑达A/久远银海/税友股份）与断板高位股（吉大正元等），早盘无力回封则兑现","date":"2026-10-21"},{"idx":5,"cat":"低吸观察","text":"AI硬件（光通信/存储/模组）活跃度上升，移远通信2板、润建股份3板，回调看承接强度","date":"2026-10-21"},{"idx":6,"cat":"观望","text":"养殖/农业（+2.97%）为防御性轮动，未有效放量前不追高","date":"2026-10-21"},{"idx":7,"cat":"数据","text":"连板晋级口径4/14=28.6%不足三成，若明日回升至50%以上为情绪修复信号","date":"2026-10-21"},{"idx":8,"cat":"数据","text":"成交1.43万亿缩量268亿，若继续缩量则高位抱团分歧加大","date":"2026-10-21"}],"close:promotions":[{"yesterday_lianban":14,"promoted":["东安动力（3板→4板）","大业股份（3板→4板）","海洋王（3板→4板）","润建股份（2板→3板）","永达股份（1板→2板）","星光股份（1板→2板）","粤传媒（1板→2板）","九阳股份（1板→2板）","日海智能（1板→2板）","泰尔股份（1板→2板）","百洋股份（1板→2板）","同为股份（1板→2板）","三峡新材（1板→2板）","移远通信（1板→2板）","南威软件（1板→2板）","安记食品（1板→2板）"],"broken":["吉大正元（4板断板，午后冲高回落）","长春一东（3板断板）","京城股份（3板断板）","慕思股份（2板断板）","宁波东力（2板断板）","凡拓数创（2板断板）","海正药业（2板断板）","浙江荣泰（2板断板）","科森科技（2板断板）","福莱新材（2板，盘中冲高炸板）","豪鹏科技/运机集团/信通电子/鲁阳节能/爱仕达/富春环保/海南瑞泽/美格智能/昂利康（炸板）/长盈精密/迪安诊断/赛摩智能/昂立教育/博通集成/龙旗科技/日出东方/骏亚科技/华之杰/长裕集团/春光科技/晶华新材/瑞芯微/东亚药业/长龄液压/博汇科技/恒玄科技/嘉晨智能/格利尔（昨日首板未续板）"],"rate":114.3,"verify":"收盘口径经 TuShare limit_list_d（10-20 与 10-21 涨停名单 limit_times 交叉验证）：晋级16家（含12家首板晋级）/昨日连板14家=114.3%（任务口径，含首板晋级致大于100%）；财联社同日报道口径为「连板股晋级率28.57%」，即昨日连板14家中仅4家续板（东安动力/大业股份/海洋王/润建股份），口径差异源于是否计入首板晋级","date":"2026-10-21"}]}};
 
 function cssToken(name) {
   return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
@@ -1389,7 +1793,7 @@ function makeSessionFactories(s) {
     ["ladderDist_" + s]: (type, fr) => ladderDistOption(type, fr, s)
   };
 }
-const chartFactories = Object.assign({}, ...["mid"].map(makeSessionFactories));
+const chartFactories = Object.assign({}, ...["mid","close"].map(makeSessionFactories));
 function activateSessionTab(key) {
   document.querySelectorAll("[data-session-tab]").forEach(b => b.classList.toggle("active", b.dataset.sessionTab === key));
   document.querySelectorAll(".session-page").forEach(p => { p.hidden = p.dataset.sessionPage !== key; });
@@ -1411,15 +1815,15 @@ function setupPageTabs() {
     });
   });
 }
-const sourceMap = {"indexTrend_mid":"sh = source/sh_index_daily.json, sz = source/sz_index_daily.json\namount_yi = (sh.amount + sz.amount) / 1e5  # 千元 → 亿元\n按日期范围过滤；最新快照行按 session 标注 午盘/收盘","sentimentTrend_mid":"counts = source/limit_counts.json  # limit_list_d 逐日计数（不含ST）\n当日行来自快照 metrics；过滤后输出 涨停/炸板/跌停 三序列","sentimentGauge_mid":"score = 0.25×净涨停效应 + 0.20×封板质量 + 0.20×连板高度 + 0.25×上涨广度 + 0.10×量能\n净涨停 = (涨停-跌停)/(涨停+跌停)×100；高度 = min(最高板/7,1)×100；量能 = 50 + 放量幅度%×3","sectorInd_mid":"sectors = 快照 sectors 展开 (行业/概念, 领涨/领跌, 名称, pct)\n图表取 grp == \"行业\"，按涨跌幅排序后红涨绿跌着色","sectorCon_mid":"sectors = 快照 sectors 展开；图表取 grp == \"概念\"，红涨绿跌着色","ladderDist_mid":"ladder = 快照涨停天梯（连板/首板/炸板）\n按 boards 标签聚合为 首板/2板/3板/5板/中军老妖/炸板 计数","mainlines_mid":"mainlines = 快照 mainlines，按 主线 > 支线 > 轮动 资金强度排序","themes_mid":"themes = 快照 themes，星级由 stars 生成 ★/☆，按 rank 升序","concepts_mid":"concepts = 快照 sectors 概念维度 12 条，按涨跌幅降序，dir 标注领涨/领跌","lianban_mid":"lianban = 快照 ladder 中 category == 连板 的行，封单/成交/换手缺失显示 —","shouban_mid":"shouban = 快照 ladder 中 category == 首板 的行，按题材聚合","zhaban_mid":"zhaban = 快照 ladder 中 category == 炸板 的行，含炸板时间与原因","hotStocks_mid":"hotStocks = 快照 hot_stocks，pct_label 格式化为带符号百分比","moverStocks_mid":"moverStocks = 快照 movers.stocks，盘中个股异动与动向标注","moverSectors_mid":"moverSectors = 快照 movers.sectors，盘中板块异动逻辑与代表股","newsMidday_mid":"newsMidday = 快照 midday_news（午间消息面），tag 标注属性","newsFerment_mid":"newsFerment = 快照 ferment_news（财经发酵新闻），tag 标注属性","watchpoints_mid":"watchpoints = 快照 watchpoints，cat 归类 主线跟踪/只卖不买/观望/低吸观察/风险监控"};
+const sourceMap = {"indexTrend_mid":"sh = source/sh_index_daily.json, sz = source/sz_index_daily.json\namount_yi = (sh.amount + sz.amount) / 1e5  # 千元 → 亿元\n按日期范围过滤；最新快照行按 session 标注 午盘/收盘","sentimentTrend_mid":"counts = source/limit_counts.json  # limit_list_d 逐日计数（不含ST）\n当日行来自快照 metrics；过滤后输出 涨停/炸板/跌停 三序列","sentimentGauge_mid":"score = 0.25×净涨停效应 + 0.20×封板质量 + 0.20×连板高度 + 0.25×上涨广度 + 0.10×量能\n净涨停 = (涨停-跌停)/(涨停+跌停)×100；高度 = min(最高板/7,1)×100；量能 = 50 + 放量幅度%×3","sectorInd_mid":"sectors = 快照 sectors 展开 (行业/概念, 领涨/领跌, 名称, pct)\n图表取 grp == \"行业\"，按涨跌幅排序后红涨绿跌着色","sectorCon_mid":"sectors = 快照 sectors 展开；图表取 grp == \"概念\"，红涨绿跌着色","ladderDist_mid":"ladder = 快照涨停天梯（连板/首板/炸板）\n按 boards 标签聚合为 首板/2板/3板/5板/中军老妖/炸板 计数","mainlines_mid":"mainlines = 快照 mainlines，按 主线 > 支线 > 轮动 资金强度排序","themes_mid":"themes = 快照 themes，星级由 stars 生成 ★/☆，按 rank 升序","concepts_mid":"concepts = 快照 sectors 概念维度 12 条，按涨跌幅降序，dir 标注领涨/领跌","lianban_mid":"lianban = 快照 ladder 中 category == 连板 的行，封单/成交/换手缺失显示 —","shouban_mid":"shouban = 快照 ladder 中 category == 首板 的行，按题材聚合","zhaban_mid":"zhaban = 快照 ladder 中 category == 炸板 的行，含炸板时间与原因","hotStocks_mid":"hotStocks = 快照 hot_stocks，pct_label 格式化为带符号百分比","moverStocks_mid":"moverStocks = 快照 movers.stocks，盘中个股异动与动向标注","moverSectors_mid":"moverSectors = 快照 movers.sectors，盘中板块异动逻辑与代表股","newsMidday_mid":"newsMidday = 快照 midday_news（午间消息面），tag 标注属性","newsFerment_mid":"newsFerment = 快照 ferment_news（财经发酵新闻），tag 标注属性","watchpoints_mid":"watchpoints = 快照 watchpoints，cat 归类 主线跟踪/只卖不买/观望/低吸观察/风险监控","indexTrend_close":"sh = source/sh_index_daily.json, sz = source/sz_index_daily.json\namount_yi = (sh.amount + sz.amount) / 1e5  # 千元 → 亿元\n按日期范围过滤；最新快照行按 session 标注 午盘/收盘","sentimentTrend_close":"counts = source/limit_counts.json  # limit_list_d 逐日计数（不含ST）\n当日行来自快照 metrics；过滤后输出 涨停/炸板/跌停 三序列","sentimentGauge_close":"score = 0.25×净涨停效应 + 0.20×封板质量 + 0.20×连板高度 + 0.25×上涨广度 + 0.10×量能\n净涨停 = (涨停-跌停)/(涨停+跌停)×100；高度 = min(最高板/7,1)×100；量能 = 50 + 放量幅度%×3","sectorInd_close":"sectors = 快照 sectors 展开 (行业/概念, 领涨/领跌, 名称, pct)\n图表取 grp == \"行业\"，按涨跌幅排序后红涨绿跌着色","sectorCon_close":"sectors = 快照 sectors 展开；图表取 grp == \"概念\"，红涨绿跌着色","ladderDist_close":"ladder = 快照涨停天梯（连板/首板/炸板）\n按 boards 标签聚合为 首板/2板/3板/5板/中军老妖/炸板 计数","mainlines_close":"mainlines = 快照 mainlines，按 主线 > 支线 > 轮动 资金强度排序","themes_close":"themes = 快照 themes，星级由 stars 生成 ★/☆，按 rank 升序","concepts_close":"concepts = 快照 sectors 概念维度 12 条，按涨跌幅降序，dir 标注领涨/领跌","lianban_close":"lianban = 快照 ladder 中 category == 连板 的行，封单/成交/换手缺失显示 —","shouban_close":"shouban = 快照 ladder 中 category == 首板 的行，按题材聚合","zhaban_close":"zhaban = 快照 ladder 中 category == 炸板 的行，含炸板时间与原因","hotStocks_close":"hotStocks = 快照 hot_stocks，pct_label 格式化为带符号百分比","moverStocks_close":"moverStocks = 快照 movers.stocks，盘中个股异动与动向标注","moverSectors_close":"moverSectors = 快照 movers.sectors，盘中板块异动逻辑与代表股","newsMidday_close":"newsMidday = 快照 midday_news（午间消息面），tag 标注属性","newsFerment_close":"newsFerment = 快照 ferment_news（财经发酵新闻），tag 标注属性","watchpoints_close":"watchpoints = 快照 watchpoints，cat 归类 主线跟踪/只卖不买/观望/低吸观察/风险监控"};
 setupDashboardRuntime({
   datasets: dashboardPayload.datasets,
   availableDates: dashboardPayload.availableDates,
   defaultRange: dashboardPayload.defaultRange,
-  initialCharts: [{"id":"indexTrend_mid","type":"line"},{"id":"sentimentTrend_mid","type":"bar"},{"id":"sentimentGauge_mid","type":"gauge"}],
+  initialCharts: [{"id":"indexTrend_mid","type":"line"},{"id":"sentimentTrend_mid","type":"bar"},{"id":"sentimentGauge_mid","type":"gauge"},{"id":"indexTrend_close","type":"line"},{"id":"sentimentTrend_close","type":"bar"},{"id":"sentimentGauge_close","type":"gauge"},{"id":"sectorInd_close","type":"bar"},{"id":"sectorCon_close","type":"bar"},{"id":"ladderDist_close","type":"bar"}],
   chartFactories,
   sourceMap,
-  tables: {"mainlinesTable_mid":{"dataset":"mid:mainlines","columns":[{"field":"tier"},{"field":"name"},{"field":"logic"},{"field":"stocks"}],"limit":10},"themesTable_mid":{"dataset":"mid:themes","sortField":"rank","sortDirection":"asc","columns":[{"field":"rank","numeric":true},{"field":"name"},{"field":"stars_label"},{"field":"status"},{"field":"stocks"}],"limit":10},"conceptsTable_mid":{"dataset":"mid:concepts","columns":[{"field":"dir"},{"field":"name"},{"field":"pct_label","numeric":true}],"limit":14},"lianbanTable_mid":{"dataset":"mid:lianban","columns":[{"field":"name"},{"field":"boards"},{"field":"theme"},{"field":"reason"},{"field":"seal_label","numeric":true},{"field":"amt_label","numeric":true},{"field":"rate_label","numeric":true}],"limit":12},"shoubanTable_mid":{"dataset":"mid:shouban","columns":[{"field":"name"},{"field":"theme"},{"field":"reason"},{"field":"seal_label","numeric":true},{"field":"amt_label","numeric":true},{"field":"rate_label","numeric":true}],"limit":20},"zhabanTable_mid":{"dataset":"mid:zhaban","columns":[{"field":"name"},{"field":"boards"},{"field":"theme"},{"field":"time"},{"field":"reason"},{"field":"amt_label","numeric":true},{"field":"rate_label","numeric":true}],"limit":10},"hotStocksTable_mid":{"dataset":"mid:hotStocks","columns":[{"field":"name"},{"field":"code"},{"field":"pct_label","numeric":true},{"field":"theme"},{"field":"note"}],"limit":12},"moverStocksTable_mid":{"dataset":"mid:moverStocks","columns":[{"field":"name"},{"field":"code"},{"field":"theme"},{"field":"action"},{"field":"note"}],"limit":10},"moverSectorsTable_mid":{"dataset":"mid:moverSectors","columns":[{"field":"name"},{"field":"logic"},{"field":"stocks"}],"limit":10},"newsMiddayTable_mid":{"dataset":"mid:newsMidday","columns":[{"field":"tag"},{"field":"source"},{"field":"title"},{"field":"detail"}],"limit":12},"newsFermentTable_mid":{"dataset":"mid:newsFerment","columns":[{"field":"tag"},{"field":"source"},{"field":"title"},{"field":"detail"}],"limit":10},"watchpointsTable_mid":{"dataset":"mid:watchpoints","sortField":"idx","sortDirection":"asc","columns":[{"field":"idx","numeric":true},{"field":"cat"},{"field":"text"}],"limit":12}},
+  tables: {"mainlinesTable_mid":{"dataset":"mid:mainlines","columns":[{"field":"tier"},{"field":"name"},{"field":"logic"},{"field":"stocks"}],"limit":10},"themesTable_mid":{"dataset":"mid:themes","sortField":"rank","sortDirection":"asc","columns":[{"field":"rank","numeric":true},{"field":"name"},{"field":"stars_label"},{"field":"status"},{"field":"stocks"}],"limit":10},"conceptsTable_mid":{"dataset":"mid:concepts","columns":[{"field":"dir"},{"field":"name"},{"field":"pct_label","numeric":true}],"limit":14},"lianbanTable_mid":{"dataset":"mid:lianban","columns":[{"field":"name"},{"field":"boards"},{"field":"theme"},{"field":"reason"},{"field":"seal_label","numeric":true},{"field":"amt_label","numeric":true},{"field":"rate_label","numeric":true}],"limit":12},"shoubanTable_mid":{"dataset":"mid:shouban","columns":[{"field":"name"},{"field":"theme"},{"field":"reason"},{"field":"seal_label","numeric":true},{"field":"amt_label","numeric":true},{"field":"rate_label","numeric":true}],"limit":20},"zhabanTable_mid":{"dataset":"mid:zhaban","columns":[{"field":"name"},{"field":"boards"},{"field":"theme"},{"field":"time"},{"field":"reason"},{"field":"amt_label","numeric":true},{"field":"rate_label","numeric":true}],"limit":10},"hotStocksTable_mid":{"dataset":"mid:hotStocks","columns":[{"field":"name"},{"field":"code"},{"field":"pct_label","numeric":true},{"field":"theme"},{"field":"note"}],"limit":12},"moverStocksTable_mid":{"dataset":"mid:moverStocks","columns":[{"field":"name"},{"field":"code"},{"field":"theme"},{"field":"action"},{"field":"note"}],"limit":10},"moverSectorsTable_mid":{"dataset":"mid:moverSectors","columns":[{"field":"name"},{"field":"logic"},{"field":"stocks"}],"limit":10},"newsMiddayTable_mid":{"dataset":"mid:newsMidday","columns":[{"field":"tag"},{"field":"source"},{"field":"title"},{"field":"detail"}],"limit":12},"newsFermentTable_mid":{"dataset":"mid:newsFerment","columns":[{"field":"tag"},{"field":"source"},{"field":"title"},{"field":"detail"}],"limit":10},"watchpointsTable_mid":{"dataset":"mid:watchpoints","sortField":"idx","sortDirection":"asc","columns":[{"field":"idx","numeric":true},{"field":"cat"},{"field":"text"}],"limit":12},"mainlinesTable_close":{"dataset":"close:mainlines","columns":[{"field":"tier"},{"field":"name"},{"field":"logic"},{"field":"stocks"}],"limit":10},"themesTable_close":{"dataset":"close:themes","sortField":"rank","sortDirection":"asc","columns":[{"field":"rank","numeric":true},{"field":"name"},{"field":"stars_label"},{"field":"status"},{"field":"stocks"}],"limit":10},"conceptsTable_close":{"dataset":"close:concepts","columns":[{"field":"dir"},{"field":"name"},{"field":"pct_label","numeric":true}],"limit":14},"lianbanTable_close":{"dataset":"close:lianban","columns":[{"field":"name"},{"field":"boards"},{"field":"theme"},{"field":"reason"},{"field":"seal_label","numeric":true},{"field":"amt_label","numeric":true},{"field":"rate_label","numeric":true}],"limit":12},"shoubanTable_close":{"dataset":"close:shouban","columns":[{"field":"name"},{"field":"theme"},{"field":"reason"},{"field":"seal_label","numeric":true},{"field":"amt_label","numeric":true},{"field":"rate_label","numeric":true}],"limit":20},"zhabanTable_close":{"dataset":"close:zhaban","columns":[{"field":"name"},{"field":"boards"},{"field":"theme"},{"field":"time"},{"field":"reason"},{"field":"amt_label","numeric":true},{"field":"rate_label","numeric":true}],"limit":10},"hotStocksTable_close":{"dataset":"close:hotStocks","columns":[{"field":"name"},{"field":"code"},{"field":"pct_label","numeric":true},{"field":"theme"},{"field":"note"}],"limit":12},"moverStocksTable_close":{"dataset":"close:moverStocks","columns":[{"field":"name"},{"field":"code"},{"field":"theme"},{"field":"action"},{"field":"note"}],"limit":10},"moverSectorsTable_close":{"dataset":"close:moverSectors","columns":[{"field":"name"},{"field":"logic"},{"field":"stocks"}],"limit":10},"newsMiddayTable_close":{"dataset":"close:newsMidday","columns":[{"field":"tag"},{"field":"source"},{"field":"title"},{"field":"detail"}],"limit":12},"newsFermentTable_close":{"dataset":"close:newsFerment","columns":[{"field":"tag"},{"field":"source"},{"field":"title"},{"field":"detail"}],"limit":10},"watchpointsTable_close":{"dataset":"close:watchpoints","sortField":"idx","sortDirection":"asc","columns":[{"field":"idx","numeric":true},{"field":"cat"},{"field":"text"}],"limit":12}},
   fullScript: "分析逻辑\n- 导航结构：顶层 Session 标签切换 午盘/收盘 两套总结页（同一交易日两份快照各自独立，datasets 以 session 为前缀）；\n  页内内容维度标签切换 总览 / 板块与主线 / 涨停梯队 / 个股与异动 / 消息与盯盘 五个视图。\n- data/snapshots/YYYY-MM-DD.json 为每日盘面快照（session=午盘/收盘），同一 session 保留最新 captured_at（午盘→收盘自动替换）。\n- data/source/ 存放 TuShare 原始数据：000001.SH 与 399106.SZ 指数日线（amount 千元，加总/1e5 合成两市成交额亿元），\n  以及 limit_list_d 逐日涨跌停/炸板计数（不含ST）。\n- compute_sentiment() 五分项打分：0.25×净涨停效应 + 0.20×封板质量 + 0.20×连板高度 + 0.25×上涨广度 + 0.10×量能；\n  映射冰点/回暖/分歧/发酵/高潮五阶段。晋级率由昨日涨停名单（limit_times≥2）与今日天梯交叉验证。\n- 前端 runtime 按所选日期范围过滤 history 与当日明细行；Session/内容标签切换仅改变可见性并触发 resize 重绘。",
   modalSubtitlePrefix: "看板面板数据变换 · "
 });
