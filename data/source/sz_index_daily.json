@@ -1,4 +1,5 @@
 [
+  {"ts_code": "399106.SZ", "trade_date": "20261022", "close": 2160.1802, "pct_chg": -2.9281, "amount": 822612530.54854},
   {"ts_code": "399106.SZ", "trade_date": "20261021", "close": 2225.3408, "pct_chg": -0.4936, "amount": 786592520.12434},
   {"ts_code": "399106.SZ", "trade_date": "20261020", "close": 2236.3806, "pct_chg": 0.3401, "amount": 756137047.79285},
   {"ts_code": "399106.SZ", "trade_date": "20261019", "close": 2228.8003, "pct_chg": 0.1032, "amount": 750495471.09885},

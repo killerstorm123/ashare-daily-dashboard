@@ -3,14 +3,12 @@
   "subtitle": "午盘/收盘双快照 · 情绪周期 · 主线梯队 · 复盘清单",
   "timezone": "Asia/Shanghai",
   "tradeDate": "2026-10-22",
-  "generatedAt": "2026-10-22T11:53:24+08:00",
+  "generatedAt": "2026-10-22T20:14:45+08:00",
   "freshness": {
     "latestDataDate": "2026-10-22",
-    "latestCapturedAt": "2026-10-22T11:52:00+08:00",
-    "primarySession": "午盘",
-    "missingSessions": [
-      "收盘总结"
-    ]
+    "latestCapturedAt": "2026-10-22T20:11:19+08:00",
+    "primarySession": "收盘",
+    "missingSessions": []
   },
   "availableDates": [
     "2026-09-10",
@@ -41,7 +39,8 @@
   ],
   "defaultRange": "ALL",
   "sessionKeys": [
-    "mid"
+    "mid",
+    "close"
   ],
   "sessions": {
     "mid": {
@@ -129,6 +128,96 @@
           "label": "情绪周期",
           "value": "发酵 · 主升期",
           "delta": "61.7 / 100",
+          "delta_class": "",
+          "detail": "最高 5 板（海洋王/大业股份）"
+        }
+      ]
+    },
+    "close": {
+      "key": "close",
+      "label": "收盘总结",
+      "sessionLabel": "收盘",
+      "snapshotDate": "2026-10-22",
+      "capturedAt": "2026-10-22T20:11:19+08:00",
+      "cutoff": "15:00",
+      "sentiment": {
+        "score": 32.7,
+        "phase": "回暖 · 试错期",
+        "breadth": null,
+        "net_limit": -18.5,
+        "seal": 58,
+        "height": 71.4,
+        "volume": null
+      },
+      "stats": {
+        "lu": 33,
+        "ld": 48,
+        "zb": 23,
+        "mb": 5,
+        "stock": "海洋王/大业股份"
+      },
+      "kpis": [
+        {
+          "id": "kpi-sh",
+          "label": "上证指数",
+          "value": "3,658.03",
+          "delta": "-1.48%",
+          "delta_class": "down",
+          "detail": "昨收 3,713.03"
+        },
+        {
+          "id": "kpi-sz",
+          "label": "深证成指",
+          "value": "11,357.32",
+          "delta": "-2.96%",
+          "delta_class": "down",
+          "detail": "深市锚点"
+        },
+        {
+          "id": "kpi-cyb",
+          "label": "创业板指",
+          "value": "2,576.90",
+          "delta": "-4.37%",
+          "delta_class": "down",
+          "detail": "两市最弱宽基"
+        },
+        {
+          "id": "kpi-kc",
+          "label": "科创50",
+          "value": "1,305.87",
+          "delta": "-2.78%",
+          "delta_class": "down",
+          "detail": "北证50 -0.93% · 沪深300 4,036.30 (-1.84%)"
+        },
+        {
+          "id": "kpi-amt",
+          "label": "成交额",
+          "value": "15,287 亿",
+          "delta": "全天口径",
+          "delta_class": "",
+          "detail": "量能对照见趋势图"
+        },
+        {
+          "id": "kpi-breadth",
+          "label": "涨跌家数",
+          "value": "待接入",
+          "delta": "广度分项跳过",
+          "delta_class": "",
+          "detail": "连板梯队 9 家参与评分"
+        },
+        {
+          "id": "kpi-limit",
+          "label": "涨停 / 跌停",
+          "value": "33 / 48",
+          "delta": "封板率 58%",
+          "delta_class": "",
+          "detail": "炸板 23 家 · 炸板率 41%"
+        },
+        {
+          "id": "kpi-phase",
+          "label": "情绪周期",
+          "value": "回暖 · 试错期",
+          "delta": "32.7 / 100",
           "delta_class": "",
           "detail": "最高 5 板（海洋王/大业股份）"
         }
@@ -361,20 +450,17 @@
       },
       {
         "date": "2026-10-22",
-        "session": "midday",
-        "sh_close": 3679.86,
-        "sh_pct": -0.89,
-        "amount_yi": 9193,
-        "turnover_delta_yi": -200,
-        "limit_up": 32,
-        "limit_down": 9,
-        "zhaban": 15,
-        "up_count": 1428,
-        "down_count": 3985,
-        "fengban_rate": 68,
+        "session": "close",
+        "sh_close": 3658.03,
+        "sh_pct": -1.48,
+        "amount_yi": 15287,
+        "captured_at": "2026-10-22T20:11:19+08:00",
+        "limit_up": 33,
+        "limit_down": 48,
+        "zhaban": 23,
+        "fengban_rate": 58,
         "max_boards": 5,
-        "max_board_stock": "海洋王/大业股份",
-        "captured_at": "2026-10-22T11:52:00+08:00"
+        "max_board_stock": "海洋王/大业股份"
       }
     ],
     "mid:mainlines": [
@@ -605,6 +691,1227 @@
         "idx": 8,
         "cat": "数据",
         "text": "涨停名单待收盘任务回填：复核32涨停/15炸板/封板率68%口径，并补全天梯 name/theme/lu_desc",
+        "date": "2026-10-22"
+      }
+    ],
+    "close:sectors": [
+      {
+        "date": "2026-10-22",
+        "grp": "行业",
+        "dir": "领涨",
+        "name": "电机Ⅱ",
+        "pct": 3.58
+      },
+      {
+        "date": "2026-10-22",
+        "grp": "行业",
+        "dir": "领涨",
+        "name": "白色家电",
+        "pct": 1.12
+      },
+      {
+        "date": "2026-10-22",
+        "grp": "行业",
+        "dir": "领涨",
+        "name": "国有大型银行Ⅱ",
+        "pct": 0.71
+      },
+      {
+        "date": "2026-10-22",
+        "grp": "行业",
+        "dir": "领涨",
+        "name": "照明设备Ⅱ",
+        "pct": 0.59
+      },
+      {
+        "date": "2026-10-22",
+        "grp": "行业",
+        "dir": "领涨",
+        "name": "家用电器",
+        "pct": 0.08
+      },
+      {
+        "date": "2026-10-22",
+        "grp": "行业",
+        "dir": "领涨",
+        "name": "地面兵装Ⅱ",
+        "pct": 0.08
+      },
+      {
+        "date": "2026-10-22",
+        "grp": "行业",
+        "dir": "领跌",
+        "name": "通信设备",
+        "pct": -7.09
+      },
+      {
+        "date": "2026-10-22",
+        "grp": "行业",
+        "dir": "领跌",
+        "name": "元件",
+        "pct": -6.21
+      },
+      {
+        "date": "2026-10-22",
+        "grp": "行业",
+        "dir": "领跌",
+        "name": "通信",
+        "pct": -6.17
+      },
+      {
+        "date": "2026-10-22",
+        "grp": "行业",
+        "dir": "领跌",
+        "name": "影视院线",
+        "pct": -5.91
+      },
+      {
+        "date": "2026-10-22",
+        "grp": "行业",
+        "dir": "领跌",
+        "name": "出版",
+        "pct": -5.16
+      },
+      {
+        "date": "2026-10-22",
+        "grp": "行业",
+        "dir": "领跌",
+        "name": "电视广播Ⅱ",
+        "pct": -5.04
+      }
+    ],
+    "close:concepts": [],
+    "close:ladderDist": [
+      {
+        "date": "2026-10-22",
+        "label": "首板",
+        "count": 24
+      },
+      {
+        "date": "2026-10-22",
+        "label": "2板",
+        "count": 7
+      },
+      {
+        "date": "2026-10-22",
+        "label": "5板",
+        "count": 2
+      },
+      {
+        "date": "2026-10-22",
+        "label": "炸板",
+        "count": 23
+      }
+    ],
+    "close:lianban": [
+      {
+        "category": "连板",
+        "name": "海洋王",
+        "boards": "5连板",
+        "theme": "照明设备/军工照明",
+        "reason": "市场最高板人气股（新浪/财联社归军工板块焦点），9:25竞价封板后开板4次、14:56回封",
+        "seal_yi": null,
+        "amount_yi": 12.71,
+        "turnover_pct": null,
+        "time": "09:25 封板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "12.7",
+        "rate_label": "—"
+      },
+      {
+        "category": "连板",
+        "name": "大业股份",
+        "boards": "5连板",
+        "theme": "通用设备/机器人",
+        "reason": "机器人概念（钢丝帘线）总龙头，9:30一字未开，封单约2.58亿（数据宝）",
+        "seal_yi": 2.58,
+        "amount_yi": 6.85,
+        "turnover_pct": null,
+        "time": "09:30 封板",
+        "date": "2026-10-22",
+        "seal_label": "2.58",
+        "amt_label": "6.8",
+        "rate_label": "—"
+      },
+      {
+        "category": "连板",
+        "name": "星光股份",
+        "boards": "3连板",
+        "theme": "照明设备",
+        "reason": "照明设备跟风3连板，9:25封板后盘中开板多达14次、尾盘回封，分歧极大",
+        "seal_yi": null,
+        "amount_yi": 9.87,
+        "turnover_pct": null,
+        "time": "09:25 封板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "9.9",
+        "rate_label": "—"
+      },
+      {
+        "category": "连板",
+        "name": "三峡新材",
+        "boards": "3连板",
+        "theme": "玻璃玻纤",
+        "reason": "超跌低价人气股，9:25一字未开，封单约4.43亿全场最大（数据宝）",
+        "seal_yi": 4.43,
+        "amount_yi": 0.69,
+        "turnover_pct": null,
+        "time": "09:25 封板",
+        "date": "2026-10-22",
+        "seal_label": "4.43",
+        "amt_label": "0.7",
+        "rate_label": "—"
+      },
+      {
+        "category": "连板",
+        "name": "哈空调",
+        "boards": "2连板",
+        "theme": "通用设备",
+        "reason": "通用设备2连板，开板9次、14:56回封",
+        "seal_yi": null,
+        "amount_yi": 6.57,
+        "turnover_pct": null,
+        "time": "09:31 封板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "6.6",
+        "rate_label": "—"
+      },
+      {
+        "category": "连板",
+        "name": "上海九百",
+        "boards": "2连板",
+        "theme": "一般零售",
+        "reason": "超跌低价零售2连板，10:52封板未开",
+        "seal_yi": null,
+        "amount_yi": 5.85,
+        "turnover_pct": null,
+        "time": "10:52 封板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "5.8",
+        "rate_label": "—"
+      },
+      {
+        "category": "连板",
+        "name": "出版传媒",
+        "boards": "2连板",
+        "theme": "出版",
+        "reason": "出版板块-5.16%下的逆势独苗，9:30封板后开板10次、14:53回封",
+        "seal_yi": null,
+        "amount_yi": 7.85,
+        "turnover_pct": null,
+        "time": "09:30 封板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "7.8",
+        "rate_label": "—"
+      },
+      {
+        "category": "连板",
+        "name": "海量数据",
+        "boards": "2连板",
+        "theme": "IT服务/算力",
+        "reason": "算力/IT服务2连板，9:25一字后开板5次、13:03回封",
+        "seal_yi": null,
+        "amount_yi": 9.95,
+        "turnover_pct": null,
+        "time": "09:25 封板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "9.9",
+        "rate_label": "—"
+      },
+      {
+        "category": "连板",
+        "name": "天洋新材",
+        "boards": "2连板",
+        "theme": "塑料/机器人",
+        "reason": "机器人概念（胶粘材料）2连板，13:54封板未开",
+        "seal_yi": null,
+        "amount_yi": 13.9,
+        "turnover_pct": null,
+        "time": "13:54 封板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "13.9",
+        "rate_label": "—"
+      }
+    ],
+    "close:shouban": [
+      {
+        "category": "首板",
+        "name": "冰山冷热",
+        "boards": "首板",
+        "theme": "通用设备/机器人",
+        "reason": "通用设备/机器人概念人气股（5天8板口径），9:30封板后开板6次、14:39回封",
+        "seal_yi": null,
+        "amount_yi": 25.52,
+        "turnover_pct": null,
+        "time": "09:30 封板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "25.5",
+        "rate_label": "—"
+      },
+      {
+        "category": "首板",
+        "name": "襄阳轴承",
+        "boards": "首板",
+        "theme": "汽车零部件/机器人轴承",
+        "reason": "机器人轴承概念（央广网收评提及），9:49封板、10:22曾开板",
+        "seal_yi": null,
+        "amount_yi": 8.57,
+        "turnover_pct": null,
+        "time": "09:49 封板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "8.6",
+        "rate_label": "—"
+      },
+      {
+        "category": "首板",
+        "name": "南矿集团",
+        "boards": "首板",
+        "theme": "专用设备",
+        "reason": "专用设备，9:25一字未开，封单约3.27亿（数据宝）",
+        "seal_yi": 3.27,
+        "amount_yi": 0.23,
+        "turnover_pct": null,
+        "time": "09:25 封板",
+        "date": "2026-10-22",
+        "seal_label": "3.27",
+        "amt_label": "0.2",
+        "rate_label": "—"
+      },
+      {
+        "category": "首板",
+        "name": "山河智能",
+        "boards": "首板",
+        "theme": "工程机械",
+        "reason": "工程机械跟涨，9:44封板、9:59回封",
+        "seal_yi": null,
+        "amount_yi": 3.95,
+        "turnover_pct": null,
+        "time": "09:44 封板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "4.0",
+        "rate_label": "—"
+      },
+      {
+        "category": "首板",
+        "name": "大洋电机",
+        "boards": "首板",
+        "theme": "电机/机器人",
+        "reason": "机器人电机龙头（央广网收评提及），电机Ⅱ+3.58%全场最强，9:36秒板未开",
+        "seal_yi": null,
+        "amount_yi": 6.06,
+        "turnover_pct": null,
+        "time": "09:36 封板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "6.1",
+        "rate_label": "—"
+      },
+      {
+        "category": "首板",
+        "name": "北新路桥",
+        "boards": "首板",
+        "theme": "基础建设",
+        "reason": "超跌低价基建股，9:30封板后开板6次、13:55回封",
+        "seal_yi": null,
+        "amount_yi": 6.97,
+        "turnover_pct": null,
+        "time": "09:30 封板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "7.0",
+        "rate_label": "—"
+      },
+      {
+        "category": "首板",
+        "name": "林州重机",
+        "boards": "首板",
+        "theme": "专用设备",
+        "reason": "专用设备跟涨，9:31封板",
+        "seal_yi": null,
+        "amount_yi": 1.38,
+        "turnover_pct": null,
+        "time": "09:31 封板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "1.4",
+        "rate_label": "—"
+      },
+      {
+        "category": "首板",
+        "name": "芯瑞达",
+        "boards": "首板",
+        "theme": "光学光电",
+        "reason": "14:35尾盘偷袭封板",
+        "seal_yi": null,
+        "amount_yi": 1.38,
+        "turnover_pct": null,
+        "time": "14:35 封板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "1.4",
+        "rate_label": "—"
+      },
+      {
+        "category": "首板",
+        "name": "兆威机电",
+        "boards": "首板",
+        "theme": "电机/机器人灵巧手",
+        "reason": "机器人灵巧手/微型传动（央广网口径4天2板），9:30封板、9:32回封",
+        "seal_yi": null,
+        "amount_yi": 6.27,
+        "turnover_pct": null,
+        "time": "09:30 封板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "6.3",
+        "rate_label": "—"
+      },
+      {
+        "category": "首板",
+        "name": "博汇股份",
+        "boards": "首板",
+        "theme": "炼化及贸易",
+        "reason": "创业板20cm，9:31封板后开板3次、尾盘回封",
+        "seal_yi": null,
+        "amount_yi": 8.13,
+        "turnover_pct": null,
+        "time": "09:31 封板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "8.1",
+        "rate_label": "—"
+      },
+      {
+        "category": "首板",
+        "name": "奕帆传动",
+        "boards": "首板",
+        "theme": "电机/机器人",
+        "reason": "机器人概念20cm涨停（21世纪经济报道），11:10封板、14:49回封",
+        "seal_yi": null,
+        "amount_yi": 4.31,
+        "turnover_pct": null,
+        "time": "11:10 封板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "4.3",
+        "rate_label": "—"
+      },
+      {
+        "category": "首板",
+        "name": "华阳智能",
+        "boards": "首板",
+        "theme": "电机/医疗器械",
+        "reason": "电机板块扩散，创业板20cm，9:36封板、9:45回封",
+        "seal_yi": null,
+        "amount_yi": 1.73,
+        "turnover_pct": null,
+        "time": "09:36 封板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "1.7",
+        "rate_label": "—"
+      },
+      {
+        "category": "首板",
+        "name": "长城电工",
+        "boards": "首板",
+        "theme": "电网设备",
+        "reason": "电网设备/电工概念，10:24封板未开",
+        "seal_yi": null,
+        "amount_yi": 3.56,
+        "turnover_pct": null,
+        "time": "10:24 封板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "3.6",
+        "rate_label": "—"
+      },
+      {
+        "category": "首板",
+        "name": "阳光照明",
+        "boards": "首板",
+        "theme": "照明设备",
+        "reason": "照明设备跟随海洋王梯队，9:32封板",
+        "seal_yi": null,
+        "amount_yi": 2.5,
+        "turnover_pct": null,
+        "time": "09:32 封板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "2.5",
+        "rate_label": "—"
+      },
+      {
+        "category": "首板",
+        "name": "湖南天雁",
+        "boards": "首板",
+        "theme": "汽车零部件",
+        "reason": "汽车零部件（增压器），10:44封板未开",
+        "seal_yi": null,
+        "amount_yi": 5.74,
+        "turnover_pct": null,
+        "time": "10:44 封板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "5.7",
+        "rate_label": "—"
+      },
+      {
+        "category": "首板",
+        "name": "沈鼓集团",
+        "boards": "首板",
+        "theme": "专用设备",
+        "reason": "次新+压缩机龙头，全天成交21.7亿为涨停股最大，9:37封板后开板9次、尾盘回封",
+        "seal_yi": null,
+        "amount_yi": 21.7,
+        "turnover_pct": null,
+        "time": "09:37 封板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "21.7",
+        "rate_label": "—"
+      },
+      {
+        "category": "首板",
+        "name": "赛福天",
+        "boards": "首板",
+        "theme": "通用设备",
+        "reason": "通用设备/钢丝绳跟涨，9:32封板未开",
+        "seal_yi": null,
+        "amount_yi": 0.81,
+        "turnover_pct": null,
+        "time": "09:32 封板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "0.8",
+        "rate_label": "—"
+      },
+      {
+        "category": "首板",
+        "name": "正裕工业",
+        "boards": "首板",
+        "theme": "汽车零部件",
+        "reason": "汽车零部件跟涨，9:48封板、14:36回封",
+        "seal_yi": null,
+        "amount_yi": 2.04,
+        "turnover_pct": null,
+        "time": "09:48 封板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "2.0",
+        "rate_label": "—"
+      },
+      {
+        "category": "首板",
+        "name": "南方路机",
+        "boards": "首板",
+        "theme": "工程机械",
+        "reason": "工程机械跟涨，9:43封板、11:00曾开板",
+        "seal_yi": null,
+        "amount_yi": 1.64,
+        "turnover_pct": null,
+        "time": "09:43 封板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "1.6",
+        "rate_label": "—"
+      },
+      {
+        "category": "首板",
+        "name": "安乃达",
+        "boards": "首板",
+        "theme": "电机/机器人",
+        "reason": "机器人电机扩散，9:34封板",
+        "seal_yi": null,
+        "amount_yi": 0.75,
+        "turnover_pct": null,
+        "time": "09:34 封板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "0.8",
+        "rate_label": "—"
+      },
+      {
+        "category": "首板",
+        "name": "华新精科",
+        "boards": "首板",
+        "theme": "电机/电磁线",
+        "reason": "电机产业链扩散，14:53尾盘封板",
+        "seal_yi": null,
+        "amount_yi": 2.34,
+        "turnover_pct": null,
+        "time": "14:53 封板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "2.3",
+        "rate_label": "—"
+      },
+      {
+        "category": "首板",
+        "name": "多伦科技",
+        "boards": "首板",
+        "theme": "软件开发",
+        "reason": "软件/车联网，13:04午后封板未开",
+        "seal_yi": null,
+        "amount_yi": 3.2,
+        "turnover_pct": null,
+        "time": "13:04 封板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "3.2",
+        "rate_label": "—"
+      },
+      {
+        "category": "首板",
+        "name": "鸣志电器",
+        "boards": "首板",
+        "theme": "电机/机器人",
+        "reason": "机器人空心杯电机（央广网收评提及），9:43封板后开板6次、14:56回封",
+        "seal_yi": null,
+        "amount_yi": 10.28,
+        "turnover_pct": null,
+        "time": "09:43 封板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "10.3",
+        "rate_label": "—"
+      },
+      {
+        "category": "首板",
+        "name": "睿能科技",
+        "boards": "首板",
+        "theme": "其他电子",
+        "reason": "电子/纺织数控，13:59午后封板未开",
+        "seal_yi": null,
+        "amount_yi": 1.03,
+        "turnover_pct": null,
+        "time": "13:59 封板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "1.0",
+        "rate_label": "—"
+      }
+    ],
+    "close:zhaban": [
+      {
+        "category": "炸板",
+        "name": "华天科技",
+        "boards": "炸板",
+        "theme": "半导体",
+        "reason": "半导体封测冲板回落，收盘仍+9.12%",
+        "seal_yi": null,
+        "amount_yi": null,
+        "turnover_pct": null,
+        "time": "炸板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "—",
+        "rate_label": "—"
+      },
+      {
+        "category": "炸板",
+        "name": "百洋股份",
+        "boards": "炸板",
+        "theme": "饲料/高位人气",
+        "reason": "昨日2连板今日炸板，高位人气股分歧（收盘-6.75%）",
+        "seal_yi": null,
+        "amount_yi": null,
+        "turnover_pct": null,
+        "time": "炸板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "—",
+        "rate_label": "—"
+      },
+      {
+        "category": "炸板",
+        "name": "新亚制程",
+        "boards": "炸板",
+        "theme": "其他电子",
+        "reason": "炸板后跳水，收盘-10%跌停价",
+        "seal_yi": null,
+        "amount_yi": null,
+        "turnover_pct": null,
+        "time": "炸板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "—",
+        "rate_label": "—"
+      },
+      {
+        "category": "炸板",
+        "name": "云汉芯城",
+        "boards": "炸板",
+        "theme": "其他电子/电子元器件电商",
+        "reason": "20cm冲板未封，收盘仍+16.16%",
+        "seal_yi": null,
+        "amount_yi": null,
+        "turnover_pct": null,
+        "time": "炸板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "—",
+        "rate_label": "—"
+      },
+      {
+        "category": "炸板",
+        "name": "巨能股份",
+        "boards": "炸板",
+        "theme": "自动化设备（北交所）",
+        "reason": "北交所机器人概念30cm冲板未封，收盘+18.94%",
+        "seal_yi": null,
+        "amount_yi": null,
+        "turnover_pct": null,
+        "time": "炸板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "—",
+        "rate_label": "—"
+      },
+      {
+        "category": "炸板",
+        "name": "日发精机",
+        "boards": "炸板",
+        "theme": "通用设备",
+        "reason": "通用设备冲板回落，收盘+7.77%",
+        "seal_yi": null,
+        "amount_yi": null,
+        "turnover_pct": null,
+        "time": "炸板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "—",
+        "rate_label": "—"
+      },
+      {
+        "category": "炸板",
+        "name": "中材节能",
+        "boards": "炸板",
+        "theme": "环保设备",
+        "reason": "冲板回落，收盘+6.09%",
+        "seal_yi": null,
+        "amount_yi": null,
+        "turnover_pct": null,
+        "time": "炸板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "—",
+        "rate_label": "—"
+      },
+      {
+        "category": "炸板",
+        "name": "日上集团",
+        "boards": "炸板",
+        "theme": "专业工程",
+        "reason": "冲板回落，收盘+8.95%",
+        "seal_yi": null,
+        "amount_yi": null,
+        "turnover_pct": null,
+        "time": "炸板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "—",
+        "rate_label": "—"
+      },
+      {
+        "category": "炸板",
+        "name": "智能自控",
+        "boards": "炸板",
+        "theme": "通用设备",
+        "reason": "冲板回落，收盘+5.69%",
+        "seal_yi": null,
+        "amount_yi": null,
+        "turnover_pct": null,
+        "time": "炸板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "—",
+        "rate_label": "—"
+      },
+      {
+        "category": "炸板",
+        "name": "杭齿前进",
+        "boards": "炸板",
+        "theme": "通用设备/齿轮",
+        "reason": "冲板回落，收盘+5.37%",
+        "seal_yi": null,
+        "amount_yi": null,
+        "turnover_pct": null,
+        "time": "炸板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "—",
+        "rate_label": "—"
+      },
+      {
+        "category": "炸板",
+        "name": "华微电子",
+        "boards": "炸板",
+        "theme": "半导体",
+        "reason": "半导体冲板回落，收盘+5.63%",
+        "seal_yi": null,
+        "amount_yi": null,
+        "turnover_pct": null,
+        "time": "炸板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "—",
+        "rate_label": "—"
+      },
+      {
+        "category": "炸板",
+        "name": "南天信息",
+        "boards": "炸板",
+        "theme": "软件开发",
+        "reason": "软件股冲板回落，收盘+5.0%",
+        "seal_yi": null,
+        "amount_yi": null,
+        "turnover_pct": null,
+        "time": "炸板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "—",
+        "rate_label": "—"
+      },
+      {
+        "category": "炸板",
+        "name": "赛象科技",
+        "boards": "炸板",
+        "theme": "专用设备",
+        "reason": "冲板回落，收盘+5.09%",
+        "seal_yi": null,
+        "amount_yi": null,
+        "turnover_pct": null,
+        "time": "炸板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "—",
+        "rate_label": "—"
+      },
+      {
+        "category": "炸板",
+        "name": "隆基机械",
+        "boards": "炸板",
+        "theme": "汽车零部件",
+        "reason": "冲板回落，收盘+3.88%",
+        "seal_yi": null,
+        "amount_yi": null,
+        "turnover_pct": null,
+        "time": "炸板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "—",
+        "rate_label": "—"
+      },
+      {
+        "category": "炸板",
+        "name": "盛邦安全",
+        "boards": "炸板",
+        "theme": "软件开发/网络安全",
+        "reason": "冲板回落，收盘+3.39%",
+        "seal_yi": null,
+        "amount_yi": null,
+        "turnover_pct": null,
+        "time": "炸板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "—",
+        "rate_label": "—"
+      },
+      {
+        "category": "炸板",
+        "name": "三变科技",
+        "boards": "炸板",
+        "theme": "电网设备",
+        "reason": "电网设备冲板回落，收盘+3.12%",
+        "seal_yi": null,
+        "amount_yi": null,
+        "turnover_pct": null,
+        "time": "炸板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "—",
+        "rate_label": "—"
+      },
+      {
+        "category": "炸板",
+        "name": "华瓷股份",
+        "boards": "炸板",
+        "theme": "家居用品",
+        "reason": "冲板回落，收盘+1.43%",
+        "seal_yi": null,
+        "amount_yi": null,
+        "turnover_pct": null,
+        "time": "炸板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "—",
+        "rate_label": "—"
+      },
+      {
+        "category": "炸板",
+        "name": "茂化实华",
+        "boards": "炸板",
+        "theme": "炼化及贸易",
+        "reason": "冲板回落，收盘+2.04%",
+        "seal_yi": null,
+        "amount_yi": null,
+        "turnover_pct": null,
+        "time": "炸板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "—",
+        "rate_label": "—"
+      },
+      {
+        "category": "炸板",
+        "name": "新叶股份",
+        "boards": "炸板",
+        "theme": "炼化及贸易",
+        "reason": "冲板回落，收盘+2.85%",
+        "seal_yi": null,
+        "amount_yi": null,
+        "turnover_pct": null,
+        "time": "炸板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "—",
+        "rate_label": "—"
+      },
+      {
+        "category": "炸板",
+        "name": "天马科技",
+        "boards": "炸板",
+        "theme": "饲料",
+        "reason": "冲板回落，收盘+1.79%",
+        "seal_yi": null,
+        "amount_yi": null,
+        "turnover_pct": null,
+        "time": "炸板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "—",
+        "rate_label": "—"
+      },
+      {
+        "category": "炸板",
+        "name": "华阳新材",
+        "boards": "炸板",
+        "theme": "小金属/稀土",
+        "reason": "稀土/小金属冲板回落，收盘+2.5%",
+        "seal_yi": null,
+        "amount_yi": null,
+        "turnover_pct": null,
+        "time": "炸板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "—",
+        "rate_label": "—"
+      },
+      {
+        "category": "炸板",
+        "name": "天融信",
+        "boards": "炸板",
+        "theme": "软件开发/网络安全",
+        "reason": "冲板回落翻绿，收盘-0.29%",
+        "seal_yi": null,
+        "amount_yi": null,
+        "turnover_pct": null,
+        "time": "炸板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "—",
+        "rate_label": "—"
+      },
+      {
+        "category": "炸板",
+        "name": "天威视讯",
+        "boards": "炸板",
+        "theme": "电视广播",
+        "reason": "昨日首板今日炸板，传媒退潮拖累（收盘-4.07%）",
+        "seal_yi": null,
+        "amount_yi": null,
+        "turnover_pct": null,
+        "time": "炸板",
+        "date": "2026-10-22",
+        "seal_label": "—",
+        "amt_label": "—",
+        "rate_label": "—"
+      }
+    ],
+    "close:mainlines": [
+      {
+        "tier": "主线",
+        "name": "机器人/电机（马斯克催化逆势爆发）",
+        "logic": "马斯克在特斯拉财报电话会称人形机器人将成为全球最大产业；电机Ⅱ+3.58%为全场最强行业，电机股7家涨停（大洋电机/兆威机电/鸣志电器/奕帆传动/华阳智能/安乃达/华新精科），大业股份5连板、奕帆传动20cm；全市场普跌下唯一放量进攻主线",
+        "stocks": "大业股份（5板）、兆威机电（4天2板）、大洋电机、鸣志电器、奕帆传动、冰山冷热",
+        "date": "2026-10-22"
+      },
+      {
+        "tier": "支线",
+        "name": "照明设备/军工照明",
+        "logic": "海洋王5连板为市场最高板（新浪/财联社归为军工板块焦点股），星光股份3板、阳光照明首板跟进，照明设备Ⅱ+0.59%逆势收红",
+        "stocks": "海洋王（5板）、星光股份（3板）、阳光照明",
+        "date": "2026-10-22"
+      },
+      {
+        "tier": "支线",
+        "name": "防御/高股息（家电+大行）",
+        "logic": "申万一级仅家用电器收红，白色家电+1.12%、国有大型银行Ⅱ+0.71%，避险资金抱团权重防御",
+        "stocks": "白色家电、国有大型银行Ⅱ",
+        "date": "2026-10-22"
+      },
+      {
+        "tier": "轮动",
+        "name": "超跌低价人气股",
+        "logic": "三峡新材3连板一字（封单4.43亿全场最大）、上海九百2板、北新路桥开板6次回封，存量资金抱团低价超跌股",
+        "stocks": "三峡新材（3板）、上海九百（2板）、北新路桥",
+        "date": "2026-10-22"
+      },
+      {
+        "tier": "轮动",
+        "name": "算力/IT服务（个股孤立）",
+        "logic": "海量数据2连板（9:25一字后开板5次回封）、多伦科技午后首板，但IT服务Ⅱ-3.41%板块整体走弱，个股逆势孤立无板块效应",
+        "stocks": "海量数据（2板）、多伦科技",
+        "date": "2026-10-22"
+      },
+      {
+        "tier": "轮动",
+        "name": "退潮：传媒/出版+AI硬件",
+        "logic": "出版-5.16%、通信设备-7.09%领跌两市；昨日主线传媒高位股集体跌停（内蒙新华/新华传媒/龙版传媒/新经典/粤传媒），剑桥科技跌停；创业板受宁德时代、中际旭创、新易盛前三大权重集体压制失守2600点",
+        "stocks": "剑桥科技、内蒙新华、新经典、龙版传媒",
+        "date": "2026-10-22"
+      }
+    ],
+    "close:themes": [
+      {
+        "rank": 1,
+        "name": "机器人/电机（马斯克催化）",
+        "stars": 5,
+        "status": "新",
+        "stocks": "大业股份（5板）、大洋电机、兆威机电（4天2板）、鸣志电器、奕帆传动（20cm）",
+        "stars_label": "★★★★★",
+        "date": "2026-10-22"
+      },
+      {
+        "rank": 2,
+        "name": "照明设备/军工照明",
+        "stars": 4,
+        "status": "新",
+        "stocks": "海洋王（5板）、星光股份（3板）、阳光照明",
+        "stars_label": "★★★★☆",
+        "date": "2026-10-22"
+      },
+      {
+        "rank": 3,
+        "name": "超跌低价人气股",
+        "stars": 3,
+        "status": "分歧",
+        "stocks": "三峡新材（3板一字）、上海九百（2板）、北新路桥",
+        "stars_label": "★★★☆☆",
+        "date": "2026-10-22"
+      },
+      {
+        "rank": 4,
+        "name": "算力/IT服务",
+        "stars": 2,
+        "status": "分歧",
+        "stocks": "海量数据（2板）、多伦科技",
+        "stars_label": "★★☆☆☆",
+        "date": "2026-10-22"
+      },
+      {
+        "rank": 5,
+        "name": "防御/高股息（家电+大行）",
+        "stars": 2,
+        "status": "旧",
+        "stocks": "白色家电+1.12%、国有大型银行Ⅱ+0.71%",
+        "stars_label": "★★☆☆☆",
+        "date": "2026-10-22"
+      },
+      {
+        "rank": 6,
+        "name": "传媒/出版",
+        "stars": 1,
+        "status": "退潮",
+        "stocks": "出版-5.16%；内蒙新华、新华传媒、龙版传媒、新经典、粤传媒跌停",
+        "stars_label": "★☆☆☆☆",
+        "date": "2026-10-22"
+      },
+      {
+        "rank": 7,
+        "name": "AI硬件/通信（CPO光模块）",
+        "stars": 1,
+        "status": "退潮",
+        "stocks": "通信设备-7.09%、元件-6.21%；剑桥科技跌停，中际旭创/新易盛权重压制",
+        "stars_label": "★☆☆☆☆",
+        "date": "2026-10-22"
+      },
+      {
+        "rank": 8,
+        "name": "白酒/消费/前期题材",
+        "stars": 1,
+        "status": "退潮",
+        "stocks": "皇台酒业、阳光乳业、醋化股份跌停",
+        "stars_label": "★☆☆☆☆",
+        "date": "2026-10-22"
+      }
+    ],
+    "close:newsMidday": [
+      {
+        "tag": "数据",
+        "source": "东方财富",
+        "title": "10月22日涨停复盘：33股涨停，封板率55.93%",
+        "detail": "33股涨停、26股盘中一度触及涨停，海洋王5连板居首",
+        "date": "2026-10-22"
+      },
+      {
+        "tag": "数据",
+        "source": "证券日报（万得数据）",
+        "title": "全市场535只上涨、4999只下跌，33股逆势涨停",
+        "detail": "涨停股分属12个申万一级行业，机械设备9只、电力设备8只合计17只居前",
+        "date": "2026-10-22"
+      },
+      {
+        "tag": "催化",
+        "source": "21世纪经济报道",
+        "title": "马斯克重磅表态，机器人板块逆市爆发",
+        "detail": "马斯克在特斯拉财报电话会称坚信人形机器人将成为全球最大产业；奕帆传动20cm涨停、大业股份5连板、兆威机电4天2板",
+        "date": "2026-10-22"
+      },
+      {
+        "tag": "数据",
+        "source": "证券时报·数据宝",
+        "title": "揭秘涨停：三峡新材封单4.43亿居首",
+        "detail": "封单资金居前：三峡新材4.43亿、南矿集团3.27亿、大业股份2.58亿；封死涨停股行业居前为机械设备、电力设备、家用电器",
+        "date": "2026-10-22"
+      },
+      {
+        "tag": "数据",
+        "source": "腾讯新闻（市场复盘）",
+        "title": "三大指数集体收跌，通信板块领跌",
+        "detail": "上证3658.03（-1.48%）、深成指11357.32（-2.96%）、创业板指2576.90（-4.37%）、科创100 -3.78%；申万一级行业仅家用电器上涨",
+        "date": "2026-10-22"
+      },
+      {
+        "tag": "风险",
+        "source": "证券时报",
+        "title": "“黑色星期四”：中东局势+AI质疑双重拖累",
+        "detail": "中东局势升级推升避险情绪并扰动能源供应预期；市场对AI交易可持续性的质疑再起，压制科技股估值与整体风险偏好，全球股市大幅下挫",
+        "date": "2026-10-22"
+      },
+      {
+        "tag": "结构",
+        "source": "上游新闻",
+        "title": "沪指失守3700点打破4天“玄学”，创业板失守2600点",
+        "detail": "沪指收3658.03点；创业板指受前三大权重宁德时代、中际旭创、新易盛集体压制，失守2600点关口",
+        "date": "2026-10-22"
+      },
+      {
+        "tag": "情绪",
+        "source": "新浪财经（财联社）",
+        "title": "连板股仅9只，23股封板未遂",
+        "detail": "33股涨停、连板股总数9只、封板率59%（不含ST）；军工板块海洋王5连板为焦点股",
+        "date": "2026-10-22"
+      },
+      {
+        "tag": "数据",
+        "source": "TuShare",
+        "title": "两市成交约1.53万亿，较前一日放量约990亿",
+        "detail": "沪指收3658.03（-1.48%）；涨停33 vs 跌停48，炸板23，下跌放量、亏钱效应显著",
+        "date": "2026-10-22"
+      }
+    ],
+    "close:watchpoints": [
+      {
+        "idx": 1,
+        "cat": "主线跟踪",
+        "text": "机器人/电机为唯一逆势主线，盯大业股份（5板）竞价与兆威机电承接，弱转弱则全面退潮确认",
+        "date": "2026-10-22"
+      },
+      {
+        "idx": 2,
+        "cat": "主线跟踪",
+        "text": "海洋王（5板）、星光股份（3板）高位梯队隔日溢价，决定情绪能否止跌修复",
+        "date": "2026-10-22"
+      },
+      {
+        "idx": 3,
+        "cat": "只卖不买",
+        "text": "传媒/出版退潮确认（出版-5.16%，内蒙新华/新华传媒/龙版传媒/新经典/粤传媒集体跌停），反抽只卖不买",
+        "date": "2026-10-22"
+      },
+      {
+        "idx": 4,
+        "cat": "只卖不买",
+        "text": "AI硬件/CPO（通信设备-7.09%、剑桥科技跌停），全球AI交易质疑未消化前不接力",
+        "date": "2026-10-22"
+      },
+      {
+        "idx": 5,
+        "cat": "风险监控",
+        "text": "“黑色星期四”外围共振（中东局势+全球科技股抛压），若隔夜外盘续跌防范低开二次探底",
+        "date": "2026-10-22"
+      },
+      {
+        "idx": 6,
+        "cat": "观望",
+        "text": "创业板失守2600点，宁德时代/中际旭创/新易盛三大权重企稳前左侧不接",
+        "date": "2026-10-22"
+      },
+      {
+        "idx": 7,
+        "cat": "低吸观察",
+        "text": "防御端白色家电+1.12%、国有大行+0.71%逆势收红，避险延续可跟踪高股息扩散",
+        "date": "2026-10-22"
+      },
+      {
+        "idx": 8,
+        "cat": "数据",
+        "text": "今日晋级率56.3%（9/16）但跌停48家>涨停33家；明日晋级率若骤降<30%则确认情绪冰点",
+        "date": "2026-10-22"
+      }
+    ],
+    "close:promotions": [
+      {
+        "yesterday_lianban": 16,
+        "promoted": [
+          "海洋王（4板→5板）",
+          "大业股份（4板→5板）",
+          "星光股份（2板→3板）",
+          "三峡新材（2板→3板）",
+          "哈空调（1板→2板）",
+          "上海九百（1板→2板）",
+          "出版传媒（1板→2板）",
+          "海量数据（1板→2板）",
+          "天洋新材（1板→2板）"
+        ],
+        "broken": [
+          "东安动力（4板跌停）",
+          "润建股份（3板断板）",
+          "安记食品（2板断板）",
+          "南威软件（2板跌停）",
+          "移远通信（2板断板）",
+          "同为股份（2板跌停）",
+          "百洋股份（2板炸板-6.75%）",
+          "泰尔股份（2板跌停）",
+          "日海智能（2板断板）",
+          "九阳股份（2板断板）",
+          "粤传媒（2板跌停）",
+          "永达股份（2板跌停）"
+        ],
+        "rate": 56.3,
+        "verify": "收盘口径经 TuShare limit_list_d（10-21 与 10-22 涨停名单 limit_times 交叉验证，分子9=首板晋级2板5只+连板续板4只）；新浪财经报道连板股晋级率25%（其口径仅统计昨日连板股今日续板 4/16，与本表口径不同）",
         "date": "2026-10-22"
       }
     ]
