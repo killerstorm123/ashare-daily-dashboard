@@ -1,29 +1,198 @@
 [
-  {"ts_code": "000001.SH", "trade_date": "20261026", "close": 3697.5199, "pct_chg": 0.1909, "amount": 746528025.7164},
-  {"ts_code": "000001.SH", "trade_date": "20261023", "close": 3690.4753, "pct_chg": 0.8871, "amount": 898666874.9023},
-  {"ts_code": "000001.SH", "trade_date": "20261022", "close": 3658.0256, "pct_chg": -1.4813, "amount": 706095648.8478},
-  {"ts_code": "000001.SH", "trade_date": "20261021", "close": 3713.0277, "pct_chg": -0.5981, "amount": 642751560.3868},
-  {"ts_code": "000001.SH", "trade_date": "20261020", "close": 3735.3704, "pct_chg": 0.1193, "amount": 699969753.7989},
-  {"ts_code": "000001.SH", "trade_date": "20261019", "close": 3730.92, "pct_chg": 0.3938, "amount": 687009728.0359},
-  {"ts_code": "000001.SH", "trade_date": "20261016", "close": 3716.2842, "pct_chg": 0.2376, "amount": 732475190.8664},
-  {"ts_code": "000001.SH", "trade_date": "20261015", "close": 3707.476, "pct_chg": -1.5861, "amount": 774391973.4548},
-  {"ts_code": "000001.SH", "trade_date": "20261014", "close": 3767.2271, "pct_chg": -0.885, "amount": 662491839.8437},
-  {"ts_code": "000001.SH", "trade_date": "20261013", "close": 3800.8644, "pct_chg": 0.0954, "amount": 779302288.0225},
-  {"ts_code": "000001.SH", "trade_date": "20261012", "close": 3797.2424, "pct_chg": -0.4339, "amount": 714909910.7222},
-  {"ts_code": "000001.SH", "trade_date": "20261009", "close": 3813.7913, "pct_chg": 0.0495, "amount": 888561198.2639},
-  {"ts_code": "000001.SH", "trade_date": "20261008", "close": 3811.9043, "pct_chg": -0.7884, "amount": 811183096.3653},
-  {"ts_code": "000001.SH", "trade_date": "20260930", "close": 3842.1946, "pct_chg": 0.3066, "amount": 679398992.4448},
-  {"ts_code": "000001.SH", "trade_date": "20260929", "close": 3830.4513, "pct_chg": 0.1786, "amount": 661704292.8007},
-  {"ts_code": "000001.SH", "trade_date": "20260928", "close": 3823.6206, "pct_chg": -1.6653, "amount": 804543704.7079},
-  {"ts_code": "000001.SH", "trade_date": "20260924", "close": 3888.3738, "pct_chg": -1.2231, "amount": 783613001.3762},
-  {"ts_code": "000001.SH", "trade_date": "20260923", "close": 3936.5199, "pct_chg": -0.3949, "amount": 834132862.9852},
-  {"ts_code": "000001.SH", "trade_date": "20260922", "close": 3952.128, "pct_chg": 0.0562, "amount": 1007995610.8823},
-  {"ts_code": "000001.SH", "trade_date": "20260921", "close": 3949.9068, "pct_chg": 0.9723, "amount": 946819124.3087},
-  {"ts_code": "000001.SH", "trade_date": "20260918", "close": 3911.8714, "pct_chg": 0.9358, "amount": 994169450.1662},
-  {"ts_code": "000001.SH", "trade_date": "20260917", "close": 3875.6044, "pct_chg": -0.411, "amount": 868773066.8502},
-  {"ts_code": "000001.SH", "trade_date": "20260916", "close": 3891.6005, "pct_chg": 0.707, "amount": 871141346.8521},
-  {"ts_code": "000001.SH", "trade_date": "20260915", "close": 3864.2794, "pct_chg": -0.5419, "amount": 763982900.0363},
-  {"ts_code": "000001.SH", "trade_date": "20260914", "close": 3885.3328, "pct_chg": -0.0714, "amount": 779281246.4972},
-  {"ts_code": "000001.SH", "trade_date": "20260911", "close": 3888.1106, "pct_chg": -1.1766, "amount": 958186336.9701},
-  {"ts_code": "000001.SH", "trade_date": "20260910", "close": 3934.4036, "pct_chg": -0.4328, "amount": 779672692.2697}
+  {
+    "ts_code": "000001.SH",
+    "trade_date": "20261027",
+    "close": 3648.301,
+    "pct_chg": -1.3311,
+    "amount": 672414398.2443
+  },
+  {
+    "ts_code": "000001.SH",
+    "trade_date": "20261026",
+    "close": 3697.5199,
+    "pct_chg": 0.1909,
+    "amount": 746528025.7164
+  },
+  {
+    "ts_code": "000001.SH",
+    "trade_date": "20261023",
+    "close": 3690.4753,
+    "pct_chg": 0.8871,
+    "amount": 898666874.9023
+  },
+  {
+    "ts_code": "000001.SH",
+    "trade_date": "20261022",
+    "close": 3658.0256,
+    "pct_chg": -1.4813,
+    "amount": 706095648.8478
+  },
+  {
+    "ts_code": "000001.SH",
+    "trade_date": "20261021",
+    "close": 3713.0277,
+    "pct_chg": -0.5981,
+    "amount": 642751560.3868
+  },
+  {
+    "ts_code": "000001.SH",
+    "trade_date": "20261020",
+    "close": 3735.3704,
+    "pct_chg": 0.1193,
+    "amount": 699969753.7989
+  },
+  {
+    "ts_code": "000001.SH",
+    "trade_date": "20261019",
+    "close": 3730.92,
+    "pct_chg": 0.3938,
+    "amount": 687009728.0359
+  },
+  {
+    "ts_code": "000001.SH",
+    "trade_date": "20261016",
+    "close": 3716.2842,
+    "pct_chg": 0.2376,
+    "amount": 732475190.8664
+  },
+  {
+    "ts_code": "000001.SH",
+    "trade_date": "20261015",
+    "close": 3707.476,
+    "pct_chg": -1.5861,
+    "amount": 774391973.4548
+  },
+  {
+    "ts_code": "000001.SH",
+    "trade_date": "20261014",
+    "close": 3767.2271,
+    "pct_chg": -0.885,
+    "amount": 662491839.8437
+  },
+  {
+    "ts_code": "000001.SH",
+    "trade_date": "20261013",
+    "close": 3800.8644,
+    "pct_chg": 0.0954,
+    "amount": 779302288.0225
+  },
+  {
+    "ts_code": "000001.SH",
+    "trade_date": "20261012",
+    "close": 3797.2424,
+    "pct_chg": -0.4339,
+    "amount": 714909910.7222
+  },
+  {
+    "ts_code": "000001.SH",
+    "trade_date": "20261009",
+    "close": 3813.7913,
+    "pct_chg": 0.0495,
+    "amount": 888561198.2639
+  },
+  {
+    "ts_code": "000001.SH",
+    "trade_date": "20261008",
+    "close": 3811.9043,
+    "pct_chg": -0.7884,
+    "amount": 811183096.3653
+  },
+  {
+    "ts_code": "000001.SH",
+    "trade_date": "20260930",
+    "close": 3842.1946,
+    "pct_chg": 0.3066,
+    "amount": 679398992.4448
+  },
+  {
+    "ts_code": "000001.SH",
+    "trade_date": "20260929",
+    "close": 3830.4513,
+    "pct_chg": 0.1786,
+    "amount": 661704292.8007
+  },
+  {
+    "ts_code": "000001.SH",
+    "trade_date": "20260928",
+    "close": 3823.6206,
+    "pct_chg": -1.6653,
+    "amount": 804543704.7079
+  },
+  {
+    "ts_code": "000001.SH",
+    "trade_date": "20260924",
+    "close": 3888.3738,
+    "pct_chg": -1.2231,
+    "amount": 783613001.3762
+  },
+  {
+    "ts_code": "000001.SH",
+    "trade_date": "20260923",
+    "close": 3936.5199,
+    "pct_chg": -0.3949,
+    "amount": 834132862.9852
+  },
+  {
+    "ts_code": "000001.SH",
+    "trade_date": "20260922",
+    "close": 3952.128,
+    "pct_chg": 0.0562,
+    "amount": 1007995610.8823
+  },
+  {
+    "ts_code": "000001.SH",
+    "trade_date": "20260921",
+    "close": 3949.9068,
+    "pct_chg": 0.9723,
+    "amount": 946819124.3087
+  },
+  {
+    "ts_code": "000001.SH",
+    "trade_date": "20260918",
+    "close": 3911.8714,
+    "pct_chg": 0.9358,
+    "amount": 994169450.1662
+  },
+  {
+    "ts_code": "000001.SH",
+    "trade_date": "20260917",
+    "close": 3875.6044,
+    "pct_chg": -0.411,
+    "amount": 868773066.8502
+  },
+  {
+    "ts_code": "000001.SH",
+    "trade_date": "20260916",
+    "close": 3891.6005,
+    "pct_chg": 0.707,
+    "amount": 871141346.8521
+  },
+  {
+    "ts_code": "000001.SH",
+    "trade_date": "20260915",
+    "close": 3864.2794,
+    "pct_chg": -0.5419,
+    "amount": 763982900.0363
+  },
+  {
+    "ts_code": "000001.SH",
+    "trade_date": "20260914",
+    "close": 3885.3328,
+    "pct_chg": -0.0714,
+    "amount": 779281246.4972
+  },
+  {
+    "ts_code": "000001.SH",
+    "trade_date": "20260911",
+    "close": 3888.1106,
+    "pct_chg": -1.1766,
+    "amount": 958186336.9701
+  },
+  {
+    "ts_code": "000001.SH",
+    "trade_date": "20260910",
+    "close": 3934.4036,
+    "pct_chg": -0.4328,
+    "amount": 779672692.2697
+  }
 ]
