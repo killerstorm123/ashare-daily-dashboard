@@ -2,14 +2,14 @@
   "title": "A股盘面每日跟踪看板",
   "subtitle": "午盘/收盘双快照 · 情绪周期 · 主线梯队 · 复盘清单",
   "timezone": "Asia/Shanghai",
-  "tradeDate": "2026-10-27",
-  "generatedAt": "2026-10-27T20:20:13+08:00",
+  "tradeDate": "2026-10-28",
+  "generatedAt": "2026-10-28T12:01:14+08:00",
   "freshness": {
-    "latestDataDate": "2026-10-27",
-    "latestCapturedAt": "2026-10-27T20:19:25+08:00",
-    "primarySession": "收盘",
+    "latestDataDate": "2026-10-28",
+    "latestCapturedAt": "2026-10-28T11:57:00+08:00",
+    "primarySession": "午盘",
     "missingSessions": [
-      "午盘总结"
+      "收盘总结"
     ]
   },
   "availableDates": [
@@ -40,100 +40,101 @@
     "2026-10-22",
     "2026-10-23",
     "2026-10-26",
-    "2026-10-27"
+    "2026-10-27",
+    "2026-10-28"
   ],
   "defaultRange": "ALL",
   "sessionKeys": [
-    "close"
+    "mid"
   ],
   "sessions": {
-    "close": {
-      "key": "close",
-      "label": "收盘总结",
-      "sessionLabel": "收盘",
-      "snapshotDate": "2026-10-27",
-      "capturedAt": "2026-10-27T20:19:25+08:00",
-      "cutoff": "15:00",
+    "mid": {
+      "key": "mid",
+      "label": "午盘总结",
+      "sessionLabel": "午盘",
+      "snapshotDate": "2026-10-28",
+      "capturedAt": "2026-10-28T11:57:00+08:00",
+      "cutoff": "11:30",
       "sentiment": {
-        "score": 51.7,
-        "phase": "分歧 · 震荡期",
-        "breadth": null,
-        "net_limit": 30.2,
-        "seal": 59,
-        "height": 71.4,
-        "volume": null
+        "score": 87.8,
+        "phase": "高潮 · 过热预警",
+        "breadth": 83.1,
+        "net_limit": null,
+        "seal": null,
+        "height": null,
+        "volume": 99.6
       },
       "stats": {
-        "lu": 41,
-        "ld": 22,
-        "zb": 28,
-        "mb": 5,
-        "stock": "上海九百"
+        "lu": null,
+        "ld": null,
+        "zb": null,
+        "mb": null,
+        "stock": null
       },
       "kpis": [
         {
           "id": "kpi-sh",
           "label": "上证指数",
-          "value": "3,648.30",
-          "delta": "-1.33%",
+          "value": "3,674.44",
+          "delta": "+0.72%",
           "delta_class": "down",
-          "detail": "昨收 3,697.52"
+          "detail": "昨收 3,648.30"
         },
         {
           "id": "kpi-sz",
           "label": "深证成指",
-          "value": "11,245.73",
-          "delta": "-2.50%",
+          "value": "11,470.03",
+          "delta": "+1.99%",
           "delta_class": "down",
           "detail": "深市锚点"
         },
         {
           "id": "kpi-cyb",
           "label": "创业板指",
-          "value": "2,548.15",
-          "delta": "-3.41%",
+          "value": "2,624.64",
+          "delta": "+3.00%",
           "delta_class": "down",
           "detail": "两市最弱宽基"
         },
         {
           "id": "kpi-kc",
           "label": "科创50",
-          "value": "1,252.28",
-          "delta": "-4.81%",
+          "value": "1,283.67",
+          "delta": "+2.51%",
           "delta_class": "down",
-          "detail": "北证50 -3.35% · 沪深300 4,049.55 (-1.32%)"
+          "detail": "沪深300 4,077.16 (+0.68%)"
         },
         {
           "id": "kpi-amt",
           "label": "成交额",
-          "value": "14,609 亿",
-          "delta": "全天口径",
+          "value": "10,136 亿",
+          "delta": "较昨同期 +1437 亿",
           "delta_class": "",
-          "detail": "量能对照见趋势图"
+          "detail": "放量但普跌 · 存量博弈"
         },
         {
           "id": "kpi-breadth",
           "label": "涨跌家数",
-          "value": "待接入",
-          "delta": "广度分项跳过",
-          "delta_class": "",
-          "detail": "连板梯队 12 家参与评分"
+          "value": "4498 / 916",
+          "delta": "上涨占比 83.1%",
+          "delta_class": "down",
+          "detail": "超5000只普跌 · 结构市"
         },
         {
           "id": "kpi-limit",
           "label": "涨停 / 跌停",
-          "value": "41 / 22",
-          "delta": "封板率 59%",
+          "value": "待收盘补全",
+          "delta": "盘中专题接口无数据",
           "delta_class": "",
-          "detail": "炸板 28 家 · 炸板率 41%"
+          "detail": "涨跌停/炸板计数由收盘任务回填"
         },
         {
           "id": "kpi-phase",
           "label": "情绪周期",
-          "value": "分歧 · 震荡期",
-          "delta": "51.7 / 100",
+          "value": "高潮 · 过热预警",
+          "delta": "87.8 / 100",
           "delta_class": "",
-          "detail": "最高 5 板（上海九百）"
+          "detail": "连板高度待收盘补全"
         }
       ]
     }
@@ -401,1431 +402,245 @@
         "sh_close": 3648.3,
         "sh_pct": -1.33,
         "amount_yi": 14609,
-        "captured_at": "2026-10-27T20:19:25+08:00",
+        "captured_at": "2026-10-15T12:30:00+08:00",
         "limit_up": 41,
         "limit_down": 22,
-        "zhaban": 28,
-        "fengban_rate": 59,
-        "max_boards": 5,
-        "max_board_stock": "上海九百"
+        "zhaban": 28
+      },
+      {
+        "date": "2026-10-28",
+        "session": "midday",
+        "sh_close": 3674.44,
+        "sh_pct": 0.72,
+        "amount_yi": 10136,
+        "turnover_delta_yi": 1437,
+        "captured_at": "2026-10-28T11:57:00+08:00"
       }
     ],
-    "close:sectors": [
-      {
-        "date": "2026-10-27",
-        "grp": "行业",
-        "dir": "领涨",
-        "name": "会展服务",
-        "pct": 4.06
-      },
-      {
-        "date": "2026-10-27",
-        "grp": "行业",
-        "dir": "领涨",
-        "name": "聚氨酯",
-        "pct": 3.28
-      },
-      {
-        "date": "2026-10-27",
-        "grp": "行业",
-        "dir": "领涨",
-        "name": "粘胶",
-        "pct": 2.67
-      },
-      {
-        "date": "2026-10-27",
-        "grp": "行业",
-        "dir": "领涨",
-        "name": "多业态零售",
-        "pct": 2.51
-      },
-      {
-        "date": "2026-10-27",
-        "grp": "行业",
-        "dir": "领涨",
-        "name": "股份制银行Ⅱ",
-        "pct": 1.61
-      },
-      {
-        "date": "2026-10-27",
-        "grp": "行业",
-        "dir": "领涨",
-        "name": "航运",
-        "pct": 1.45
-      },
-      {
-        "date": "2026-10-27",
-        "grp": "行业",
-        "dir": "领跌",
-        "name": "印刷",
-        "pct": -7.5
-      },
-      {
-        "date": "2026-10-27",
-        "grp": "行业",
-        "dir": "领跌",
-        "name": "半导体设备",
-        "pct": -6.14
-      },
-      {
-        "date": "2026-10-27",
-        "grp": "行业",
-        "dir": "领跌",
-        "name": "资产管理",
-        "pct": -5.18
-      },
-      {
-        "date": "2026-10-27",
-        "grp": "行业",
-        "dir": "领跌",
-        "name": "航空装备Ⅱ",
-        "pct": -5.13
-      },
-      {
-        "date": "2026-10-27",
-        "grp": "行业",
-        "dir": "领跌",
-        "name": "其他黑色家电",
-        "pct": -5.13
-      },
-      {
-        "date": "2026-10-27",
-        "grp": "行业",
-        "dir": "领跌",
-        "name": "半导体材料",
-        "pct": -5.09
-      }
-    ],
-    "close:concepts": [],
-    "close:ladderDist": [
-      {
-        "date": "2026-10-27",
-        "label": "首板",
-        "count": 29
-      },
-      {
-        "date": "2026-10-27",
-        "label": "2板",
-        "count": 11
-      },
-      {
-        "date": "2026-10-27",
-        "label": "5板",
-        "count": 1
-      },
-      {
-        "date": "2026-10-27",
-        "label": "炸板",
-        "count": 28
-      }
-    ],
-    "close:lianban": [
-      {
-        "category": "连板",
-        "name": "上海九百",
-        "boards": "5连板",
-        "theme": "一般零售",
-        "reason": "开盘1分钟拉涨停录得5连板，零售概念总龙头（上海证券报），10月20日以来累计涨幅近65%",
-        "seal_yi": 1.5,
-        "amount_yi": 3.94,
-        "turnover_pct": 7.49,
-        "time": "09:30 封板",
-        "date": "2026-10-27",
-        "seal_label": "1.50",
-        "amt_label": "3.9",
-        "rate_label": "7.5%"
-      },
-      {
-        "category": "连板",
-        "name": "多伦科技",
-        "boards": "4连板",
-        "theme": "软件开发",
-        "reason": "机器人概念晋级4连板（金融界），一字板；证券之星：北向当日净卖出2337.95万元",
-        "seal_yi": 1.15,
-        "amount_yi": 8.1,
-        "turnover_pct": 11.65,
-        "time": "09:25 封板",
-        "date": "2026-10-27",
-        "seal_label": "1.15",
-        "amt_label": "8.1",
-        "rate_label": "11.7%"
-      },
-      {
-        "category": "连板",
-        "name": "赛福天",
-        "boards": "4连板",
-        "theme": "通用设备",
-        "reason": "机器人概念晋级4连板（金融界），一字板",
-        "seal_yi": 0.25,
-        "amount_yi": 3.02,
-        "turnover_pct": 10.31,
-        "time": "09:25 封板",
-        "date": "2026-10-27",
-        "seal_label": "0.25",
-        "amt_label": "3.0",
-        "rate_label": "10.3%"
-      },
-      {
-        "category": "连板",
-        "name": "襄阳轴承",
-        "boards": "4连板",
-        "theme": "汽车零部件",
-        "reason": "机器人概念+「羊」字辈玄学龙头晋级4连板（金融界）",
-        "seal_yi": 1.28,
-        "amount_yi": 14.92,
-        "turnover_pct": 20.57,
-        "time": "09:34 封板",
-        "date": "2026-10-27",
-        "seal_label": "1.28",
-        "amt_label": "14.9",
-        "rate_label": "20.6%"
-      },
-      {
-        "category": "连板",
-        "name": "青岛食品",
-        "boards": "2连板",
-        "theme": "休闲食品",
-        "reason": "食品饮料防御延续2连板",
-        "seal_yi": 0.32,
-        "amount_yi": 2.21,
-        "turnover_pct": 7.77,
-        "time": "09:25 封板",
-        "date": "2026-10-27",
-        "seal_label": "0.32",
-        "amt_label": "2.2",
-        "rate_label": "7.8%"
-      },
-      {
-        "category": "连板",
-        "name": "光洋股份",
-        "boards": "2连板",
-        "theme": "汽车零部件",
-        "reason": "机器人概念+「羊」字辈，一字板2连板（金融界）",
-        "seal_yi": 1.7,
-        "amount_yi": 3.39,
-        "turnover_pct": 3.87,
-        "time": "09:30 封板",
-        "date": "2026-10-27",
-        "seal_label": "1.70",
-        "amt_label": "3.4",
-        "rate_label": "3.9%"
-      },
-      {
-        "category": "连板",
-        "name": "国脉科技",
-        "boards": "2连板",
-        "theme": "教育",
-        "reason": "教育板块高位辨识度标的2连板",
-        "seal_yi": 0.46,
-        "amount_yi": 5.25,
-        "turnover_pct": 6.63,
-        "time": "09:30 封板",
-        "date": "2026-10-27",
-        "seal_label": "0.46",
-        "amt_label": "5.2",
-        "rate_label": "6.6%"
-      },
-      {
-        "category": "连板",
-        "name": "胜通能源",
-        "boards": "2连板",
-        "theme": "燃气Ⅱ",
-        "reason": "2连板缩圈抱团标的（金融界）",
-        "seal_yi": 0.88,
-        "amount_yi": 7.16,
-        "turnover_pct": 6.69,
-        "time": "09:39 封板",
-        "date": "2026-10-27",
-        "seal_label": "0.88",
-        "amt_label": "7.2",
-        "rate_label": "6.7%"
-      },
-      {
-        "category": "连板",
-        "name": "桂发祥",
-        "boards": "2连板",
-        "theme": "休闲食品",
-        "reason": "食品饮料防御2连板，涨停未开板",
-        "seal_yi": 0.44,
-        "amount_yi": 3.77,
-        "turnover_pct": 17.86,
-        "time": "10:11 封板",
-        "date": "2026-10-27",
-        "seal_label": "0.44",
-        "amt_label": "3.8",
-        "rate_label": "17.9%"
-      },
-      {
-        "category": "连板",
-        "name": "阳光乳业",
-        "boards": "2连板",
-        "theme": "饮料乳品",
-        "reason": "「羊」字辈玄学2连板（金融界），盘中开板4次回封",
-        "seal_yi": 0.17,
-        "amount_yi": 5.57,
-        "turnover_pct": 15.54,
-        "time": "10:11 封板",
-        "date": "2026-10-27",
-        "seal_label": "0.17",
-        "amt_label": "5.6",
-        "rate_label": "15.5%"
-      },
-      {
-        "category": "连板",
-        "name": "沪光股份",
-        "boards": "2连板",
-        "theme": "汽车零部件",
-        "reason": "机器人/汽车线束2连板（金融界）；证券之星：北向3日净买入128.7万元",
-        "seal_yi": 0.05,
-        "amount_yi": 3.7,
-        "turnover_pct": 4.18,
-        "time": "10:21 封板",
-        "date": "2026-10-27",
-        "seal_label": "0.05",
-        "amt_label": "3.7",
-        "rate_label": "4.2%"
-      },
-      {
-        "category": "连板",
-        "name": "科瑞思",
-        "boards": "2连板",
-        "theme": "通信设备",
-        "reason": "通信设备20cm涨停2连板，午后回封",
-        "seal_yi": 0.11,
-        "amount_yi": 5.63,
-        "turnover_pct": 30.24,
-        "time": "13:46 封板",
-        "date": "2026-10-27",
-        "seal_label": "0.11",
-        "amt_label": "5.6",
-        "rate_label": "30.2%"
-      }
-    ],
-    "close:shouban": [
-      {
-        "category": "首板",
-        "name": "深赛格",
-        "boards": "首板",
-        "theme": "一般零售",
-        "reason": 0.76,
-        "seal_yi": 4.01,
-        "amount_yi": 0.59,
-        "turnover_pct": 0.76,
-        "time": "09:25 封板",
-        "date": "2026-10-27",
-        "seal_label": "4.01",
-        "amt_label": "0.6",
-        "rate_label": "0.8%"
-      },
-      {
-        "category": "首板",
-        "name": "盾安环境",
-        "boards": "首板",
-        "theme": "家电零部",
-        "reason": 2.6,
-        "seal_yi": 0.18,
-        "amount_yi": 3.13,
-        "turnover_pct": 2.6,
-        "time": "09:30 封板",
-        "date": "2026-10-27",
-        "seal_label": "0.18",
-        "amt_label": "3.1",
-        "rate_label": "2.6%"
-      },
-      {
-        "category": "首板",
-        "name": "亚太股份",
-        "boards": "首板",
-        "theme": "汽车零部件",
-        "reason": 6.79,
-        "seal_yi": 0.61,
-        "amount_yi": 4.78,
-        "turnover_pct": 6.79,
-        "time": "09:30 封板",
-        "date": "2026-10-27",
-        "seal_label": "0.61",
-        "amt_label": "4.8",
-        "rate_label": "6.8%"
-      },
-      {
-        "category": "首板",
-        "name": "中谷物流",
-        "boards": "首板",
-        "theme": "航运港口",
-        "reason": 1.49,
-        "seal_yi": 0.31,
-        "amount_yi": 3.92,
-        "turnover_pct": 1.49,
-        "time": "09:31 封板",
-        "date": "2026-10-27",
-        "seal_label": "0.31",
-        "amt_label": "3.9",
-        "rate_label": "1.5%"
-      },
-      {
-        "category": "首板",
-        "name": "九牧王",
-        "boards": "首板",
-        "theme": "服装家纺",
-        "reason": 5.08,
-        "seal_yi": 0.35,
-        "amount_yi": 2.98,
-        "turnover_pct": 5.08,
-        "time": "09:31 封板",
-        "date": "2026-10-27",
-        "seal_label": "0.35",
-        "amt_label": "3.0",
-        "rate_label": "5.1%"
-      },
-      {
-        "category": "首板",
-        "name": "曙光股份",
-        "boards": "首板",
-        "theme": "商用车",
-        "reason": 12.08,
-        "seal_yi": 0.18,
-        "amount_yi": 2.5,
-        "turnover_pct": 12.08,
-        "time": "09:32 封板",
-        "date": "2026-10-27",
-        "seal_label": "0.18",
-        "amt_label": "2.5",
-        "rate_label": "12.1%"
-      },
-      {
-        "category": "首板",
-        "name": "秦安股份",
-        "boards": "首板",
-        "theme": "汽车零部件",
-        "reason": 2.95,
-        "seal_yi": 0.2,
-        "amount_yi": 1.34,
-        "turnover_pct": 2.95,
-        "time": "09:33 封板",
-        "date": "2026-10-27",
-        "seal_label": "0.20",
-        "amt_label": "1.3",
-        "rate_label": "3.0%"
-      },
-      {
-        "category": "首板",
-        "name": "东贝集团",
-        "boards": "首板",
-        "theme": "家电零部",
-        "reason": 4.15,
-        "seal_yi": 0.34,
-        "amount_yi": 1.42,
-        "turnover_pct": 4.15,
-        "time": "09:33 封板",
-        "date": "2026-10-27",
-        "seal_label": "0.34",
-        "amt_label": "1.4",
-        "rate_label": "4.2%"
-      },
-      {
-        "category": "首板",
-        "name": "江顺科技",
-        "boards": "首板",
-        "theme": "专用设备",
-        "reason": 5.84,
-        "seal_yi": 0.81,
-        "amount_yi": 1.48,
-        "turnover_pct": 5.84,
-        "time": "09:35 封板",
-        "date": "2026-10-27",
-        "seal_label": "0.81",
-        "amt_label": "1.5",
-        "rate_label": "5.8%"
-      },
-      {
-        "category": "首板",
-        "name": "茂业商业",
-        "boards": "首板",
-        "theme": "一般零售",
-        "reason": 1.57,
-        "seal_yi": 0.19,
-        "amount_yi": 1.18,
-        "turnover_pct": 1.57,
-        "time": "09:40 封板",
-        "date": "2026-10-27",
-        "seal_label": "0.19",
-        "amt_label": "1.2",
-        "rate_label": "1.6%"
-      },
-      {
-        "category": "首板",
-        "name": "文投控股",
-        "boards": "首板",
-        "theme": "游戏Ⅱ",
-        "reason": 8.88,
-        "seal_yi": 0.07,
-        "amount_yi": 4.69,
-        "turnover_pct": 8.88,
-        "time": "09:41 封板",
-        "date": "2026-10-27",
-        "seal_label": "0.07",
-        "amt_label": "4.7",
-        "rate_label": "8.9%"
-      },
-      {
-        "category": "首板",
-        "name": "广百股份",
-        "boards": "首板",
-        "theme": "一般零售",
-        "reason": 5.12,
-        "seal_yi": 0.35,
-        "amount_yi": 2.09,
-        "turnover_pct": 5.12,
-        "time": "09:43 封板",
-        "date": "2026-10-27",
-        "seal_label": "0.35",
-        "amt_label": "2.1",
-        "rate_label": "5.1%"
-      },
-      {
-        "category": "首板",
-        "name": "大明电子",
-        "boards": "首板",
-        "theme": "汽车零部件",
-        "reason": 11.04,
-        "seal_yi": 0.03,
-        "amount_yi": 0.92,
-        "turnover_pct": 11.04,
-        "time": "09:48 封板",
-        "date": "2026-10-27",
-        "seal_label": "0.03",
-        "amt_label": "0.9",
-        "rate_label": "11.0%"
-      },
-      {
-        "category": "首板",
-        "name": "宏明电子",
-        "boards": "首板",
-        "theme": "军工电子",
-        "reason": 23.66,
-        "seal_yi": 0.73,
-        "amount_yi": 7.14,
-        "turnover_pct": 23.66,
-        "time": "09:55 封板",
-        "date": "2026-10-27",
-        "seal_label": "0.73",
-        "amt_label": "7.1",
-        "rate_label": "23.7%"
-      },
-      {
-        "category": "首板",
-        "name": "大洋电机",
-        "boards": "首板",
-        "theme": "电机Ⅱ",
-        "reason": 10.16,
-        "seal_yi": 1.1,
-        "amount_yi": 14.19,
-        "turnover_pct": 10.16,
-        "time": "09:56 封板",
-        "date": "2026-10-27",
-        "seal_label": "1.10",
-        "amt_label": "14.2",
-        "rate_label": "10.2%"
-      },
-      {
-        "category": "首板",
-        "name": "弘景光电",
-        "boards": "首板",
-        "theme": "光学光电",
-        "reason": 19.17,
-        "seal_yi": 0.33,
-        "amount_yi": 7.42,
-        "turnover_pct": 19.17,
-        "time": "09:57 封板",
-        "date": "2026-10-27",
-        "seal_label": "0.33",
-        "amt_label": "7.4",
-        "rate_label": "19.2%"
-      },
-      {
-        "category": "首板",
-        "name": "横河精密",
-        "boards": "首板",
-        "theme": "塑料",
-        "reason": 11.44,
-        "seal_yi": 0.4,
-        "amount_yi": 4.74,
-        "turnover_pct": 11.44,
-        "time": "10:04 封板",
-        "date": "2026-10-27",
-        "seal_label": "0.40",
-        "amt_label": "4.7",
-        "rate_label": "11.4%"
-      },
-      {
-        "category": "首板",
-        "name": "海洋王",
-        "boards": "首板",
-        "theme": "照明设备",
-        "reason": 28.85,
-        "seal_yi": 0.33,
-        "amount_yi": 20.9,
-        "turnover_pct": 28.85,
-        "time": "10:07 封板",
-        "date": "2026-10-27",
-        "seal_label": "0.33",
-        "amt_label": "20.9",
-        "rate_label": "28.9%"
-      },
-      {
-        "category": "首板",
-        "name": "峨眉山Ａ",
-        "boards": "首板",
-        "theme": "旅游及景",
-        "reason": 9.88,
-        "seal_yi": 0.22,
-        "amount_yi": 5.14,
-        "turnover_pct": 9.88,
-        "time": "10:29 封板",
-        "date": "2026-10-27",
-        "seal_label": "0.22",
-        "amt_label": "5.1",
-        "rate_label": "9.9%"
-      },
-      {
-        "category": "首板",
-        "name": "原尚股份",
-        "boards": "首板",
-        "theme": "物流",
-        "reason": 1.89,
-        "seal_yi": 0.06,
-        "amount_yi": 0.47,
-        "turnover_pct": 1.89,
-        "time": "10:34 封板",
-        "date": "2026-10-27",
-        "seal_label": "0.06",
-        "amt_label": "0.5",
-        "rate_label": "1.9%"
-      },
-      {
-        "category": "首板",
-        "name": "国统股份",
-        "boards": "首板",
-        "theme": "水泥",
-        "reason": 6.33,
-        "seal_yi": 0.27,
-        "amount_yi": 1.29,
-        "turnover_pct": 6.33,
-        "time": "10:49 封板",
-        "date": "2026-10-27",
-        "seal_label": "0.27",
-        "amt_label": "1.3",
-        "rate_label": "6.3%"
-      },
-      {
-        "category": "首板",
-        "name": "华新精科",
-        "boards": "首板",
-        "theme": "电机Ⅱ",
-        "reason": 12.71,
-        "seal_yi": 0.08,
-        "amount_yi": 3.19,
-        "turnover_pct": 12.71,
-        "time": "10:51 封板",
-        "date": "2026-10-27",
-        "seal_label": "0.08",
-        "amt_label": "3.2",
-        "rate_label": "12.7%"
-      },
-      {
-        "category": "首板",
-        "name": "凯中精密",
-        "boards": "首板",
-        "theme": "电机Ⅱ",
-        "reason": 10.28,
-        "seal_yi": 0.25,
-        "amount_yi": 3.02,
-        "turnover_pct": 10.28,
-        "time": "11:05 封板",
-        "date": "2026-10-27",
-        "seal_label": "0.25",
-        "amt_label": "3.0",
-        "rate_label": "10.3%"
-      },
-      {
-        "category": "首板",
-        "name": "天邑股份",
-        "boards": "首板",
-        "theme": "通信设备",
-        "reason": 11.95,
-        "seal_yi": 0.45,
-        "amount_yi": 4.39,
-        "turnover_pct": 11.95,
-        "time": "11:12 封板",
-        "date": "2026-10-27",
-        "seal_label": "0.45",
-        "amt_label": "4.4",
-        "rate_label": "11.9%"
-      },
-      {
-        "category": "首板",
-        "name": "凯众股份",
-        "boards": "首板",
-        "theme": "汽车零部件",
-        "reason": 8.18,
-        "seal_yi": 0.23,
-        "amount_yi": 2.51,
-        "turnover_pct": 8.18,
-        "time": "13:01 封板",
-        "date": "2026-10-27",
-        "seal_label": "0.23",
-        "amt_label": "2.5",
-        "rate_label": "8.2%"
-      },
-      {
-        "category": "首板",
-        "name": "亚玛顿",
-        "boards": "首板",
-        "theme": "光伏设备",
-        "reason": 6.72,
-        "seal_yi": 0.43,
-        "amount_yi": 2.33,
-        "turnover_pct": 6.72,
-        "time": "13:19 封板",
-        "date": "2026-10-27",
-        "seal_label": "0.43",
-        "amt_label": "2.3",
-        "rate_label": "6.7%"
-      },
-      {
-        "category": "首板",
-        "name": "申达股份",
-        "boards": "首板",
-        "theme": "汽车零部件",
-        "reason": 4.8,
-        "seal_yi": 0.01,
-        "amount_yi": 2.45,
-        "turnover_pct": 4.8,
-        "time": "13:24 封板",
-        "date": "2026-10-27",
-        "seal_label": "0.01",
-        "amt_label": "2.5",
-        "rate_label": "4.8%"
-      },
-      {
-        "category": "首板",
-        "name": "新华百货",
-        "boards": "首板",
-        "theme": "一般零售",
-        "reason": 19.86,
-        "seal_yi": 0.11,
-        "amount_yi": 8.23,
-        "turnover_pct": 19.86,
-        "time": "14:50 封板",
-        "date": "2026-10-27",
-        "seal_label": "0.11",
-        "amt_label": "8.2",
-        "rate_label": "19.9%"
-      },
-      {
-        "category": "首板",
-        "name": "国芳集团",
-        "boards": "首板",
-        "theme": "一般零售",
-        "reason": 14.9,
-        "seal_yi": 0.56,
-        "amount_yi": 11.97,
-        "turnover_pct": 14.9,
-        "time": "14:52 封板",
-        "date": "2026-10-27",
-        "seal_label": "0.56",
-        "amt_label": "12.0",
-        "rate_label": "14.9%"
-      }
-    ],
-    "close:zhaban": [
-      {
-        "category": "炸板",
-        "name": "大西洋",
-        "boards": "炸板",
-        "theme": "通用设备",
-        "reason": "焊接材料冲高回落（2天1板断板）",
-        "seal_yi": null,
-        "amount_yi": null,
-        "turnover_pct": null,
-        "time": "炸板",
-        "date": "2026-10-27",
-        "seal_label": "—",
-        "amt_label": "—",
-        "rate_label": "—"
-      },
-      {
-        "category": "炸板",
-        "name": "兰生股份",
-        "boards": "炸板",
-        "theme": "专业服务",
-        "reason": "会展服务为全天最强二级行业（+4.06%），盘中开板9次未能回封",
-        "seal_yi": null,
-        "amount_yi": null,
-        "turnover_pct": null,
-        "time": "炸板",
-        "date": "2026-10-27",
-        "seal_label": "—",
-        "amt_label": "—",
-        "rate_label": "—"
-      },
-      {
-        "category": "炸板",
-        "name": "东方海洋",
-        "boards": "炸板",
-        "theme": "农产品加",
-        "reason": "农业板块冲高回落（2天1板断板）",
-        "seal_yi": null,
-        "amount_yi": null,
-        "turnover_pct": null,
-        "time": "炸板",
-        "date": "2026-10-27",
-        "seal_label": "—",
-        "amt_label": "—",
-        "rate_label": "—"
-      },
-      {
-        "category": "炸板",
-        "name": "多利科技",
-        "boards": "炸板",
-        "theme": "汽车零部件",
-        "reason": "汽车零部件分歧炸板",
-        "seal_yi": null,
-        "amount_yi": null,
-        "turnover_pct": null,
-        "time": "炸板",
-        "date": "2026-10-27",
-        "seal_label": "—",
-        "amt_label": "—",
-        "rate_label": "—"
-      },
-      {
-        "category": "炸板",
-        "name": "浙江世宝",
-        "boards": "炸板",
-        "theme": "汽车零部件",
-        "reason": "汽车零部件分歧炸板",
-        "seal_yi": null,
-        "amount_yi": null,
-        "turnover_pct": null,
-        "time": "炸板",
-        "date": "2026-10-27",
-        "seal_label": "—",
-        "amt_label": "—",
-        "rate_label": "—"
-      },
-      {
-        "category": "炸板",
-        "name": "雪人集团",
-        "boards": "炸板",
-        "theme": "通用设备",
-        "reason": "通用设备冲高回落",
-        "seal_yi": null,
-        "amount_yi": null,
-        "turnover_pct": null,
-        "time": "炸板",
-        "date": "2026-10-27",
-        "seal_label": "—",
-        "amt_label": "—",
-        "rate_label": "—"
-      },
-      {
-        "category": "炸板",
-        "name": "天德钰",
-        "boards": "炸板",
-        "theme": "半导体",
-        "reason": "半导体冲高回落",
-        "seal_yi": null,
-        "amount_yi": null,
-        "turnover_pct": null,
-        "time": "炸板",
-        "date": "2026-10-27",
-        "seal_label": "—",
-        "amt_label": "—",
-        "rate_label": "—"
-      },
-      {
-        "category": "炸板",
-        "name": "三联锻造",
-        "boards": "炸板",
-        "theme": "汽车零部件",
-        "reason": "汽车零部件分歧炸板",
-        "seal_yi": null,
-        "amount_yi": null,
-        "turnover_pct": null,
-        "time": "炸板",
-        "date": "2026-10-27",
-        "seal_label": "—",
-        "amt_label": "—",
-        "rate_label": "—"
-      },
-      {
-        "category": "炸板",
-        "name": "中晶科技",
-        "boards": "炸板",
-        "theme": "半导体",
-        "reason": "半导体冲高回落",
-        "seal_yi": null,
-        "amount_yi": null,
-        "turnover_pct": null,
-        "time": "炸板",
-        "date": "2026-10-27",
-        "seal_label": "—",
-        "amt_label": "—",
-        "rate_label": "—"
-      },
-      {
-        "category": "炸板",
-        "name": "杰克科技",
-        "boards": "炸板",
-        "theme": "专用设备",
-        "reason": "昨日2连板今日炸板断板",
-        "seal_yi": null,
-        "amount_yi": null,
-        "turnover_pct": null,
-        "time": "炸板",
-        "date": "2026-10-27",
-        "seal_label": "—",
-        "amt_label": "—",
-        "rate_label": "—"
-      },
-      {
-        "category": "炸板",
-        "name": "万安科技",
-        "boards": "炸板",
-        "theme": "汽车零部件",
-        "reason": "汽车零部件分歧炸板",
-        "seal_yi": null,
-        "amount_yi": null,
-        "turnover_pct": null,
-        "time": "炸板",
-        "date": "2026-10-27",
-        "seal_label": "—",
-        "amt_label": "—",
-        "rate_label": "—"
-      },
-      {
-        "category": "炸板",
-        "name": "粤传媒",
-        "boards": "炸板",
-        "theme": "出版",
-        "reason": "出版传媒冲高回落",
-        "seal_yi": null,
-        "amount_yi": null,
-        "turnover_pct": null,
-        "time": "炸板",
-        "date": "2026-10-27",
-        "seal_label": "—",
-        "amt_label": "—",
-        "rate_label": "—"
-      },
-      {
-        "category": "炸板",
-        "name": "华培动力",
-        "boards": "炸板",
-        "theme": "汽车零部件",
-        "reason": "汽车零部件分歧炸板",
-        "seal_yi": null,
-        "amount_yi": null,
-        "turnover_pct": null,
-        "time": "炸板",
-        "date": "2026-10-27",
-        "seal_label": "—",
-        "amt_label": "—",
-        "rate_label": "—"
-      },
-      {
-        "category": "炸板",
-        "name": "众智科技",
-        "boards": "炸板",
-        "theme": "电网设备",
-        "reason": "电网设备冲高回落（收盘仍涨16.35%）",
-        "seal_yi": null,
-        "amount_yi": null,
-        "turnover_pct": null,
-        "time": "炸板",
-        "date": "2026-10-27",
-        "seal_label": "—",
-        "amt_label": "—",
-        "rate_label": "—"
-      },
-      {
-        "category": "炸板",
-        "name": "通达电气",
-        "boards": "炸板",
-        "theme": "汽车零部件",
-        "reason": "汽车零部件分歧炸板",
-        "seal_yi": null,
-        "amount_yi": null,
-        "turnover_pct": null,
-        "time": "炸板",
-        "date": "2026-10-27",
-        "seal_label": "—",
-        "amt_label": "—",
-        "rate_label": "—"
-      },
-      {
-        "category": "炸板",
-        "name": "新北洋",
-        "boards": "炸板",
-        "theme": "计算机设",
-        "reason": "计算机设备冲高回落",
-        "seal_yi": null,
-        "amount_yi": null,
-        "turnover_pct": null,
-        "time": "炸板",
-        "date": "2026-10-27",
-        "seal_label": "—",
-        "amt_label": "—",
-        "rate_label": "—"
-      },
-      {
-        "category": "炸板",
-        "name": "钧达股份",
-        "boards": "炸板",
-        "theme": "光伏设备",
-        "reason": "光伏设备冲高回落",
-        "seal_yi": null,
-        "amount_yi": null,
-        "turnover_pct": null,
-        "time": "炸板",
-        "date": "2026-10-27",
-        "seal_label": "—",
-        "amt_label": "—",
-        "rate_label": "—"
-      },
-      {
-        "category": "炸板",
-        "name": "万里扬",
-        "boards": "炸板",
-        "theme": "汽车零部件",
-        "reason": "汽车零部件分歧炸板",
-        "seal_yi": null,
-        "amount_yi": null,
-        "turnover_pct": null,
-        "time": "炸板",
-        "date": "2026-10-27",
-        "seal_label": "—",
-        "amt_label": "—",
-        "rate_label": "—"
-      },
-      {
-        "category": "炸板",
-        "name": "方正电机",
-        "boards": "炸板",
-        "theme": "电机Ⅱ",
-        "reason": "电机板块分歧炸板",
-        "seal_yi": null,
-        "amount_yi": null,
-        "turnover_pct": null,
-        "time": "炸板",
-        "date": "2026-10-27",
-        "seal_label": "—",
-        "amt_label": "—",
-        "rate_label": "—"
-      },
-      {
-        "category": "炸板",
-        "name": "润建股份",
-        "boards": "炸板",
-        "theme": "通信服务",
-        "reason": "通信服务冲高回落",
-        "seal_yi": null,
-        "amount_yi": null,
-        "turnover_pct": null,
-        "time": "炸板",
-        "date": "2026-10-27",
-        "seal_label": "—",
-        "amt_label": "—",
-        "rate_label": "—"
-      },
-      {
-        "category": "炸板",
-        "name": "国新能源",
-        "boards": "炸板",
-        "theme": "燃气Ⅱ",
-        "reason": "燃气板块冲高回落",
-        "seal_yi": null,
-        "amount_yi": null,
-        "turnover_pct": null,
-        "time": "炸板",
-        "date": "2026-10-27",
-        "seal_label": "—",
-        "amt_label": "—",
-        "rate_label": "—"
-      },
-      {
-        "category": "炸板",
-        "name": "福晶科技",
-        "boards": "炸板",
-        "theme": "光学光电",
-        "reason": "光学元件冲高回落",
-        "seal_yi": null,
-        "amount_yi": null,
-        "turnover_pct": null,
-        "time": "炸板",
-        "date": "2026-10-27",
-        "seal_label": "—",
-        "amt_label": "—",
-        "rate_label": "—"
-      },
-      {
-        "category": "炸板",
-        "name": "天地在线",
-        "boards": "炸板",
-        "theme": "广告营销",
-        "reason": "广告营销冲高回落",
-        "seal_yi": null,
-        "amount_yi": null,
-        "turnover_pct": null,
-        "time": "炸板",
-        "date": "2026-10-27",
-        "seal_label": "—",
-        "amt_label": "—",
-        "rate_label": "—"
-      },
-      {
-        "category": "炸板",
-        "name": "光华科技",
-        "boards": "炸板",
-        "theme": "电子化学",
-        "reason": "电子化学品冲高回落",
-        "seal_yi": null,
-        "amount_yi": null,
-        "turnover_pct": null,
-        "time": "炸板",
-        "date": "2026-10-27",
-        "seal_label": "—",
-        "amt_label": "—",
-        "rate_label": "—"
-      },
-      {
-        "category": "炸板",
-        "name": "日出东方",
-        "boards": "炸板",
-        "theme": "厨卫电器",
-        "reason": "厨卫电器冲高回落",
-        "seal_yi": null,
-        "amount_yi": null,
-        "turnover_pct": null,
-        "time": "炸板",
-        "date": "2026-10-27",
-        "seal_label": "—",
-        "amt_label": "—",
-        "rate_label": "—"
-      },
-      {
-        "category": "炸板",
-        "name": "八方股份",
-        "boards": "炸板",
-        "theme": "电机Ⅱ",
-        "reason": "电机板块冲高回落",
-        "seal_yi": null,
-        "amount_yi": null,
-        "turnover_pct": null,
-        "time": "炸板",
-        "date": "2026-10-27",
-        "seal_label": "—",
-        "amt_label": "—",
-        "rate_label": "—"
-      },
-      {
-        "category": "炸板",
-        "name": "太阳电缆",
-        "boards": "炸板",
-        "theme": "电网设备",
-        "reason": "电网设备冲高回落",
-        "seal_yi": null,
-        "amount_yi": null,
-        "turnover_pct": null,
-        "time": "炸板",
-        "date": "2026-10-27",
-        "seal_label": "—",
-        "amt_label": "—",
-        "rate_label": "—"
-      },
-      {
-        "category": "炸板",
-        "name": "百大集团",
-        "boards": "炸板",
-        "theme": "一般零售",
-        "reason": "零售概念分歧，尾盘炸板（14:47封板未守住）",
-        "seal_yi": null,
-        "amount_yi": null,
-        "turnover_pct": null,
-        "time": "炸板",
-        "date": "2026-10-27",
-        "seal_label": "—",
-        "amt_label": "—",
-        "rate_label": "—"
-      }
-    ],
-    "close:mainlines": [
+    "mid:mainlines": [
       {
         "tier": "主线",
-        "name": "零售/新消费（缩圈抱团核心）",
-        "logic": "上海九百开盘1分钟拉涨停录得5连板（10月20日以来6连阳累计涨幅近65%，上证报），带动茂业商业、广百股份、国芳集团、新华百货、深赛格等多股涨停，多业态零售+2.51%；但百大集团尾盘炸板显示分歧",
-        "stocks": "上海九百（5板）、茂业商业、广百股份、国芳集团、新华百货、深赛格",
-        "date": "2026-10-27"
+        "name": "人形机器人/减速器（物理AI共振）",
+        "logic": "特斯拉Q3财报会首次系统披露Optimus量产时间表：弗里蒙特工厂启动早期生产、规划年产能100万台、约一年爬坡至每周2万台（东方财富）；GTC柏林大会将Physical AI列为核心议题，英伟达升级Isaac平台并推出Cosmos世界模型；上海等地明确人形机器人进厂量化目标；昨日缩圈后重新放量扩散，福莱新材8天5板创历史新高",
+        "stocks": "襄阳轴承（5连板）、福莱新材（8天5板）、兆威机电（8天4板）、光洋股份（3连板）、万向钱潮/锋龙股份（4天3板）、宁波东力/五洲新春/浙江荣泰/安培龙/恒锋工具/双环传动（涨停）、宇树科技-W（+12%）",
+        "date": "2026-10-28"
       },
       {
         "tier": "主线",
-        "name": "机器人/汽车零部件（缩圈抱团）",
-        "logic": "资金选择少数辨识度标的局部缩圈抱团（金融界）：襄阳轴承、赛福天、多伦科技晋级4连板，沪光股份、胜通能源2连板，大洋电机4天2板；横河精密、宏明电子、弘景光电20cm涨停；但三联锻造、万里扬、万安科技、浙江世宝等7只汽车零部件炸板，板块内部分歧加大",
-        "stocks": "襄阳轴承（4板）、赛福天（4板）、多伦科技（4板）、沪光股份（2板）、光洋股份（2板）",
-        "date": "2026-10-27"
-      },
-      {
-        "tier": "主线",
-        "name": "「羊」字辈玄学抱团",
-        "logic": "短线资金聚焦名字带「羊（洋/阳）」音的玄学炒作（金融界）：海洋王反包涨停走出8天7板，襄阳轴承4连板，光洋股份、阳光乳业2连板，大洋电机4天2板",
-        "stocks": "海洋王（8天7板）、襄阳轴承（4板）、阳光乳业（2板）、光洋股份（2板）、大洋电机",
-        "date": "2026-10-27"
+        "name": "半导体/AI硬件（超跌反抽）",
+        "logic": "昨日重挫（科创50 -4.81%）后抄底资金回流：CPO、PCB指数涨超2%，存储芯片/光刻机指数涨超1.7%（证券时报）；盈方微直线涨停封单一度超70万手；但CPO冲高回落（共进股份）、方正科技炸板，内部分歧未消，反抽持续性午后待验证",
+        "stocks": "盈方微（直线涨停）、君正股份（+12%）、朗科科技（+9%）、兆易创新、金安国纪（一字板）、新易盛、中际旭创、天孚通信",
+        "date": "2026-10-28"
       },
       {
         "tier": "支线",
-        "name": "银行/高股息防御",
-        "logic": "31个申万一级行业中仅银行收涨+1.23%（证券日报），沪农商行+4.22%创年内新高、重庆银行+3.72%，工商银行、建设银行盘中创历史新高，避险资金集中抱团",
-        "stocks": "沪农商行、重庆银行、工商银行、建设银行",
-        "date": "2026-10-27"
-      },
-      {
-        "tier": "支线",
-        "name": "海运/航运",
-        "logic": "航运+1.45%行业涨幅居前，中谷物流涨停；36氪：海运股走强，与银行同为今日少数逆势方向",
-        "stocks": "中谷物流",
-        "date": "2026-10-27"
+        "name": "AI应用（漫剧/制药）",
+        "logic": "AI应用端高低切轮动：AI漫剧文投控股2连板、掌阅科技涨停（慈文传媒昨日跌停后题材内部切换）；AI制药百普赛斯、义翘神州均涨超11%（财联社），算力之外的AI应用开始补涨",
+        "stocks": "文投控股（2连板）、掌阅科技（涨停）、百普赛斯（+11%）、义翘神州（+11%）",
+        "date": "2026-10-28"
       },
       {
         "tier": "轮动",
-        "name": "会展/化工局部（聚氨酯/粘胶）",
-        "logic": "会展服务+4.06%为全天最强二级行业（兰生股份炸板未能封住），聚氨酯+3.28%、粘胶+2.67%局部活跃；国统股份（水泥）、亚玛顿（光伏）零星首板",
-        "stocks": "国统股份、亚玛顿、江顺科技",
-        "date": "2026-10-27"
+        "name": "汽车零部件（机器人外溢）",
+        "logic": "机器人产业链外溢至汽车零部件：福赛科技、豪恩汽电等多股涨停（人民财讯），与减速器/丝杠方向联动",
+        "stocks": "福赛科技（涨停）、豪恩汽电（涨停）",
+        "date": "2026-10-28"
       },
       {
-        "tier": "退潮",
-        "name": "AI应用/科技成长（高位重挫）",
-        "logic": "昨日5连板总龙头慈文传媒因三季报营收同比下滑89.67%跌停（换手39.65%、成交17.31亿，证券时报），紫光国微跌停、理工导航跌超13%、协创数据跌超10%（36氪）；半导体设备-6.14%、软件开发-4.57%、国防军工-4.16%，科技成长全线重挫",
-        "stocks": "慈文传媒（跌停）、紫光国微（跌停）、华正新材（2连跌停）",
-        "date": "2026-10-27"
+        "tier": "轮动",
+        "name": "防御抱团退潮（白酒/银行/海运/油气）",
+        "logic": "昨日避险方向集体回吐：酿酒板块调整，海运、石油天然气、银行、证券、非银金融跌幅居前（人民财讯/界面新闻）；资金从防御切回科技进攻，风格再平衡",
+        "stocks": "白酒、银行、证券、海运、油气（板块调整）",
+        "date": "2026-10-28"
       }
     ],
-    "close:themes": [
+    "mid:themes": [
       {
         "rank": 1,
-        "name": "零售/新消费",
+        "name": "人形机器人/减速器",
         "stars": 5,
-        "status": "新（龙头晋级）",
-        "stocks": "上海九百（5板）、茂业商业、广百股份、国芳集团、新华百货",
+        "status": "新",
+        "stocks": "襄阳轴承（5连板）、福莱新材（8天5板创新高）、兆威机电（8天4板）、光洋股份（3连板）、安培龙/恒锋工具（涨停）",
         "stars_label": "★★★★★",
-        "date": "2026-10-27"
+        "date": "2026-10-28"
       },
       {
         "rank": 2,
-        "name": "机器人/汽车零部件",
+        "name": "半导体/存储",
         "stars": 4,
-        "status": "分歧（缩圈+批量炸板）",
-        "stocks": "襄阳轴承（4板）、赛福天（4板）、多伦科技（4板） vs 三联锻造等7只汽车零部件炸板",
+        "status": "新",
+        "stocks": "盈方微（直线涨停，封单超70万手）、君正股份+12%、朗科科技+9%、兆易创新跟涨",
         "stars_label": "★★★★☆",
-        "date": "2026-10-27"
+        "date": "2026-10-28"
       },
       {
         "rank": 3,
-        "name": "「羊」字辈玄学",
-        "stars": 4,
-        "status": "旧（延续抱团）",
-        "stocks": "海洋王（8天7板）、襄阳轴承（4板）、阳光乳业（2板）、大洋电机",
-        "stars_label": "★★★★☆",
-        "date": "2026-10-27"
+        "name": "CPO/PCB",
+        "stars": 3,
+        "status": "分歧",
+        "stocks": "金安国纪一字板、新易盛/中际旭创/天孚通信跟涨；共进股份冲高回落、方正科技炸板",
+        "stars_label": "★★★☆☆",
+        "date": "2026-10-28"
       },
       {
         "rank": 4,
-        "name": "银行/高股息",
+        "name": "AI漫剧",
         "stars": 3,
-        "status": "旧（防御扩散）",
-        "stocks": "沪农商行+4.22%、工行建行盘中新高，申万一级唯一收涨",
+        "status": "旧",
+        "stocks": "文投控股（2连板）、掌阅科技（涨停）",
         "stars_label": "★★★☆☆",
-        "date": "2026-10-27"
+        "date": "2026-10-28"
       },
       {
         "rank": 5,
-        "name": "海运/航运",
+        "name": "AI制药",
         "stars": 3,
         "status": "新",
-        "stocks": "中谷物流涨停、航运+1.45%",
+        "stocks": "百普赛斯、义翘神州（+11%）",
         "stars_label": "★★★☆☆",
-        "date": "2026-10-27"
+        "date": "2026-10-28"
       },
       {
         "rank": 6,
-        "name": "会展/化工局部",
-        "stars": 2,
+        "name": "汽车零部件",
+        "stars": 3,
         "status": "新",
-        "stocks": "会展服务+4.06%、聚氨酯+3.28%、粘胶+2.67%",
-        "stars_label": "★★☆☆☆",
-        "date": "2026-10-27"
+        "stocks": "福赛科技、豪恩汽电（涨停）",
+        "stars_label": "★★★☆☆",
+        "date": "2026-10-28"
       },
       {
         "rank": 7,
-        "name": "AI应用/短剧",
+        "name": "酿酒/银行/证券",
         "stars": 1,
         "status": "退潮",
-        "stocks": "慈文传媒跌停（5板断板）、华正新材2连跌停",
+        "stocks": "酿酒调整，银行、证券、非银金融跌幅居前（人民财讯/界面新闻）",
         "stars_label": "★☆☆☆☆",
-        "date": "2026-10-27"
+        "date": "2026-10-28"
       },
       {
         "rank": 8,
-        "name": "半导体/军工",
+        "name": "海运/油气",
         "stars": 1,
         "status": "退潮",
-        "stocks": "半导体设备-6.14%、紫光国微跌停、航空装备Ⅱ-5.13%",
+        "stocks": "海运、石油天然气跌幅居前（人民财讯）",
         "stars_label": "★☆☆☆☆",
-        "date": "2026-10-27"
+        "date": "2026-10-28"
       }
     ],
-    "close:newsMidday": [
-      {
-        "tag": "数据",
-        "source": "证券日报",
-        "title": "沪深北三市成交约1.47万亿元，银行板块上涨1.23%",
-        "detail": "31个申万一级行业中仅银行上涨（+1.23%）、交通运输收平；沪农商行+4.22%创年内新高、重庆银行+3.72%",
-        "date": "2026-10-27"
-      },
-      {
-        "tag": "数据",
-        "source": "上海证券报",
-        "title": "沪指收跌1.33% 银行、零售板块走强",
-        "detail": "上证指数报3648.30点跌1.33%，深证成指-2.50%、创业板指-3.41%；工商银行、建设银行盘中创历史新高，零售板块茂业商业等活跃",
-        "date": "2026-10-27"
-      },
-      {
-        "tag": "催化",
-        "source": "人民财讯（新浪财经）",
-        "title": "收评：三大指数高开低走，银行板块逆势走强",
-        "detail": "上证指数-1.33%、深证成指-2.5%、创业板指-3.41%，银行逆势走强",
-        "date": "2026-10-27"
-      },
-      {
-        "tag": "风险",
-        "source": "华夏时报",
-        "title": "A股尾盘跳水、量能萎缩，超4900只个股下跌",
-        "detail": "机构称内部信心不足是主因，市场悲观情绪较浓",
-        "date": "2026-10-27"
-      },
+    "mid:newsMidday": [
       {
         "tag": "数据",
         "source": "财联社",
-        "title": "连板股晋级率26.67%，海洋王走出8天7板",
-        "detail": "今日共41股涨停、连板股12只（三连板及以上4只），上一交易日15只连板股，晋级率26.67%（不含ST股、退市股）",
-        "date": "2026-10-27"
+        "title": "午评：创业板指半日涨3%，两市半日成交1.01万亿",
+        "detail": "市场高开回落后再度震荡走强，创业板指涨3%、深成指涨近2%；沪深两市半日成交额1.01万亿，较上个交易日同期放量1437亿；全市场近4500只个股上涨",
+        "date": "2026-10-28"
+      },
+      {
+        "tag": "数据",
+        "source": "界面新闻",
+        "title": "午间涨跌停：80只涨停、1只跌停",
+        "detail": "截至午盘全市场4498只上涨、916只下跌；减速器、物理AI、人形机器人、半导体、非金属材料、通用设备涨幅居前，白酒、家禽、水产、银行、证券、非银金融跌幅居前",
+        "date": "2026-10-28"
+      },
+      {
+        "tag": "催化",
+        "source": "东方财富",
+        "title": "人形机器人赛道批量涨停，宇树科技重返700元",
+        "detail": "特斯拉Q3财报电话会首次系统披露Optimus量产时间表：弗里蒙特工厂启动早期生产、规划年产能100万台、约一年爬坡至每周2万台；GTC柏林大会将Physical AI列为核心议题",
+        "date": "2026-10-28"
+      },
+      {
+        "tag": "事件",
+        "source": "财联社",
+        "title": "福莱新材8天5板创历史新高",
+        "detail": "人形机器人概念日内涨势扩大，此前恒工精密、宁波东力、五洲新春、万向钱潮、东贝集团等十余股涨停，安培龙、精锻科技、斯菱智驱、上纬新材均涨超10%",
+        "date": "2026-10-28"
+      },
+      {
+        "tag": "催化",
+        "source": "证券时报",
+        "title": "AI产业链领涨，CPO、PCB指数涨超2%",
+        "detail": "存储芯片指数、光刻机指数涨超1.7%；盈方微盘中直线涨停、封单一度超70万手，君正股份涨超12%、朗科科技涨超9%，新易盛、中际旭创、天孚通信跟涨",
+        "date": "2026-10-28"
       },
       {
         "tag": "风险",
-        "source": "证券时报（e公司）",
-        "title": "五连板牛股第三季度营收不足百万，跌停开盘",
-        "detail": "慈文传媒跌停开盘、封单一度超40万手后打开；前三季度营收1990.12万元同比下滑89.67%，10月9日以来最高涨幅近100%",
-        "date": "2026-10-27"
-      },
-      {
-        "tag": "数据",
-        "source": "证券时报（龙虎榜）",
-        "title": "慈文传媒换手39.65%，机构净买入3462.54万元",
-        "detail": "全天成交17.31亿元、振幅14.17%，营业部席位合计净买入1.27亿元",
-        "date": "2026-10-27"
+        "source": "财联社",
+        "title": "CPO冲高回落，AI硬件内部分歧",
+        "detail": "PCB金安国纪一字涨停，而方正科技炸板回落、共进股份冲高回落；超跌反抽的持续性午后待验证",
+        "date": "2026-10-28"
       },
       {
         "tag": "催化",
-        "source": "36氪",
-        "title": "航天军工、电脑硬件、半导体下挫，海运银行走强",
-        "detail": "紫光国微跌停、理工导航跌超13%、协创数据跌超10%；中谷物流涨停，工商银行、建设银行股价再创新高",
-        "date": "2026-10-27"
+        "source": "财联社",
+        "title": "AI漫剧活跃、AI制药走强",
+        "detail": "文投控股2连板、掌阅科技涨停；AI制药百普赛斯、义翘神州均涨超11%，AI应用端开始补涨轮动",
+        "date": "2026-10-28"
       },
       {
-        "tag": "催化",
-        "source": "上海证券报",
-        "title": "1分钟拉涨停，上海九百五连板",
-        "detail": "零售股上海九百开盘1分钟涨停报13.31元，10月20日以来6个交易日上涨、累计涨幅接近65%",
-        "date": "2026-10-27"
+        "tag": "利空",
+        "source": "证券时报（人民财讯）",
+        "title": "酿酒调整，海运、石油天然气、银行跌幅居前",
+        "detail": "昨日避险抱团方向集体回吐，资金切回科技进攻；半导体、元器件、工业母机概念涨幅居前",
+        "date": "2026-10-28"
       },
       {
         "tag": "数据",
-        "source": "证券之星",
-        "title": "多伦科技4连板，北向净卖出2337.95万元",
-        "detail": "多伦科技收9.85元涨10.06%、4连板、换手11.65%、成交8.1亿元；沪光股份2连板获北向3日净买入128.7万元",
-        "date": "2026-10-27"
+        "source": "界面新闻",
+        "title": "连板梯队：机器人军团批量晋级",
+        "detail": "襄阳轴承5连板、光洋股份3连板、兆威机电8天4板、万向钱潮/锋龙股份4天3板、大丰实业4天2板、上纬新材3天2板，减速器概念双环传动、宁波东力等涨停",
+        "date": "2026-10-28"
       }
     ],
-    "close:watchpoints": [
+    "mid:watchpoints": [
       {
         "idx": 1,
         "cat": "主线跟踪",
-        "text": "上海九百5板为全场最高板兼零售总龙头，明日竞价强弱决定零售线持续性",
-        "date": "2026-10-27"
+        "text": "机器人梯队晋级确认：襄阳轴承5→6板封单强度、福莱新材8天5板能否续创新高决定题材高度；宁波东力/五洲新春/浙江荣泰等首板回封质量",
+        "date": "2026-10-28"
       },
       {
         "idx": 2,
         "cat": "主线跟踪",
-        "text": "机器人缩圈抱团（襄阳轴承/赛福天/多伦科技4板）断板即退潮确认；板块今日炸板已达7家，分歧放大",
-        "date": "2026-10-27"
+        "text": "半导体反抽定性：盈方微封单能否守住；CPO（新易盛/中际旭创）午后若继续冲高回落，则定性为超跌反抽而非反转",
+        "date": "2026-10-28"
       },
       {
         "idx": 3,
         "cat": "只卖不买",
-        "text": "AI应用/短剧高位股（慈文传媒跌停、众生药业跌停），反抽无力继续兑现",
-        "date": "2026-10-27"
+        "text": "昨日防御抱团方向（白酒/银行/家禽水产）反抽减仓——资金已切回进攻，修复弱于大盘即兑现",
+        "date": "2026-10-28"
       },
       {
         "idx": 4,
-        "cat": "风险监控",
-        "text": "科技成长（半导体设备-6.14%、软件-4.57%、军工-4.16%）趋势走坏，超4900股下跌，左侧勿急于抄底",
-        "date": "2026-10-27"
+        "cat": "观望",
+        "text": "AI漫剧仅轮动脉冲（文投控股2连板、掌阅科技涨停），慈文传媒昨日跌停后题材内部高低切，勿追高位",
+        "date": "2026-10-28"
       },
       {
         "idx": 5,
         "cat": "低吸观察",
-        "text": "银行/高股息避险扩散（申万一级唯一收涨，工行建行新高），若继续放量可确认防御风格",
-        "date": "2026-10-27"
+        "text": "机器人低位二线（减速器/丝杠/电机）午后回踩缩量可观察低吸，避开5板以上高位标的",
+        "date": "2026-10-28"
       },
       {
         "idx": 6,
-        "cat": "数据",
-        "text": "晋级率26.7%（4/15）跌破三成至近期低位，情绪冰点区，观察明日修复力度",
-        "date": "2026-10-27"
+        "cat": "风险监控",
+        "text": "创业板指半日+3%高位，午后警惕获利回吐；沪指3700整数关口为压力位，冲高缩量则防回落",
+        "date": "2026-10-28"
       },
       {
         "idx": 7,
         "cat": "数据",
-        "text": "全天成交1.46万亿较昨缩量约1480亿，尾盘跳水+缩量下跌，观望为主",
-        "date": "2026-10-27"
-      }
-    ],
-    "close:promotions": [
+        "text": "半日放量1437亿至1.01万亿确认增量回流，午后若量能持续（全天冲击1.6万亿+）则进攻行情延续，缩量过快则防冲高回落",
+        "date": "2026-10-28"
+      },
       {
-        "yesterday_lianban": 15,
-        "promoted": [
-          "襄阳轴承（3板→4板）",
-          "上海九百（4板→5板）",
-          "赛福天（3板→4板）",
-          "多伦科技（3板→4板）"
-        ],
-        "broken": [
-          "林州重机（3板，跌停）",
-          "正裕工业（3板，跌停）",
-          "万向钱潮（2板断板）",
-          "模塑科技（2板断板）",
-          "创维数字（2板断板）",
-          "锋龙股份（2板断板）",
-          "华阳智能（3板断板）",
-          "大名城（2板断板）",
-          "杰克科技（2板，炸板）",
-          "永创智能（2板断板）",
-          "福莱新材（2板断板）"
-        ],
-        "rate": 26.7,
-        "verify": "收盘口径经 TuShare limit_list_d（10-26 与 10-27 涨停名单 limit_times 交叉验证）；与财联社「连板股晋级率26.67%（不含ST股、退市股）」报道一致",
-        "date": "2026-10-27"
+        "idx": 8,
+        "cat": "数据",
+        "text": "北京时间周四凌晨美联储议息决议落地（市场预期按兵不动、焦点12月路径指引），会前午后勿重仓押注单边",
+        "date": "2026-10-28"
       }
     ]
   }
