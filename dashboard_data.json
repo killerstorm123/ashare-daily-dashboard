@@ -2,13 +2,15 @@
   "title": "A股盘面每日跟踪看板",
   "subtitle": "午盘/收盘双快照 · 情绪周期 · 主线梯队 · 复盘清单",
   "timezone": "Asia/Shanghai",
-  "tradeDate": "2026-11-19",
-  "generatedAt": "2026-11-19T20:16:13+08:00",
+  "tradeDate": "2026-11-20",
+  "generatedAt": "2026-11-20T11:52:23+08:00",
   "freshness": {
-    "latestDataDate": "2026-11-19",
-    "latestCapturedAt": "2026-11-19T20:12:15+08:00",
-    "primarySession": "收盘",
-    "missingSessions": []
+    "latestDataDate": "2026-11-20",
+    "latestCapturedAt": "2026-11-20T11:51:16+08:00",
+    "primarySession": "午盘",
+    "missingSessions": [
+      "收盘总结"
+    ]
   },
   "availableDates": [
     "2026-09-10",
@@ -47,167 +49,77 @@
     "2026-11-12",
     "2026-11-17",
     "2026-11-18",
-    "2026-11-19"
+    "2026-11-19",
+    "2026-11-20"
   ],
   "defaultRange": "ALL",
   "sessionKeys": [
-    "mid",
-    "close"
+    "mid"
   ],
   "sessions": {
     "mid": {
       "key": "mid",
       "label": "午盘总结",
       "sessionLabel": "午盘",
-      "snapshotDate": "2026-11-19",
-      "capturedAt": "2026-11-19T11:54:00+08:00",
+      "snapshotDate": "2026-11-20",
+      "capturedAt": "2026-11-20T11:51:16+08:00",
       "cutoff": "11:30",
       "sentiment": {
-        "score": 22.4,
-        "phase": "回暖 · 试错期",
-        "breadth": 16.2,
-        "net_limit": 2.2,
-        "seal": null,
-        "height": 42.9,
-        "volume": 47.4
-      },
-      "stats": {
-        "lu": 23,
-        "ld": 22,
-        "zb": null,
-        "mb": 3,
-        "stock": "盛剑科技、全筑股份"
-      },
-      "kpis": [
-        {
-          "id": "kpi-sh",
-          "label": "上证指数",
-          "value": "3,571.99",
-          "delta": "-0.44%",
-          "delta_class": "down",
-          "detail": "昨收 3,587.83"
-        },
-        {
-          "id": "kpi-sz",
-          "label": "深证成指",
-          "value": "10,604.52",
-          "delta": "-0.51%",
-          "delta_class": "down",
-          "detail": "深市锚点"
-        },
-        {
-          "id": "kpi-cyb",
-          "label": "创业板指",
-          "value": "2,297.02",
-          "delta": "-0.63%",
-          "delta_class": "down",
-          "detail": "两市最弱宽基"
-        },
-        {
-          "id": "kpi-kc",
-          "label": "科创50",
-          "value": "1,260.28",
-          "delta": "+0.98%",
-          "delta_class": "down",
-          "detail": "沪深300 3,964.17 (-0.49%)"
-        },
-        {
-          "id": "kpi-amt",
-          "label": "成交额",
-          "value": "7,859 亿",
-          "delta": "较昨同期 -69 亿",
-          "delta_class": "",
-          "detail": "较昨同期缩量 · 关注午后承接"
-        },
-        {
-          "id": "kpi-breadth",
-          "label": "涨跌家数",
-          "value": "890 / 4592",
-          "delta": "上涨占比 16.2%",
-          "delta_class": "down",
-          "detail": "超5000只普跌 · 结构市"
-        },
-        {
-          "id": "kpi-limit",
-          "label": "涨停 / 跌停",
-          "value": "23 / 22",
-          "delta": "封板率待收盘补全",
-          "delta_class": "",
-          "detail": "炸板家数午间未披露"
-        },
-        {
-          "id": "kpi-phase",
-          "label": "情绪周期",
-          "value": "回暖 · 试错期",
-          "delta": "22.4 / 100",
-          "delta_class": "",
-          "detail": "最高 3 板（盛剑科技、全筑股份）"
-        }
-      ]
-    },
-    "close": {
-      "key": "close",
-      "label": "收盘总结",
-      "sessionLabel": "收盘",
-      "snapshotDate": "2026-11-19",
-      "capturedAt": "2026-11-19T20:12:15+08:00",
-      "cutoff": "15:00",
-      "sentiment": {
-        "score": 9.2,
-        "phase": "冰点 · 退潮末端",
+        "score": 70.2,
+        "phase": "发酵 · 主升期",
         "breadth": null,
-        "net_limit": -49.5,
-        "seal": 49,
-        "height": 42.9,
-        "volume": null
+        "net_limit": 67.6,
+        "seal": null,
+        "height": null,
+        "volume": 76.7
       },
       "stats": {
-        "lu": 23,
-        "ld": 68,
-        "zb": 24,
-        "mb": 3,
-        "stock": "真视通/全筑股份/盛剑科技"
+        "lu": 31,
+        "ld": 6,
+        "zb": null,
+        "mb": null,
+        "stock": null
       },
       "kpis": [
         {
           "id": "kpi-sh",
           "label": "上证指数",
-          "value": "3,577.62",
-          "delta": "-0.28%",
+          "value": "3,521.40",
+          "delta": "-1.57%",
           "delta_class": "down",
-          "detail": "昨收 3,587.83"
+          "detail": "昨收 3,577.62"
         },
         {
           "id": "kpi-sz",
           "label": "深证成指",
-          "value": "10,583.20",
-          "delta": "-0.71%",
+          "value": "10,365.76",
+          "delta": "-2.05%",
           "delta_class": "down",
           "detail": "深市锚点"
         },
         {
           "id": "kpi-cyb",
           "label": "创业板指",
-          "value": "2,293.34",
-          "delta": "-0.79%",
+          "value": "2,245.61",
+          "delta": "-2.08%",
           "delta_class": "down",
           "detail": "两市最弱宽基"
         },
         {
           "id": "kpi-kc",
           "label": "科创50",
-          "value": "1,270.78",
-          "delta": "+1.83%",
+          "value": "1,236.38",
+          "delta": "-2.71%",
           "delta_class": "down",
-          "detail": "北证50 -3.99% · 沪深300 3,984.84 (+0.03%)"
+          "detail": "沪深300 3,916.96 (-1.70%)"
         },
         {
           "id": "kpi-amt",
           "label": "成交额",
-          "value": "13,051 亿",
-          "delta": "全天口径",
+          "value": "8,558 亿",
+          "delta": "较昨同期 +699 亿",
           "delta_class": "",
-          "detail": "量能对照见趋势图"
+          "detail": "放量但普跌 · 存量博弈"
         },
         {
           "id": "kpi-breadth",
@@ -220,18 +132,18 @@
         {
           "id": "kpi-limit",
           "label": "涨停 / 跌停",
-          "value": "23 / 68",
-          "delta": "封板率 49%",
+          "value": "31 / 6",
+          "delta": "封板率待收盘补全",
           "delta_class": "",
-          "detail": "炸板 24 家 · 炸板率 51%"
+          "detail": "炸板家数午间未披露"
         },
         {
           "id": "kpi-phase",
           "label": "情绪周期",
-          "value": "冰点 · 退潮末端",
-          "delta": "9.2 / 100",
+          "value": "发酵 · 主升期",
+          "delta": "70.2 / 100",
           "delta_class": "",
-          "detail": "最高 3 板（真视通/全筑股份/盛剑科技）"
+          "detail": "连板高度待收盘补全"
         }
       ]
     }
@@ -598,1304 +510,550 @@
         "sh_close": 3577.62,
         "sh_pct": -0.28,
         "amount_yi": 13051,
-        "captured_at": "2026-11-19T20:12:15+08:00",
+        "captured_at": "2026-10-15T12:30:00+08:00",
         "limit_up": 23,
         "limit_down": 68,
-        "zhaban": 24,
-        "fengban_rate": 49,
-        "max_boards": 3,
-        "max_board_stock": "真视通/全筑股份/盛剑科技"
+        "zhaban": 24
+      },
+      {
+        "date": "2026-11-20",
+        "session": "midday",
+        "sh_close": 3521.4,
+        "sh_pct": -1.57,
+        "amount_yi": 8558,
+        "turnover_delta_yi": 699,
+        "limit_up": 31,
+        "limit_down": 6,
+        "captured_at": "2026-11-20T11:51:16+08:00",
+        "source_note": "指数与成交额：东财实时接口11:45定格半日收盘（沪4039.89亿+深4517.79亿）；涨停31/跌停6：界面新闻午间涨跌停分析；炸板数午间接口无数据，zhaban/fengban_rate/max_boards省略；rt_idx_k接口无权限，改用东财实时行情"
       }
     ],
+    "mid:ladderDist": [
+      {
+        "date": "2026-11-20",
+        "label": "首板",
+        "count": 12
+      },
+      {
+        "date": "2026-11-20",
+        "label": "2板",
+        "count": 5
+      }
+    ],
+    "mid:lianban": [
+      {
+        "category": "连板",
+        "name": "北纬科技",
+        "boards": "8天6板",
+        "theme": "机器人/物联网",
+        "reason": "宇树合作+机器狗+游戏+低空经济（韭研公社）；参股天宇经纬30.33%四足机器人云盒，华为云具身世界模型发布会合作预期，物联网主业收入占比75%+（新浪涨停分析）",
+        "seal_yi": null,
+        "amount_yi": null,
+        "turnover_pct": null,
+        "time": "",
+        "date": "2026-11-20",
+        "seal_label": "—",
+        "amt_label": "—",
+        "rate_label": "—"
+      },
+      {
+        "category": "连板",
+        "name": "真视通",
+        "boards": "4连板",
+        "theme": "华为算力",
+        "reason": "昇腾模型双榜登顶+华为云具身发布会预期，开盘1分钟直线涨停（证券时报，报15.82元）",
+        "seal_yi": null,
+        "amount_yi": null,
+        "turnover_pct": null,
+        "time": "",
+        "date": "2026-11-20",
+        "seal_label": "—",
+        "amt_label": "—",
+        "rate_label": "—"
+      },
+      {
+        "category": "连板",
+        "name": "好当家",
+        "boards": "7天4板",
+        "theme": "水产",
+        "reason": "水产概念活跃（界面新闻午间涨跌停分析）",
+        "seal_yi": null,
+        "amount_yi": null,
+        "turnover_pct": null,
+        "time": "",
+        "date": "2026-11-20",
+        "seal_label": "—",
+        "amt_label": "—",
+        "rate_label": "—"
+      },
+      {
+        "category": "连板",
+        "name": "中京电子",
+        "boards": "2连板",
+        "theme": "PCB",
+        "reason": "PCB概念逆势活跃（央广网/网易午间报道）",
+        "seal_yi": null,
+        "amount_yi": null,
+        "turnover_pct": null,
+        "time": "",
+        "date": "2026-11-20",
+        "seal_label": "—",
+        "amt_label": "—",
+        "rate_label": "—"
+      },
+      {
+        "category": "连板",
+        "name": "*ST发展",
+        "boards": "2连板",
+        "theme": "ST股",
+        "reason": "界面新闻午间涨跌停分析列入连板（题材未披露）",
+        "seal_yi": null,
+        "amount_yi": null,
+        "turnover_pct": null,
+        "time": "",
+        "date": "2026-11-20",
+        "seal_label": "—",
+        "amt_label": "—",
+        "rate_label": "—"
+      }
+    ],
+    "mid:shouban": [
+      {
+        "category": "首板",
+        "name": "超声电子",
+        "boards": "首板",
+        "theme": "PCB",
+        "reason": "PCB概念逆势涨停（界面新闻/央广网）",
+        "seal_yi": null,
+        "amount_yi": null,
+        "turnover_pct": null,
+        "time": "",
+        "date": "2026-11-20",
+        "seal_label": "—",
+        "amt_label": "—",
+        "rate_label": "—"
+      },
+      {
+        "category": "首板",
+        "name": "光华科技",
+        "boards": "首板",
+        "theme": "PCB化学品",
+        "reason": "PCB链涨停（界面新闻午间涨跌停分析）",
+        "seal_yi": null,
+        "amount_yi": null,
+        "turnover_pct": null,
+        "time": "",
+        "date": "2026-11-20",
+        "seal_label": "—",
+        "amt_label": "—",
+        "rate_label": "—"
+      },
+      {
+        "category": "首板",
+        "name": "澳弘电子",
+        "boards": "首板",
+        "theme": "PCB",
+        "reason": "PCB概念逆势涨停（央广网/网易）",
+        "seal_yi": null,
+        "amount_yi": null,
+        "turnover_pct": null,
+        "time": "",
+        "date": "2026-11-20",
+        "seal_label": "—",
+        "amt_label": "—",
+        "rate_label": "—"
+      },
+      {
+        "category": "首板",
+        "name": "满坤科技",
+        "boards": "首板",
+        "theme": "PCB",
+        "reason": "PCB概念20cm涨停（央广网/网易）",
+        "seal_yi": null,
+        "amount_yi": null,
+        "turnover_pct": null,
+        "time": "",
+        "date": "2026-11-20",
+        "seal_label": "—",
+        "amt_label": "—",
+        "rate_label": "—"
+      },
+      {
+        "category": "首板",
+        "name": "龙版传媒",
+        "boards": "首板",
+        "theme": "出版/AI漫剧",
+        "reason": "出版板块走强+AI漫剧概念震荡回升（界面新闻/新浪午评）",
+        "seal_yi": null,
+        "amount_yi": null,
+        "turnover_pct": null,
+        "time": "",
+        "date": "2026-11-20",
+        "seal_label": "—",
+        "amt_label": "—",
+        "rate_label": "—"
+      },
+      {
+        "category": "首板",
+        "name": "华媒控股",
+        "boards": "首板",
+        "theme": "AI漫剧/传媒",
+        "reason": "AI漫剧概念震荡回升涨停（网易午间报道）",
+        "seal_yi": null,
+        "amount_yi": null,
+        "turnover_pct": null,
+        "time": "",
+        "date": "2026-11-20",
+        "seal_label": "—",
+        "amt_label": "—",
+        "rate_label": "—"
+      },
+      {
+        "category": "首板",
+        "name": "克来机电",
+        "boards": "首板",
+        "theme": "机器人",
+        "reason": "机器人概念盘中局部异动涨停（央广网/网易）",
+        "seal_yi": null,
+        "amount_yi": null,
+        "turnover_pct": null,
+        "time": "",
+        "date": "2026-11-20",
+        "seal_label": "—",
+        "amt_label": "—",
+        "rate_label": "—"
+      },
+      {
+        "category": "首板",
+        "name": "长华集团",
+        "boards": "首板",
+        "theme": "机器人/汽车零部件",
+        "reason": "机器人概念盘中局部异动涨停（央广网/网易）",
+        "seal_yi": null,
+        "amount_yi": null,
+        "turnover_pct": null,
+        "time": "",
+        "date": "2026-11-20",
+        "seal_label": "—",
+        "amt_label": "—",
+        "rate_label": "—"
+      },
+      {
+        "category": "首板",
+        "name": "东方海洋",
+        "boards": "首板",
+        "theme": "水产",
+        "reason": "水产概念活跃涨停（界面新闻）",
+        "seal_yi": null,
+        "amount_yi": null,
+        "turnover_pct": null,
+        "time": "",
+        "date": "2026-11-20",
+        "seal_label": "—",
+        "amt_label": "—",
+        "rate_label": "—"
+      },
+      {
+        "category": "首板",
+        "name": "金新农",
+        "boards": "首板",
+        "theme": "猪肉",
+        "reason": "猪肉板块震荡拉升涨停（新浪午评）",
+        "seal_yi": null,
+        "amount_yi": null,
+        "turnover_pct": null,
+        "time": "",
+        "date": "2026-11-20",
+        "seal_label": "—",
+        "amt_label": "—",
+        "rate_label": "—"
+      },
+      {
+        "category": "首板",
+        "name": "万向德农",
+        "boards": "首板",
+        "theme": "农业/种业",
+        "reason": "农业板块走强涨停（新浪午评）",
+        "seal_yi": null,
+        "amount_yi": null,
+        "turnover_pct": null,
+        "time": "",
+        "date": "2026-11-20",
+        "seal_label": "—",
+        "amt_label": "—",
+        "rate_label": "—"
+      },
+      {
+        "category": "首板",
+        "name": "凡拓数创",
+        "boards": "首板",
+        "theme": "物理AI",
+        "reason": "物理AI概念局部回暖，20cm涨停（新浪午评）",
+        "seal_yi": null,
+        "amount_yi": null,
+        "turnover_pct": null,
+        "time": "",
+        "date": "2026-11-20",
+        "seal_label": "—",
+        "amt_label": "—",
+        "rate_label": "—"
+      }
+    ],
+    "mid:zhaban": [],
     "mid:mainlines": [
       {
         "tier": "主线",
-        "name": "光刻胶/半导体材料",
-        "logic": "阿斯麦CEO富凯称2028年大量订单涌入、客户欲提前锁定2029-2030年产能；HBM4扩产预期+「三星流片」发酵强化国产替代，格林达开盘1分钟涨停（3天2板）、红宝丽2分钟涨停",
-        "stocks": "格林达（3天2板）、盛剑科技（3连板）、红宝丽、怡达股份、江化微、广信材料",
-        "date": "2026-11-19"
+        "name": "PCB/元件（逆势主线）",
+        "logic": "元件板块领涨、PCB概念逆势活跃（央广网/网易），承接昨日中京电子涨停延续：中京电子2连板，澳弘电子、超声电子涨停，满坤科技20cm涨停，光华科技（PCB化学品）涨停",
+        "stocks": "中京电子（2连板）、超声电子、光华科技、澳弘电子、满坤科技（20cm）",
+        "date": "2026-11-20"
       },
       {
         "tier": "主线",
-        "name": "先进封装/晶圆代工",
-        "logic": "英伟达数十亿美元锁产能（21财经雷达），国产晶圆代工双雄大涨：华虹宏力涨超10%、中芯国际涨超5%；科创50逆势+0.98%、宽基ETF显著放量呼应硬科技",
-        "stocks": "大港股份、蓝箭电子（20cm）、柏诚股份、灿芯股份（20cm）",
-        "date": "2026-11-19"
+        "name": "华为算力/具身智能（局部回暖）",
+        "logic": "昇腾模型双榜登顶+华为云具身世界模型发布会预期，真视通开盘1分钟直线涨停斩获4连板（报15.82元，证券时报/21财经雷达）；荣联科技1分钟涨停、易天股份20cm涨停、华微电子/盛剑科技盘中涨停（10:16口径，午后封板状态待确认）、苏试试验/骏亚科技跟涨",
+        "stocks": "真视通（4连板）、荣联科技、易天股份（20cm）、华微电子、盛剑科技",
+        "date": "2026-11-20"
       },
       {
         "tier": "支线",
-        "name": "PCB/半导体链扩散",
-        "logic": "半导体链扩散行情：光刻机概念、电子化学品、功率半导体涨幅居前，PCB中京电子涨停，承接昨日算力硬件高低切",
-        "stocks": "中京电子、灿芯股份、盛剑科技",
-        "date": "2026-11-19"
+        "name": "AI漫剧/出版（震荡回升）",
+        "logic": "AI漫剧概念盘中震荡回升（新浪午评），出版板块走强（界面新闻）：龙版传媒、华媒控股涨停，果麦文化涨超15%；物理AI概念局部回暖，凡拓数创20cm涨停",
+        "stocks": "龙版传媒、华媒控股、果麦文化（+15%）、凡拓数创（20cm）",
+        "date": "2026-11-20"
       },
       {
         "tier": "支线",
-        "name": "航空机场/出行链",
-        "logic": "机场航运板块逆市走高，出行链防御属性凸显",
-        "stocks": "吉祥航空、中国国航、中国东航",
-        "date": "2026-11-19"
+        "name": "机器人（局部异动）",
+        "logic": "机器人概念盘中局部异动（央广网）：克来机电、长华集团涨停；连板高标北纬科技8天6板（宇树合作+机器狗+物联网，参股天宇经纬30.33%四足机器人，新浪涨停分析：物联网主业收入占比75%+三季报扭亏）",
+        "stocks": "北纬科技（8天6板）、克来机电、长华集团",
+        "date": "2026-11-20"
+      },
+      {
+        "tier": "支线",
+        "name": "农业/水产/猪肉（防御题材轮动）",
+        "logic": "水产概念活跃：好当家7天4板、东方海洋涨停（界面新闻）；猪肉板块震荡拉升金新农涨停、农业板块走强万向德农涨停（新浪午评），元件/猪肉/文化传媒领涨印证防御题材扩散",
+        "stocks": "好当家（7天4板）、东方海洋、金新农、万向德农",
+        "date": "2026-11-20"
       },
       {
         "tier": "轮动",
-        "name": "证券（脉冲）",
-        "logic": "证券板块盘中回暖，国信证券领涨，持续性待观察",
-        "stocks": "国信证券",
-        "date": "2026-11-19"
+        "name": "超跌反抽（临近午盘回暖）",
+        "logic": "市场低开后震荡调整、临近午盘回暖（新浪午评），半日放量约699亿但下跌个股仍超4800只，量增价跌、反抽持续性待午后确认",
+        "stocks": "—",
+        "date": "2026-11-20"
       },
       {
         "tier": "轮动",
-        "name": "酒类/摩托车（防御）",
-        "logic": "普跌日少数翻红方向：摩托车、饮料、酒类逆势上涨，资金避险",
-        "stocks": "摩托车、饮料、酒类个股",
-        "date": "2026-11-19"
+        "name": "贵金属/黄金（崩跌退潮）",
+        "logic": "美国通胀数据超预期后美联储加息预期升温，现货黄金盘中跌破3600美元/盎司、一周连破3900/3800/3700/3600美元、单周累计跌幅接近8%（新浪港股）；A股黄金珠宝指数盘中一度跌超5%（每经），山东黄金、赤峰黄金、紫金矿业等集体深蹲",
+        "stocks": "山东黄金、赤峰黄金、兴业银锡、紫金矿业",
+        "date": "2026-11-20"
+      },
+      {
+        "tier": "轮动",
+        "name": "算力芯片（延续调整）",
+        "logic": "算力芯片概念延续调整态势（央广网）：天普股份录得2连跌停，海光信息等跟跌；黑色家电、白酒板块跌幅居前（同花顺午评：贵金属、白酒跌幅居前）",
+        "stocks": "天普股份（2连跌停）、海光信息",
+        "date": "2026-11-20"
       }
     ],
     "mid:themes": [
       {
         "rank": 1,
-        "name": "光刻胶/半导体材料",
+        "name": "PCB/元件（逆势主线）",
         "stars": 5,
-        "status": "新",
-        "stocks": "格林达（3天2板）、盛剑科技（3连板）、红宝丽",
+        "status": "旧",
+        "stocks": "中京电子（2连板）、超声电子、光华科技、澳弘电子、满坤科技（20cm）",
         "stars_label": "★★★★★",
-        "date": "2026-11-19"
+        "date": "2026-11-20"
       },
       {
         "rank": 2,
-        "name": "先进封装/晶圆代工",
-        "stars": 5,
+        "name": "华为算力/具身智能",
+        "stars": 4,
         "status": "新",
-        "stocks": "大港股份、蓝箭电子（20cm）、柏诚股份；中芯国际+5%、华虹宏力+10%",
-        "stars_label": "★★★★★",
-        "date": "2026-11-19"
+        "stocks": "真视通（4连板）、荣联科技、易天股份（20cm）、华微电子、盛剑科技",
+        "stars_label": "★★★★☆",
+        "date": "2026-11-20"
       },
       {
         "rank": 3,
-        "name": "PCB/电子化学品",
-        "stars": 3,
-        "status": "旧",
-        "stocks": "中京电子（涨停）",
-        "stars_label": "★★★☆☆",
-        "date": "2026-11-19"
+        "name": "机器人（宇树/机器狗链）",
+        "stars": 4,
+        "status": "新",
+        "stocks": "北纬科技（8天6板）、克来机电、长华集团",
+        "stars_label": "★★★★☆",
+        "date": "2026-11-20"
       },
       {
         "rank": 4,
-        "name": "航空机场",
+        "name": "AI漫剧/出版",
         "stars": 3,
-        "status": "新",
-        "stocks": "吉祥航空、中国国航、中国东航",
+        "status": "回暖",
+        "stocks": "龙版传媒、华媒控股、果麦文化（+15%）",
         "stars_label": "★★★☆☆",
-        "date": "2026-11-19"
+        "date": "2026-11-20"
       },
       {
         "rank": 5,
-        "name": "证券",
-        "stars": 2,
-        "status": "旧",
-        "stocks": "国信证券（领涨）",
-        "stars_label": "★★☆☆☆",
-        "date": "2026-11-19"
+        "name": "农业/水产/猪肉",
+        "stars": 3,
+        "status": "新",
+        "stocks": "好当家（7天4板）、东方海洋、金新农、万向德农",
+        "stars_label": "★★★☆☆",
+        "date": "2026-11-20"
       },
       {
         "rank": 6,
-        "name": "酒类/摩托车",
+        "name": "物理AI",
         "stars": 2,
         "status": "新",
-        "stocks": "摩托车、饮料、酒类逆势上涨",
+        "stocks": "凡拓数创（20cm涨停）",
         "stars_label": "★★☆☆☆",
-        "date": "2026-11-19"
+        "date": "2026-11-20"
       },
       {
         "rank": 7,
-        "name": "家电（昨日主线退潮）",
-        "stars": 2,
+        "name": "贵金属/黄金",
+        "stars": 1,
         "status": "退潮",
-        "stocks": "家电板块跌幅居前",
-        "stars_label": "★★☆☆☆",
-        "date": "2026-11-19"
+        "stocks": "山东黄金、赤峰黄金、兴业银锡、紫金矿业重挫；沪金期货跌近6%、沪银跌近9%",
+        "stars_label": "★☆☆☆☆",
+        "date": "2026-11-20"
       },
       {
         "rank": 8,
-        "name": "算力芯片/算力租赁/AI视频",
+        "name": "算力芯片",
         "stars": 1,
         "status": "退潮",
-        "stocks": "天普股份（跌停）、燧原科技触及20cm跌停",
+        "stocks": "天普股份（2连跌停）、海光信息跟跌",
         "stars_label": "★☆☆☆☆",
-        "date": "2026-11-19"
+        "date": "2026-11-20"
       },
       {
         "rank": 9,
-        "name": "AI漫剧/短剧/影视院线",
+        "name": "黑色家电/白酒",
         "stars": 1,
         "status": "退潮",
-        "stocks": "慈文传媒（3连跌停）、文投控股、横店影视、金逸影视（跌停）",
+        "stocks": "黑色家电、白酒板块跌幅居前（同花顺午评）",
         "stars_label": "★☆☆☆☆",
-        "date": "2026-11-19"
-      },
-      {
-        "rank": 10,
-        "name": "冰雪经济/黄金",
-        "stars": 1,
-        "status": "退潮",
-        "stocks": "龙江交通、龙建股份（跌停）；黄金股重挫",
-        "stars_label": "★☆☆☆☆",
-        "date": "2026-11-19"
+        "date": "2026-11-20"
       }
     ],
     "mid:newsMidday": [
       {
         "tag": "数据",
-        "source": "财联社/新浪财经",
-        "title": "午评：三大指数收跌，科创50逆势涨近1%",
-        "detail": "沪指-0.44%、深成指-0.51%、创业板指-0.63%，科创50+0.98%；两市半日成交7858.83亿元、较昨日同期缩量约69亿；全市场890涨/4592跌",
-        "date": "2026-11-19"
+        "source": "新浪财经",
+        "title": "午评：沪指半日跌1.57%报3521.40点，双创跌超2%",
+        "detail": "市场低开后震荡调整、临近午盘回暖；深成指-2.05%、创业板指-2.08%；元件、猪肉、文化传媒板块领涨，贵金属、黑色家电领跌，下跌个股超4800只",
+        "date": "2026-11-20"
       },
       {
         "tag": "数据",
         "source": "界面新闻",
-        "title": "午间涨跌停统计：23只涨停、22只跌停",
-        "detail": "盛剑科技、全筑股份3连板，海立股份、格林达3天2板，华升股份、中嘉博创2连板；*ST启环4连跌停、国统股份/慈文传媒3连跌停、金逸影视/凯撒文化2连跌停",
-        "date": "2026-11-19"
+        "title": "午间涨跌停统计：31只涨停股、6只跌停股",
+        "detail": "连板股：北纬科技8天6板、真视通4连板、中京电子/*ST发展2连板；水产概念活跃，好当家7天4板、东方海洋涨停；出版板块走强，龙版传媒涨停",
+        "date": "2026-11-20"
       },
       {
-        "tag": "催化",
-        "source": "新浪财经·21财经雷达",
-        "title": "英伟达数十亿美元锁产能，先进封装大涨",
-        "detail": "大港股份直线涨停、蓝箭电子20cm涨停、柏诚股份涨停，先进封装扩产逻辑发酵",
-        "date": "2026-11-19"
-      },
-      {
-        "tag": "催化",
-        "source": "上海证券报",
-        "title": "光刻胶概念拉升，格林达、盛剑科技涨停",
-        "detail": "阿斯麦CEO富凯：2028年大量订单涌入，客户希望提前下达2029-2030年订单；格林达开盘1分钟涨停（3天2板）、红宝丽2分钟涨停",
-        "date": "2026-11-19"
-      },
-      {
-        "tag": "催化",
-        "source": "新浪财经/证券时报e公司",
-        "title": "HBM4扩产+「三星流片」发酵，国产替代逻辑走顺",
-        "detail": "多家行业宣布扩张HBM4产能、全球晶圆产能放量；国产晶圆代工双雄华虹宏力涨超10%、中芯国际涨超5%；半导体板块灿芯股份、蓝箭电子20%涨停",
-        "date": "2026-11-19"
+        "tag": "利空",
+        "source": "新浪财经",
+        "title": "现货黄金跌破3600美元，单周跌幅接近8%",
+        "detail": "美国通胀数据超预期后美联储加息预期持续升温，一周内连破3900/3800/3700/3600美元四大关口，金价跌回2025年9月水平；A股黄金珠宝指数盘中一度跌超5%，山东黄金、赤峰黄金、深中华A、招金黄金、鹏欣资源、紫金矿业集体深蹲",
+        "date": "2026-11-20"
       },
       {
         "tag": "数据",
-        "source": "证券时报e公司·人民财讯",
-        "title": "半导体、光刻机、航空机场、电子化学品涨幅居前",
-        "detail": "短剧概念下挫，横店影视、文投控股跌停；AI视频、算力租赁、消费电子、家电跌幅居前",
-        "date": "2026-11-19"
+        "source": "央广网",
+        "title": "国内期货午盘分化：沪银跌近9%、沪金跌近6%",
+        "detail": "钯跌近9%、铂跌超5%、沪锡跌近5%、沪铜跌超3%；焦炭涨超3%、焦煤涨近3%、SC原油/沥青涨超2%，煤焦与贵金属走势剧烈分化",
+        "date": "2026-11-20"
+      },
+      {
+        "tag": "催化",
+        "source": "腾讯新闻·21财经雷达",
+        "title": "昇腾模型双榜登顶，华为概念局部回暖",
+        "detail": "真视通开盘1分钟直线涨停斩获4连板，荣联科技1分钟涨停，易天股份20cm涨停，华微电子、盛剑科技盘中涨停，苏试试验、骏亚科技跟涨",
+        "date": "2026-11-20"
+      },
+      {
+        "tag": "催化",
+        "source": "央广网/网易财经",
+        "title": "PCB概念逆势活跃，两市放量超600亿",
+        "detail": "中京电子2连板，澳弘电子、超声电子涨停，满坤科技20cm涨停；机器人概念局部异动，克来机电、长华集团涨停；AI漫剧概念震荡回升，龙版传媒、华媒控股涨停，果麦文化涨超15%",
+        "date": "2026-11-20"
+      },
+      {
+        "tag": "催化",
+        "source": "新浪财经",
+        "title": "猪肉、农业逆势拉升，物理AI回暖",
+        "detail": "金新农涨停、万向德农涨停；物理AI概念盘中局部回暖，凡拓数创20cm涨停",
+        "date": "2026-11-20"
       },
       {
         "tag": "利空",
-        "source": "腾讯新闻",
-        "title": "冰雪经济、算力芯片集体调整",
-        "detail": "龙江交通、龙建股份跌停，冰山冷热、长白山触及跌停；天普股份跌停、燧原科技触及20cm跌停",
-        "date": "2026-11-19"
+        "source": "央广网",
+        "title": "算力芯片概念延续调整",
+        "detail": "天普股份录得2连跌停，海光信息等个股跟跌；昨日算力链退潮延续",
+        "date": "2026-11-20"
       },
       {
-        "tag": "利空",
-        "source": "网易财经",
-        "title": "黄金股重挫，传媒/能源设备/教育领跌",
-        "detail": "电脑硬件、互联网、零售、环保跌幅居前；冰雪旅游、AI算力、云计算、培育钻石、CRO走低；摩托车、酒类少数上涨",
-        "date": "2026-11-19"
-      },
-      {
-        "tag": "资金",
-        "source": "财联社",
-        "title": "宽基ETF半日显著放量",
-        "detail": "临近午盘部分宽基ETF再放量，资金借道ETF入场，与科创50逆势+0.98%呼应",
-        "date": "2026-11-19"
+        "tag": "催化",
+        "source": "每日经济新闻",
+        "title": "华为算力概念局部回暖，多股冲高",
+        "detail": "真视通4连板，荣联科技涨停，华胜天成、盛合晶微、直真科技、青云科技等冲高",
+        "date": "2026-11-20"
       }
     ],
     "mid:watchpoints": [
       {
         "idx": 1,
         "cat": "主线跟踪",
-        "text": "光刻胶主线盯封单——格林达3天2板、盛剑科技3连板午后若炸板，则半导体材料线整体兑现",
-        "date": "2026-11-19"
+        "text": "PCB逆势主线盯中京电子2连板封单——若午后炸板则板块兑现，超声电子/光华科技/满坤科技联动",
+        "date": "2026-11-20"
       },
       {
         "idx": 2,
         "cat": "主线跟踪",
-        "text": "先进封装盯中军——中芯国际/华虹宏力涨幅是否守住，大港股份/蓝箭电子封单变化",
-        "date": "2026-11-19"
+        "text": "华为算力盯真视通4连板能否晋级5板，荣联科技/华微电子/盛剑科技盘中涨停午后能否守住封单",
+        "date": "2026-11-20"
       },
       {
         "idx": 3,
         "cat": "主线跟踪",
-        "text": "科创50逆势+宽基ETF放量，午后观察能否延续；延续则硬科技风格占优",
-        "date": "2026-11-19"
+        "text": "北纬科技8天6板为全市场最高标，午后走势决定情绪周期位置——炸板则高位接力全面谨慎",
+        "date": "2026-11-20"
       },
       {
         "idx": 4,
         "cat": "只卖不买",
-        "text": "AI漫剧/短剧——慈文传媒3连跌停、金逸影视2连跌停，跌停未开不抄底",
-        "date": "2026-11-19"
+        "text": "黄金/贵金属——美联储加息预期升温、金价破3600单周跌8%，反抽先兑现勿抄底",
+        "date": "2026-11-20"
       },
       {
         "idx": 5,
         "cat": "只卖不买",
-        "text": "算力芯片/算力租赁——昨日主线今日天普股份跌停、燧原科技触及20cm跌停，反抽不接",
-        "date": "2026-11-19"
+        "text": "算力芯片——天普股份2连跌停、海光信息跟跌，调整未止不接飞刀",
+        "date": "2026-11-20"
       },
       {
         "idx": 6,
-        "cat": "只卖不买",
-        "text": "冰雪经济（龙江交通/龙建股份跌停）与黄金股重挫，勿抢反弹",
-        "date": "2026-11-19"
+        "cat": "数据",
+        "text": "半日放量约699亿但下跌超4800只、量增价跌，13:00后观察量能延续性与指数能否收窄跌幅",
+        "date": "2026-11-20"
       },
       {
         "idx": 7,
         "cat": "观望",
-        "text": "昨日主线家电今日跌幅居前，缩量轮动切换快，不追不杀等方向",
-        "date": "2026-11-19"
+        "text": "临近午盘回暖，观察13:00后双创（半日跌超2%）能否修复，回暖持续则午后情绪修复",
+        "date": "2026-11-20"
       },
       {
         "idx": 8,
         "cat": "风险监控",
-        "text": "涨停23 vs 跌停22、半日仅7859亿缩量，13:00后每小时量能不足则午后继续防守",
-        "date": "2026-11-19"
-      }
-    ],
-    "close:sectors": [
-      {
-        "date": "2026-11-19",
-        "grp": "行业",
-        "dir": "领涨",
-        "name": "半导体设备",
-        "pct": 2.94
-      },
-      {
-        "date": "2026-11-19",
-        "grp": "行业",
-        "dir": "领涨",
-        "name": "集成电路封测",
-        "pct": 2.25
-      },
-      {
-        "date": "2026-11-19",
-        "grp": "行业",
-        "dir": "领涨",
-        "name": "冰洗",
-        "pct": 2.2
-      },
-      {
-        "date": "2026-11-19",
-        "grp": "行业",
-        "dir": "领涨",
-        "name": "分立器件",
-        "pct": 1.88
-      },
-      {
-        "date": "2026-11-19",
-        "grp": "行业",
-        "dir": "领涨",
-        "name": "航空运输",
-        "pct": 1.75
-      },
-      {
-        "date": "2026-11-19",
-        "grp": "行业",
-        "dir": "领涨",
-        "name": "工程机械器件",
-        "pct": 1.56
-      },
-      {
-        "date": "2026-11-19",
-        "grp": "行业",
-        "dir": "领跌",
-        "name": "通信应用增值服务",
-        "pct": -5.59
-      },
-      {
-        "date": "2026-11-19",
-        "grp": "行业",
-        "dir": "领跌",
-        "name": "营销代理",
-        "pct": -5.54
-      },
-      {
-        "date": "2026-11-19",
-        "grp": "行业",
-        "dir": "领跌",
-        "name": "数字媒体",
-        "pct": -5.52
-      },
-      {
-        "date": "2026-11-19",
-        "grp": "行业",
-        "dir": "领跌",
-        "name": "厨卫电器",
-        "pct": -5.26
-      },
-      {
-        "date": "2026-11-19",
-        "grp": "行业",
-        "dir": "领跌",
-        "name": "会展服务",
-        "pct": -5.02
-      },
-      {
-        "date": "2026-11-19",
-        "grp": "行业",
-        "dir": "领跌",
-        "name": "门户网站",
-        "pct": -4.68
-      }
-    ],
-    "close:concepts": [],
-    "close:ladderDist": [
-      {
-        "date": "2026-11-19",
-        "label": "首板",
-        "count": 18
-      },
-      {
-        "date": "2026-11-19",
-        "label": "2板",
-        "count": 5
-      },
-      {
-        "date": "2026-11-19",
-        "label": "炸板",
-        "count": 24
-      }
-    ],
-    "close:lianban": [
-      {
-        "category": "连板",
-        "name": "真视通",
-        "boards": "3连板",
-        "theme": "华为算力/IT服务",
-        "reason": "华为算力概念3连板（财联社涨停分析），全天一字未开",
-        "seal_yi": 2.08,
-        "amount_yi": 0.61,
-        "turnover_pct": 2.36,
-        "time": "09:25 封板",
-        "date": "2026-11-19",
-        "seal_label": "2.08",
-        "amt_label": "0.6",
-        "rate_label": "2.4%"
-      },
-      {
-        "category": "连板",
-        "name": "全筑股份",
-        "boards": "3连板",
-        "theme": "芯片产业链/装修装饰",
-        "reason": "芯片产业链3连板（财联社涨停分析），一字未开",
-        "seal_yi": 0.96,
-        "amount_yi": 0.75,
-        "turnover_pct": 2.44,
-        "time": "09:25 封板",
-        "date": "2026-11-19",
-        "seal_label": "0.96",
-        "amt_label": "0.8",
-        "rate_label": "2.4%"
-      },
-      {
-        "category": "连板",
-        "name": "盛剑科技",
-        "boards": "3连板",
-        "theme": "芯片产业链/环保设备",
-        "reason": "芯片产业链3连板（财联社涨停分析），9:37封板后未开",
-        "seal_yi": 0.28,
-        "amount_yi": 2.44,
-        "turnover_pct": 7.04,
-        "time": "09:37 封板",
-        "date": "2026-11-19",
-        "seal_label": "0.28",
-        "amt_label": "2.4",
-        "rate_label": "7.0%"
-      },
-      {
-        "category": "连板",
-        "name": "京蓝科技",
-        "boards": "2连板",
-        "theme": "环境治理",
-        "reason": "昨日涨停晋级2连板，午后13:25回封（开板1次）",
-        "seal_yi": 0.58,
-        "amount_yi": 9.59,
-        "turnover_pct": 11.29,
-        "time": "13:25 封板",
-        "date": "2026-11-19",
-        "seal_label": "0.58",
-        "amt_label": "9.6",
-        "rate_label": "11.3%"
-      },
-      {
-        "category": "连板",
-        "name": "华升股份",
-        "boards": "2连板",
-        "theme": "纺织制造",
-        "reason": "昨日涨停晋级2连板，早盘9:30封板（开板3次回封）",
-        "seal_yi": 0.5,
-        "amount_yi": 5.97,
-        "turnover_pct": 16.79,
-        "time": "09:30 封板",
-        "date": "2026-11-19",
-        "seal_label": "0.50",
-        "amt_label": "6.0",
-        "rate_label": "16.8%"
-      }
-    ],
-    "close:shouban": [
-      {
-        "category": "首板",
-        "name": "九阳股份",
-        "boards": "首板",
-        "theme": "小家电",
-        "reason": "小家电/冰洗防御链，竞价涨停后13次开板尾盘回封，全天成交51.3亿为涨停股最大",
-        "seal_yi": 0.64,
-        "amount_yi": 51.29,
-        "turnover_pct": 23.74,
-        "time": "09:25 封板",
-        "date": "2026-11-19",
-        "seal_label": "0.64",
-        "amt_label": "51.3",
-        "rate_label": "23.7%"
-      },
-      {
-        "category": "首板",
-        "name": "毅昌科技",
-        "boards": "首板",
-        "theme": "综合Ⅱ",
-        "reason": "一字涨停（封单4.96亿、成交仅0.48亿）",
-        "seal_yi": 4.96,
-        "amount_yi": 0.48,
-        "turnover_pct": 1.84,
-        "time": "09:25 封板",
-        "date": "2026-11-19",
-        "seal_label": "4.96",
-        "amt_label": "0.5",
-        "rate_label": "1.8%"
-      },
-      {
-        "category": "首板",
-        "name": "红宝丽",
-        "boards": "首板",
-        "theme": "化学制品/光刻胶",
-        "reason": "光刻胶概念活跃（财联社收评），开盘秒板未开",
-        "seal_yi": 0.57,
-        "amount_yi": 3.07,
-        "turnover_pct": 6.79,
-        "time": "09:32 封板",
-        "date": "2026-11-19",
-        "seal_label": "0.57",
-        "amt_label": "3.1",
-        "rate_label": "6.8%"
-      },
-      {
-        "category": "首板",
-        "name": "格林达",
-        "boards": "首板",
-        "theme": "电子化学/光刻胶",
-        "reason": "光刻胶概念活跃（财联社收评），9:31封板（开板1次）",
-        "seal_yi": 0.84,
-        "amount_yi": 1.78,
-        "turnover_pct": 3.12,
-        "time": "09:31 封板",
-        "date": "2026-11-19",
-        "seal_label": "0.84",
-        "amt_label": "1.8",
-        "rate_label": "3.1%"
-      },
-      {
-        "category": "首板",
-        "name": "康盛股份",
-        "boards": "首板",
-        "theme": "家电零部",
-        "reason": "家电零部件（冰洗链），开盘秒板未开",
-        "seal_yi": 0.57,
-        "amount_yi": 2.36,
-        "turnover_pct": 5.28,
-        "time": "09:35 封板",
-        "date": "2026-11-19",
-        "seal_label": "0.57",
-        "amt_label": "2.4",
-        "rate_label": "5.3%"
-      },
-      {
-        "category": "首板",
-        "name": "大港股份",
-        "boards": "首板",
-        "theme": "半导体",
-        "reason": "半导体抱团主线（财联社收评提及），9:40封板（开板2次）",
-        "seal_yi": 0.57,
-        "amount_yi": 6.08,
-        "turnover_pct": 8.75,
-        "time": "09:40 封板",
-        "date": "2026-11-19",
-        "seal_label": "0.57",
-        "amt_label": "6.1",
-        "rate_label": "8.8%"
-      },
-      {
-        "category": "首板",
-        "name": "三佳科技",
-        "boards": "首板",
-        "theme": "半导体",
-        "reason": "半导体抱团主线，9:42封板未开",
-        "seal_yi": 0.57,
-        "amount_yi": 2.43,
-        "turnover_pct": 7.07,
-        "time": "09:42 封板",
-        "date": "2026-11-19",
-        "seal_label": "0.57",
-        "amt_label": "2.4",
-        "rate_label": "7.1%"
-      },
-      {
-        "category": "首板",
-        "name": "襄阳轴承",
-        "boards": "首板",
-        "theme": "汽车零部件/人形机器人",
-        "reason": "人形机器人轴承（网易龙虎榜：章盟主爆买超3亿），退潮环境超预期反包涨停，盘中开板9次回封",
-        "seal_yi": 0.54,
-        "amount_yi": 24.49,
-        "turnover_pct": 32.73,
-        "time": "09:43 封板",
-        "date": "2026-11-19",
-        "seal_label": "0.54",
-        "amt_label": "24.5",
-        "rate_label": "32.7%"
-      },
-      {
-        "category": "首板",
-        "name": "广电电气",
-        "boards": "首板",
-        "theme": "电网设备",
-        "reason": "电网设备板块跟涨，9:52封板未开",
-        "seal_yi": 0.24,
-        "amount_yi": 1.48,
-        "turnover_pct": 4.75,
-        "time": "09:52 封板",
-        "date": "2026-11-19",
-        "seal_label": "0.24",
-        "amt_label": "1.5",
-        "rate_label": "4.8%"
-      },
-      {
-        "category": "首板",
-        "name": "中京电子",
-        "boards": "首板",
-        "theme": "元件/PCB",
-        "reason": "PCB元件板块，10:27封板未开",
-        "seal_yi": 1.01,
-        "amount_yi": 9.15,
-        "turnover_pct": 13.33,
-        "time": "10:27 封板",
-        "date": "2026-11-19",
-        "seal_label": "1.01",
-        "amt_label": "9.2",
-        "rate_label": "13.3%"
-      },
-      {
-        "category": "首板",
-        "name": "金科股份",
-        "boards": "首板",
-        "theme": "房地产开发/超跌低价",
-        "reason": "收盘价1.02元超跌低价股，午前封板（开板2次回封）",
-        "seal_yi": 0.4,
-        "amount_yi": 6.14,
-        "turnover_pct": 6.51,
-        "time": "10:23 封板",
-        "date": "2026-11-19",
-        "seal_label": "0.40",
-        "amt_label": "6.1",
-        "rate_label": "6.5%"
-      },
-      {
-        "category": "首板",
-        "name": "海立股份",
-        "boards": "首板",
-        "theme": "家电零部",
-        "reason": "家电零部件（冰洗链+2.2%），10:48封板（开板2次回封）",
-        "seal_yi": 0.66,
-        "amount_yi": 16.17,
-        "turnover_pct": 14.3,
-        "time": "10:48 封板",
-        "date": "2026-11-19",
-        "seal_label": "0.66",
-        "amt_label": "16.2",
-        "rate_label": "14.3%"
-      },
-      {
-        "category": "首板",
-        "name": "原尚股份",
-        "boards": "首板",
-        "theme": "物流",
-        "reason": "物流板块零星脉冲，10:17封板未开",
-        "seal_yi": 0.72,
-        "amount_yi": 0.58,
-        "turnover_pct": 2.51,
-        "time": "10:17 封板",
-        "date": "2026-11-19",
-        "seal_label": "0.72",
-        "amt_label": "0.6",
-        "rate_label": "2.5%"
-      },
-      {
-        "category": "首板",
-        "name": "蓝箭电子",
-        "boards": "首板",
-        "theme": "半导体",
-        "reason": "半导体/先进封装（财联社收评提及），创业板20cm涨停（开板1次回封）",
-        "seal_yi": 0.51,
-        "amount_yi": 7.84,
-        "turnover_pct": 19.41,
-        "time": "10:16 封板",
-        "date": "2026-11-19",
-        "seal_label": "0.51",
-        "amt_label": "7.8",
-        "rate_label": "19.4%"
-      },
-      {
-        "category": "首板",
-        "name": "时空科技",
-        "boards": "首板",
-        "theme": "专业工程",
-        "reason": "专业工程板块，10:56封板未开",
-        "seal_yi": 0.58,
-        "amount_yi": 1.63,
-        "turnover_pct": 3.17,
-        "time": "10:56 封板",
-        "date": "2026-11-19",
-        "seal_label": "0.58",
-        "amt_label": "1.6",
-        "rate_label": "3.2%"
-      },
-      {
-        "category": "首板",
-        "name": "江化微",
-        "boards": "首板",
-        "theme": "电子化学/半导体材料",
-        "reason": "电子化学品（半导体材料链），午后13:06封板未开",
-        "seal_yi": 0.84,
-        "amount_yi": 12.75,
-        "turnover_pct": 12.79,
-        "time": "13:06 封板",
-        "date": "2026-11-19",
-        "seal_label": "0.84",
-        "amt_label": "12.8",
-        "rate_label": "12.8%"
-      },
-      {
-        "category": "首板",
-        "name": "兴欣新材",
-        "boards": "首板",
-        "theme": "化学制品",
-        "reason": "6天3板（东方财富涨停复盘），午后13:07封板（开板1次）",
-        "seal_yi": 0.19,
-        "amount_yi": 4.28,
-        "turnover_pct": 30.61,
-        "time": "13:07 封板",
-        "date": "2026-11-19",
-        "seal_label": "0.19",
-        "amt_label": "4.3",
-        "rate_label": "30.6%"
-      },
-      {
-        "category": "首板",
-        "name": "兴业股份",
-        "boards": "首板",
-        "theme": "塑料",
-        "reason": "塑料板块，午后13:25封板（开板3次回封）",
-        "seal_yi": 0.29,
-        "amount_yi": 6.27,
-        "turnover_pct": 15.5,
-        "time": "13:25 封板",
-        "date": "2026-11-19",
-        "seal_label": "0.29",
-        "amt_label": "6.3",
-        "rate_label": "15.5%"
-      }
-    ],
-    "close:zhaban": [
-      {
-        "category": "炸板",
-        "name": "华东重机",
-        "boards": "炸板",
-        "theme": "工程机械",
-        "reason": "昨日4连板今日炸板，高位妖股重创（成交40.7亿、换手51.3%）",
-        "seal_yi": null,
-        "amount_yi": 40.67,
-        "turnover_pct": 51.33,
-        "time": "09:25 触板后炸板",
-        "date": "2026-11-19",
-        "seal_label": "—",
-        "amt_label": "40.7",
-        "rate_label": "51.3%"
-      },
-      {
-        "category": "炸板",
-        "name": "利通电子",
-        "boards": "炸板",
-        "theme": "消费电子",
-        "reason": "昨日涨停今日炸板（成交41.6亿）",
-        "seal_yi": null,
-        "amount_yi": 41.62,
-        "turnover_pct": 17.68,
-        "time": "09:30 触板后炸板",
-        "date": "2026-11-19",
-        "seal_label": "—",
-        "amt_label": "41.6",
-        "rate_label": "17.7%"
-      },
-      {
-        "category": "炸板",
-        "name": "中嘉博创",
-        "boards": "炸板",
-        "theme": "通信服务",
-        "reason": "昨日涨停今日炸板（盘中开板12次）",
-        "seal_yi": null,
-        "amount_yi": 8.38,
-        "turnover_pct": 26.15,
-        "time": "09:25 触板后炸板",
-        "date": "2026-11-19",
-        "seal_label": "—",
-        "amt_label": "8.4",
-        "rate_label": "26.1%"
-      },
-      {
-        "category": "炸板",
-        "name": "证通电子",
-        "boards": "炸板",
-        "theme": "计算机设备",
-        "reason": "昨日涨停今日炸板",
-        "seal_yi": null,
-        "amount_yi": 7.77,
-        "turnover_pct": 22.96,
-        "time": "09:30 触板后炸板",
-        "date": "2026-11-19",
-        "seal_label": "—",
-        "amt_label": "7.8",
-        "rate_label": "23.0%"
-      },
-      {
-        "category": "炸板",
-        "name": "卡莱特",
-        "boards": "炸板",
-        "theme": "计算机设备",
-        "reason": "昨日2连板今日炸板，连板梯队断层",
-        "seal_yi": null,
-        "amount_yi": 8.18,
-        "turnover_pct": 16.57,
-        "time": "13:00 触板后炸板",
-        "date": "2026-11-19",
-        "seal_label": "—",
-        "amt_label": "8.2",
-        "rate_label": "16.6%"
-      },
-      {
-        "category": "炸板",
-        "name": "灿芯股份",
-        "boards": "炸板",
-        "theme": "半导体",
-        "reason": "半导体抱团内部分歧，触板后回落（换手28.7%）",
-        "seal_yi": null,
-        "amount_yi": 12.58,
-        "turnover_pct": 28.65,
-        "time": "11:22 触板后炸板",
-        "date": "2026-11-19",
-        "seal_label": "—",
-        "amt_label": "12.6",
-        "rate_label": "28.6%"
-      },
-      {
-        "category": "炸板",
-        "name": "燕东微",
-        "boards": "炸板",
-        "theme": "半导体",
-        "reason": "半导体抱团内部分歧，午后触板后回落",
-        "seal_yi": null,
-        "amount_yi": 16.86,
-        "turnover_pct": 3.69,
-        "time": "13:07 触板后炸板",
-        "date": "2026-11-19",
-        "seal_label": "—",
-        "amt_label": "16.9",
-        "rate_label": "3.7%"
-      },
-      {
-        "category": "炸板",
-        "name": "耐科装备",
-        "boards": "炸板",
-        "theme": "半导体",
-        "reason": "半导体设备分支触板回落",
-        "seal_yi": null,
-        "amount_yi": 2.38,
-        "turnover_pct": 5.59,
-        "time": "13:08 触板后炸板",
-        "date": "2026-11-19",
-        "seal_label": "—",
-        "amt_label": "2.4",
-        "rate_label": "5.6%"
-      },
-      {
-        "category": "炸板",
-        "name": "荣盛发展",
-        "boards": "炸板",
-        "theme": "房地产开发",
-        "reason": "地产低价脉冲尾盘14:37触板后炸板",
-        "seal_yi": null,
-        "amount_yi": 3.61,
-        "turnover_pct": 9.52,
-        "time": "14:37 触板后炸板",
-        "date": "2026-11-19",
-        "seal_label": "—",
-        "amt_label": "3.6",
-        "rate_label": "9.5%"
-      },
-      {
-        "category": "炸板",
-        "name": "国安股份",
-        "boards": "炸板",
-        "theme": "通信服务",
-        "reason": "通信服务板块冲板未封",
-        "seal_yi": null,
-        "amount_yi": 3.87,
-        "turnover_pct": 3.87,
-        "time": "14:04 触板后炸板",
-        "date": "2026-11-19",
-        "seal_label": "—",
-        "amt_label": "3.9",
-        "rate_label": "3.9%"
-      },
-      {
-        "category": "炸板",
-        "name": "中通国脉",
-        "boards": "炸板",
-        "theme": "通信服务",
-        "reason": "通信服务板块冲板未封",
-        "seal_yi": null,
-        "amount_yi": 1.41,
-        "turnover_pct": 4.8,
-        "time": "09:37 触板后炸板",
-        "date": "2026-11-19",
-        "seal_label": "—",
-        "amt_label": "1.4",
-        "rate_label": "4.8%"
-      },
-      {
-        "category": "炸板",
-        "name": "岳阳兴长",
-        "boards": "炸板",
-        "theme": "炼化及贸易",
-        "reason": "炼化板块冲板未封",
-        "seal_yi": null,
-        "amount_yi": 5.66,
-        "turnover_pct": 11.71,
-        "time": "09:53 触板后炸板",
-        "date": "2026-11-19",
-        "seal_label": "—",
-        "amt_label": "5.7",
-        "rate_label": "11.7%"
-      },
-      {
-        "category": "炸板",
-        "name": "青岛食品",
-        "boards": "炸板",
-        "theme": "休闲食品",
-        "reason": "食品板块冲板未封（换手25%）",
-        "seal_yi": null,
-        "amount_yi": 8.59,
-        "turnover_pct": 25.04,
-        "time": "09:35 触板后炸板",
-        "date": "2026-11-19",
-        "seal_label": "—",
-        "amt_label": "8.6",
-        "rate_label": "25.0%"
-      },
-      {
-        "category": "炸板",
-        "name": "立新能源",
-        "boards": "炸板",
-        "theme": "电力",
-        "reason": "电力板块冲板未封",
-        "seal_yi": null,
-        "amount_yi": 9.72,
-        "turnover_pct": 11.79,
-        "time": "09:48 触板后炸板",
-        "date": "2026-11-19",
-        "seal_label": "—",
-        "amt_label": "9.7",
-        "rate_label": "11.8%"
-      },
-      {
-        "category": "炸板",
-        "name": "华能蒙电",
-        "boards": "炸板",
-        "theme": "电力",
-        "reason": "电力板块冲板未封（成交19.3亿）",
-        "seal_yi": null,
-        "amount_yi": 19.31,
-        "turnover_pct": 4.73,
-        "time": "09:40 触板后炸板",
-        "date": "2026-11-19",
-        "seal_label": "—",
-        "amt_label": "19.3",
-        "rate_label": "4.7%"
-      },
-      {
-        "category": "炸板",
-        "name": "群兴玩具",
-        "boards": "炸板",
-        "theme": "综合Ⅱ",
-        "reason": "低价股冲板未封",
-        "seal_yi": null,
-        "amount_yi": 4.93,
-        "turnover_pct": 16.52,
-        "time": "09:25 触板后炸板",
-        "date": "2026-11-19",
-        "seal_label": "—",
-        "amt_label": "4.9",
-        "rate_label": "16.5%"
-      },
-      {
-        "category": "炸板",
-        "name": "摩登大道",
-        "boards": "炸板",
-        "theme": "服装家纺",
-        "reason": "服装家纺板块冲板未封",
-        "seal_yi": null,
-        "amount_yi": 1.27,
-        "turnover_pct": 7.21,
-        "time": "09:54 触板后炸板",
-        "date": "2026-11-19",
-        "seal_label": "—",
-        "amt_label": "1.3",
-        "rate_label": "7.2%"
-      },
-      {
-        "category": "炸板",
-        "name": "同兴达",
-        "boards": "炸板",
-        "theme": "光学光电",
-        "reason": "光学光电子板块冲板未封",
-        "seal_yi": null,
-        "amount_yi": 2.09,
-        "turnover_pct": 7.06,
-        "time": "10:11 触板后炸板",
-        "date": "2026-11-19",
-        "seal_label": "—",
-        "amt_label": "2.1",
-        "rate_label": "7.1%"
-      },
-      {
-        "category": "炸板",
-        "name": "冠石科技",
-        "boards": "炸板",
-        "theme": "光学光电",
-        "reason": "光学光电子板块冲板未封",
-        "seal_yi": null,
-        "amount_yi": 1.69,
-        "turnover_pct": 6.17,
-        "time": "09:31 触板后炸板",
-        "date": "2026-11-19",
-        "seal_label": "—",
-        "amt_label": "1.7",
-        "rate_label": "6.2%"
-      },
-      {
-        "category": "炸板",
-        "name": "青山纸业",
-        "boards": "炸板",
-        "theme": "造纸",
-        "reason": "造纸板块冲板未封（成交16.7亿）",
-        "seal_yi": null,
-        "amount_yi": 16.66,
-        "turnover_pct": 22.86,
-        "time": "13:28 触板后炸板",
-        "date": "2026-11-19",
-        "seal_label": "—",
-        "amt_label": "16.7",
-        "rate_label": "22.9%"
-      },
-      {
-        "category": "炸板",
-        "name": "柏诚股份",
-        "boards": "炸板",
-        "theme": "专业工程",
-        "reason": "专业工程板块冲板未封",
-        "seal_yi": null,
-        "amount_yi": 5.19,
-        "turnover_pct": 5.74,
-        "time": "11:20 触板后炸板",
-        "date": "2026-11-19",
-        "seal_label": "—",
-        "amt_label": "5.2",
-        "rate_label": "5.7%"
-      },
-      {
-        "category": "炸板",
-        "name": "比依股份",
-        "boards": "炸板",
-        "theme": "小家电",
-        "reason": "小家电板块分化冲板未封",
-        "seal_yi": null,
-        "amount_yi": 4.33,
-        "turnover_pct": 12.34,
-        "time": "10:27 触板后炸板",
-        "date": "2026-11-19",
-        "seal_label": "—",
-        "amt_label": "4.3",
-        "rate_label": "12.3%"
-      },
-      {
-        "category": "炸板",
-        "name": "科沃斯",
-        "boards": "炸板",
-        "theme": "小家电",
-        "reason": "小家电板块分化冲板未封",
-        "seal_yi": null,
-        "amount_yi": 8.1,
-        "turnover_pct": 2.81,
-        "time": "13:19 触板后炸板",
-        "date": "2026-11-19",
-        "seal_label": "—",
-        "amt_label": "8.1",
-        "rate_label": "2.8%"
-      },
-      {
-        "category": "炸板",
-        "name": "龙版传媒",
-        "boards": "炸板",
-        "theme": "出版",
-        "reason": "出版传媒板块冲板未封",
-        "seal_yi": null,
-        "amount_yi": 7.07,
-        "turnover_pct": 10.58,
-        "time": "09:49 触板后炸板",
-        "date": "2026-11-19",
-        "seal_label": "—",
-        "amt_label": "7.1",
-        "rate_label": "10.6%"
-      }
-    ],
-    "close:mainlines": [
-      {
-        "tier": "主线",
-        "name": "半导体（光刻胶/先进封装/设备）孤岛抱团",
-        "logic": "科创50逆势+1.83%，半导体设备+2.94%、集成电路封测+2.25%、分立器件+1.88%领涨；财联社收评：光刻胶、先进封装概念活跃，格林达、红宝丽、大港股份涨停、蓝箭电子20cm涨停；但燕东微、灿芯股份、耐科装备炸板，板块内部亦有分歧",
-        "stocks": "格林达、红宝丽、大港股份、蓝箭电子（20cm）、三佳科技、江化微",
-        "date": "2026-11-19"
-      },
-      {
-        "tier": "主线",
-        "name": "芯片产业链连板梯队（华为算力）",
-        "logic": "财联社涨停分析：华为算力概念股真视通3连板，芯片产业链全筑股份、盛剑科技3连板，为全市场仅有的5只连板股中最高梯队，一字或秒板缩量封死，情绪冰点下的抱团核心",
-        "stocks": "真视通（3板）、全筑股份（3板）、盛剑科技（3板）",
-        "date": "2026-11-19"
-      },
-      {
-        "tier": "支线",
-        "name": "AI应用/传媒/游戏（跌停潮退潮）",
-        "logic": "昨日IT服务/通信涨停群（常山北明、美利云、华胜天成等）集体断板，慈文传媒、文投控股、大晟文化、浙文影业、金逸影视、横店影视、凯撒文化、电魂网络跌停；申万数字媒体-5.52%、营销代理-5.54%、通信应用增值服务-5.59%领跌",
-        "stocks": "慈文传媒（跌停）、文投控股（跌停）、电魂网络（跌停）、大晟文化（跌停）",
-        "date": "2026-11-19"
-      },
-      {
-        "tier": "支线",
-        "name": "冰洗/家电（防御分化）",
-        "logic": "冰洗+2.2%居行业涨幅前三，九阳股份竞价涨停后13次开板尾盘回封（成交51.3亿）、康盛股份秒板、海立股份涨停；但爱仕达、小熊电器跌停、科沃斯/比依股份炸板，板块内部剧烈分化",
-        "stocks": "九阳股份、康盛股份、海立股份",
-        "date": "2026-11-19"
-      },
-      {
-        "tier": "轮动",
-        "name": "人形机器人/汽车零部件（资金脉冲）",
-        "logic": "网易龙虎榜：章盟主爆买超3亿元，人形机器人概念近一个月上涨超50%；襄阳轴承在超4500股下跌的退潮环境中走出超预期反包涨停（开板9次回封）；但亿嘉和跌停，板块分歧明显",
-        "stocks": "襄阳轴承、亿嘉和（跌停）",
-        "date": "2026-11-19"
-      },
-      {
-        "tier": "轮动",
-        "name": "超跌低价股/房地产",
-        "logic": "弱势环境资金炒低价：金科股份（收盘1.02元）涨停、荣盛发展尾盘炸板，地产链零星脉冲、持续性存疑",
-        "stocks": "金科股份、荣盛发展（炸板）",
-        "date": "2026-11-19"
-      }
-    ],
-    "close:themes": [
-      {
-        "rank": 1,
-        "name": "半导体/光刻胶·先进封装",
-        "stars": 5,
-        "status": "新",
-        "stocks": "格林达、红宝丽、大港股份、蓝箭电子（20cm）、三佳科技、江化微 vs 燕东微/灿芯股份/耐科装备炸板",
-        "stars_label": "★★★★★",
-        "date": "2026-11-19"
-      },
-      {
-        "rank": 2,
-        "name": "华为算力/芯片产业链（连板梯队）",
-        "stars": 4,
-        "status": "新",
-        "stocks": "真视通（3板）、全筑股份（3板）、盛剑科技（3板）",
-        "stars_label": "★★★★☆",
-        "date": "2026-11-19"
-      },
-      {
-        "rank": 3,
-        "name": "AI应用/传媒/游戏",
-        "stars": 1,
-        "status": "退潮",
-        "stocks": "慈文传媒、文投控股、大晟文化、浙文影业、金逸影视、横店影视、凯撒文化、电魂网络跌停",
-        "stars_label": "★☆☆☆☆",
-        "date": "2026-11-19"
-      },
-      {
-        "rank": 4,
-        "name": "冰洗/家电（防御）",
-        "stars": 3,
-        "status": "分歧",
-        "stocks": "九阳股份、康盛股份、海立股份 vs 爱仕达/小熊电器跌停",
-        "stars_label": "★★★☆☆",
-        "date": "2026-11-19"
-      },
-      {
-        "rank": 5,
-        "name": "人形机器人/汽车零部件",
-        "stars": 2,
-        "status": "分歧",
-        "stocks": "襄阳轴承（反包涨停）vs 亿嘉和跌停",
-        "stars_label": "★★☆☆☆",
-        "date": "2026-11-19"
-      },
-      {
-        "rank": 6,
-        "name": "超跌低价/房地产",
-        "stars": 2,
-        "status": "新",
-        "stocks": "金科股份（1元低价涨停）、荣盛发展炸板",
-        "stars_label": "★★☆☆☆",
-        "date": "2026-11-19"
-      }
-    ],
-    "close:newsMidday": [
-      {
-        "tag": "数据",
-        "source": "证券时报·数据宝",
-        "title": "揭秘涨停：涨停股数量创年内新低",
-        "detail": "不含未开板新股，上涨个股仅649只（占11.65%）、下跌4876只；收盘封死涨停26只创年内新低，跌停83只，27股封板未遂，封板率49.06%",
-        "date": "2026-11-19"
-      },
-      {
-        "tag": "数据",
-        "source": "财联社",
-        "title": "11月19日涨停分析：23股涨停、连板股5只",
-        "detail": "24股封板未遂、封板率49%（不含ST/退市）；焦点股：华为算力概念真视通3连板，芯片产业链全筑股份、盛剑科技3连板",
-        "date": "2026-11-19"
-      },
-      {
-        "tag": "数据",
-        "source": "财联社收评",
-        "title": "上证50探底回升涨0.32%，两市成交仅1.31万亿",
-        "detail": "尾盘震荡拉升、三大指数跌幅收窄；光刻胶、先进封装概念表现活跃，格林达、红宝丽、大港股份涨停",
-        "date": "2026-11-19"
-      },
-      {
-        "tag": "数据",
-        "source": "东方财富（天天基金）",
-        "title": "11月19日涨停复盘：26只股涨停，兴欣新材6天3板",
-        "detail": "26股涨停、27股盘中触及涨停后未封，封板率49.06%；沪指-0.28%、深成指-0.71%、创业板指-0.79%，全天成交1.31万亿",
-        "date": "2026-11-19"
-      },
-      {
-        "tag": "解盘",
-        "source": "川观新闻",
-        "title": "沪指再创年内新低，科创50逆势涨1.83%，半导体在'孤岛'里抱团",
-        "detail": "全市场成交1.31万亿、缩量654亿刷新年内地量；超4800只个股下跌、26只涨停72只跌停；剔除ST为2024年7月8日以来涨停最少的一天，连续第六个交易日超4100只个股下跌",
-        "date": "2026-11-19"
-      },
-      {
-        "tag": "资金",
-        "source": "网易（龙虎榜）",
-        "title": "章盟主爆买超3亿元，人形机器人概念近一月涨超50%",
-        "detail": "襄阳轴承在超4500只个股下跌的退潮环境中走出超预期反包涨停并封至收盘，年内已18次登上龙虎榜",
-        "date": "2026-11-19"
-      },
-      {
-        "tag": "行业",
-        "source": "申万行业（TuShare sw_daily）",
-        "title": "半导体链与冰洗领涨，AI应用/传媒链领跌",
-        "detail": "半导体设备+2.94%、集成电路封测+2.25%、冰洗+2.2%、分立器件+1.88%、航空运输+1.75%；通信应用增值服务-5.59%、营销代理-5.54%、数字媒体-5.52%、厨卫电器-5.26%",
-        "date": "2026-11-19"
-      },
-      {
-        "tag": "风险",
-        "source": "盘面复盘（TuShare limit_list_d）",
-        "title": "昨日连板股亏钱效应放大，传媒/AI应用跌停潮",
-        "detail": "昨日8只连板股仅3只晋级连板：双环科技（2板）、泰嘉股份（2板）晋级失败反手跌停，华东重机（4板）、卡莱特（2板）炸板；慈文传媒、文投控股、大晟文化、浙文影业、金逸影视、横店影视、凯撒文化、电魂网络集体跌停",
-        "date": "2026-11-19"
-      }
-    ],
-    "close:watchpoints": [
-      {
-        "idx": 1,
-        "cat": "主线跟踪",
-        "text": "半导体孤岛抱团是唯一正反馈：盯格林达/大港股份竞价承接与真视通能否4板，熄火则情绪继续探底",
-        "date": "2026-11-19"
-      },
-      {
-        "idx": 2,
-        "cat": "只卖不买",
-        "text": "传媒/AI应用跌停潮（慈文传媒、文投控股、大晟文化、电魂网络等）未见止跌信号，反抽先兑现",
-        "date": "2026-11-19"
-      },
-      {
-        "idx": 3,
-        "cat": "风险监控",
-        "text": "涨停23家创2024年7月以来最少+成交1.31万亿年内地量，普跌第六日，控制仓位为第一原则",
-        "date": "2026-11-19"
-      },
-      {
-        "idx": 4,
-        "cat": "观望",
-        "text": "昨日连板股亏钱效应大（双环科技/泰嘉股份反手跌停、华东重机4板炸板），高位接力谨慎",
-        "date": "2026-11-19"
-      },
-      {
-        "idx": 5,
-        "cat": "数据",
-        "text": "晋级率62.5%（5/8，含首板晋级口径）；连板晋级连板仅3/8=37.5%，情绪仍处冰点，若明日冰点后修复可关注首板质量",
-        "date": "2026-11-19"
-      },
-      {
-        "idx": 6,
-        "cat": "低吸观察",
-        "text": "冰洗/家电（+2.2%）、航空运输（+1.75%）逆势收红，观察防御风格能否继续扩散",
-        "date": "2026-11-19"
-      },
-      {
-        "idx": 7,
-        "cat": "风险监控",
-        "text": "襄阳轴承等反包股若明日大幅低开，确认人形机器人轮动结束；缩量反抽（上证50尾盘翻红）持续性存疑",
-        "date": "2026-11-19"
-      }
-    ],
-    "close:promotions": [
-      {
-        "yesterday_lianban": 8,
-        "promoted": [
-          "京蓝科技（1板→2板）",
-          "华升股份（1板→2板）",
-          "真视通（2板→3板）",
-          "全筑股份（2板→3板）",
-          "盛剑科技（2板→3板）"
-        ],
-        "broken": [
-          "双环科技（2板→跌停）",
-          "泰嘉股份（2板→跌停）",
-          "华东重机（4板→炸板）",
-          "卡莱特（2板→炸板）",
-          "华胜天成（2板→断板）",
-          "另有31只昨日首板股未晋级：常山北明、美利云、华孚时尚、深南电路、沪电股份等断板，爱仕达跌停，中嘉博创/证通电子/利通电子炸板"
-        ],
-        "rate": 62.5,
-        "verify": "经 TuShare limit_list_d（11-18 与 11-19 涨停名单 limit_times 交叉验证）：晋级5家/昨日连板8家=62.5%；财联社口径连板晋级连板为3/8=37.5%（微博复盘口径37.5%相互印证）",
-        "date": "2026-11-19"
+        "text": "美联储加息预期升温压制全球风险资产，警惕午后外围联动与贵金属链二次下杀",
+        "date": "2026-11-20"
       }
     ]
   }
