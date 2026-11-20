@@ -1,0 +1,145 @@
+{
+  "snapshot_date": "2026-11-20",
+  "captured_at": "2026-11-20T20:16:51+08:00",
+  "session": "收盘",
+  "source": "TuShare 收盘数据（index_daily / limit_list_d / kpl_list / sw_daily）+ 网络复盘文章（财联社 / 东方财富·天天基金 / 腾讯新闻 / 中国新闻网 / 新浪财经 / 凤凰网）自动归纳",
+  "timezone": "Asia/Shanghai",
+  "metrics": [
+    {
+      "date": "2026-11-20",
+      "session": "close",
+      "sh_close": 3533.79,
+      "sh_pct": -1.23,
+      "amount_yi": 14222,
+      "limit_up": 28,
+      "limit_down": 58,
+      "zhaban": 7,
+      "fengban_rate": 80,
+      "max_boards": 4,
+      "max_board_stock": "真视通/盛剑科技",
+      "captured_at": "2026-11-20T20:16:51+08:00"
+    }
+  ],
+  "indices": [
+    {"code": "000001.SH", "name": "上证指数", "close": 3533.79, "pct": -1.23},
+    {"code": "399001.SZ", "name": "深证成指", "close": 10256.39, "pct": -3.09},
+    {"code": "399006.SZ", "name": "创业板指", "close": 2212.13, "pct": -3.54},
+    {"code": "000688.SH", "name": "科创50", "close": 1231.09, "pct": -3.12},
+    {"code": "899050.BJ", "name": "北证50", "close": 759.9, "pct": -4.85},
+    {"code": "000300.SH", "name": "沪深300", "close": 3954.57, "pct": -0.76}
+  ],
+  "sentiment": {
+    "turnover_yi": 14222,
+    "turnover_note": "全天成交约1.42万亿，较前一日放量约1171亿",
+    "limit_up": 28,
+    "limit_down": 58,
+    "zhaban": 7,
+    "fengban_rate": 80,
+    "max_boards": 4,
+    "max_board_stock": "真视通/盛剑科技",
+    "up_count": 313,
+    "down_count": 5236,
+    "context": "三大指数放量下跌：沪指盘中一度跌超2%失守3500点后尾盘跌幅收窄至-1.23%，上证50尾盘翻红（建行/工行/中信行/长电创新高、中国石油+4%）；两市仅313家上涨、5236家下跌，跌停58家远超涨停28家，涨停梯队断档至4板（真视通/盛剑科技），PCB为唯一逆势集群（元件涨停最多），集成电路封测-8.69%领跌（BIS新规落地），上证50ETF成交超240亿刷新年内纪录"
+  },
+  "sectors": {
+    "up_industry": [
+      {"name": "国有大型银行Ⅱ", "pct": 2.52},
+      {"name": "国有大型银行Ⅲ", "pct": 2.52},
+      {"name": "水力发电", "pct": 2.16},
+      {"name": "炼油化工", "pct": 2.16},
+      {"name": "商用载客车", "pct": 2.03},
+      {"name": "水产养殖", "pct": 1.9}
+    ],
+    "down_industry": [
+      {"name": "集成电路封测", "pct": -8.69},
+      {"name": "大气治理", "pct": -7.81},
+      {"name": "其他自动化设备", "pct": -7.68},
+      {"name": "氟化工", "pct": -7.46},
+      {"name": "仪器仪表", "pct": -7.42},
+      {"name": "光伏加工设备", "pct": -7.27}
+    ]
+  },
+  "mainlines": [
+    {"tier": "主线", "name": "红利/银行（护盘避险）", "logic": "上证50盘中跌超2%后尾盘翻红，红利权重全天逆势：建设银行、工商银行、中信银行、长江电力盘中创历史新高，中国石油+4%；工商银行收涨3.3%、银行板块年内累涨逾11%（中新社）；上证50ETF华夏成交超240亿元刷新2026-1-28纪录（财联社收评）", "stocks": "建设银行、工商银行、中信银行、长江电力、中国石油"},
+    {"tier": "主线", "name": "PCB（逆势活跃）", "logic": "大盘普跌中PCB/元件逆势集群走强（财联社收评），成为涨停家数最多的行业：中京电子2连板，超声电子、澳弘电子、满坤科技、骏亚科技、东晶电子等首板跟进；龙虎榜资金抱团元件方向", "stocks": "中京电子（2板）、超声电子、澳弘电子、满坤科技、骏亚科技、东晶电子"},
+    {"tier": "支线", "name": "IT服务/数字媒体（资金抱团）", "logic": "机构净买入前三为凡拓数创、中嘉博创、冰山冷热，资金抱团IT服务/元件/环保设备（微博·龙虎榜）；真视通（IT服务）晋级4连板为当日空间板，荣联科技首板，凡拓数创/风语筑数字媒体涨停", "stocks": "真视通（4板）、凡拓数创、风语筑、荣联科技、中嘉博创"},
+    {"tier": "支线", "name": "物理AI/机器人", "logic": "克来机电、长华集团盘中异动涨停（财联社收评：物理AI机器人异动），凡拓数创20cm涨停，机器人方向获资金回流", "stocks": "克来机电、长华集团、凡拓数创"},
+    {"tier": "轮动", "name": "AI漫剧/传媒", "logic": "AI漫剧概念震荡回升（财联社收评），龙版传媒（出版）、华媒控股（广告营销）涨停，与前一日传媒高位分歧形成对照", "stocks": "龙版传媒、华媒控股"},
+    {"tier": "轮动", "name": "农业/养殖（零星修复）", "logic": "前期热门股止跌反抽（财联社连板股分析）：东方海洋13.71亿成交涨停，好当家（渔业）、万向德农（种植业）、金新农（饲料）、国光股份（农化制品）零星走强，水产养殖为涨幅榜第6行业", "stocks": "东方海洋、好当家、万向德农、金新农、国光股份"}
+  ],
+  "themes": [
+    {"rank": 1, "name": "红利/银行（避险）", "stars": 5, "status": "旧", "stocks": "建设银行、工商银行（+3.3%）、中信银行、长江电力、中国石油（+4%）"},
+    {"rank": 2, "name": "PCB/元件", "stars": 4, "status": "新", "stocks": "中京电子（2板）、超声电子、澳弘电子、满坤科技、骏亚科技、东晶电子"},
+    {"rank": 3, "name": "IT服务/物理AI", "stars": 4, "status": "旧", "stocks": "真视通（4板）、凡拓数创、克来机电、长华集团、荣联科技"},
+    {"rank": 4, "name": "环保设备/制冷", "stars": 3, "status": "旧", "stocks": "盛剑科技（4板）、冰山冷热（巨量反包，机构净买入第三）"},
+    {"rank": 5, "name": "AI漫剧/传媒", "stars": 3, "status": "新", "stocks": "龙版传媒、华媒控股"},
+    {"rank": 6, "name": "农业/养殖", "stars": 2, "status": "分歧", "stocks": "东方海洋（止跌反抽）、好当家、万向德农、金新农"},
+    {"rank": 7, "name": "高位人气股", "stars": 1, "status": "退潮", "stocks": "大东方（14天7板仅止跌反抽）、京蓝科技/华升股份/全筑股份断板，跌停58家"}
+  ],
+  "ladder": [
+    {"category": "连板", "name": "真视通", "boards": "4连板", "theme": "IT服务", "reason": "晋级4连板（财联社连板股分析），资金抱团IT服务，竞价未开板", "seal_yi": null, "amount_yi": 4.89, "turnover_pct": 17.6, "time": "09:30 封板"},
+    {"category": "连板", "name": "盛剑科技", "boards": "4连板", "theme": "环保设备", "reason": "晋级4连板（财联社连板股分析），资金抱团环保设备，盘中开板4次回封", "seal_yi": null, "amount_yi": 6.73, "turnover_pct": 17.14, "time": "09:25 封板"},
+    {"category": "连板", "name": "中京电子", "boards": "2连板", "theme": "元件/PCB", "reason": "PCB逆势活跃（财联社收评），晋级2连板，竞价未开板", "seal_yi": null, "amount_yi": 9.9, "turnover_pct": 12.97, "time": "09:36 封板"},
+    {"category": "首板", "name": "荣联科技", "boards": "首板", "theme": "IT服务", "reason": "资金抱团IT服务方向（微博·龙虎榜），竞价未开板", "seal_yi": null, "amount_yi": 1.54, "turnover_pct": 3.25, "time": "09:31 封板"},
+    {"category": "首板", "name": "华微电子", "boards": "首板", "theme": "半导体", "reason": "半导体行业涨停，盘中开板4次回封，催化剂未知", "seal_yi": null, "amount_yi": 12.29, "turnover_pct": 14.34, "time": "09:32 封板"},
+    {"category": "首板", "name": "光华科技", "boards": "首板", "theme": "电子化学品", "reason": "电子化学品行业涨停，催化剂未知", "seal_yi": null, "amount_yi": 7.52, "turnover_pct": 9.43, "time": "09:36 封板"},
+    {"category": "首板", "name": "建业股份", "boards": "首板", "theme": "化学制品", "reason": "化学制品行业涨停，盘中开板4次回封，催化剂未知", "seal_yi": null, "amount_yi": 1.85, "turnover_pct": 5.89, "time": "09:37 封板"},
+    {"category": "首板", "name": "东晶电子", "boards": "首板", "theme": "元件/PCB", "reason": "PCB逆势活跃（财联社收评）", "seal_yi": null, "amount_yi": 0.38, "turnover_pct": 1.78, "time": "09:40 封板"},
+    {"category": "首板", "name": "东方海洋", "boards": "首板", "theme": "农产品加工/水产", "reason": "前期热门股止跌反抽（财联社连板股分析）", "seal_yi": null, "amount_yi": 13.71, "turnover_pct": 23.83, "time": "09:42 封板"},
+    {"category": "首板", "name": "易天股份", "boards": "首板", "theme": "消费电子", "reason": "消费电子行业涨停，盘中开板3次回封，催化剂未知", "seal_yi": null, "amount_yi": 5.03, "turnover_pct": 16.25, "time": "09:42 封板"},
+    {"category": "首板", "name": "龙版传媒", "boards": "首板", "theme": "出版/AI漫剧", "reason": "AI漫剧震荡回升（财联社收评），盘中开板1次回封", "seal_yi": null, "amount_yi": 5.16, "turnover_pct": 7.41, "time": "09:47 封板"},
+    {"category": "首板", "name": "超声电子", "boards": "首板", "theme": "元件/PCB", "reason": "PCB逆势活跃（财联社收评）", "seal_yi": null, "amount_yi": 21.35, "turnover_pct": 19.95, "time": "10:00 封板"},
+    {"category": "首板", "name": "冰山冷热", "boards": "首板", "theme": "通用设备/制冷", "reason": "资金抱团涨停反包（财联社连板股分析），机构净买入第三（微博·龙虎榜），30.62亿巨量", "seal_yi": null, "amount_yi": 30.62, "turnover_pct": 42.64, "time": "10:00 封板"},
+    {"category": "首板", "name": "澳弘电子", "boards": "首板", "theme": "元件/PCB", "reason": "PCB逆势活跃（财联社收评）", "seal_yi": null, "amount_yi": 5.11, "turnover_pct": 8.67, "time": "10:04 封板"},
+    {"category": "首板", "name": "国光股份", "boards": "首板", "theme": "农化制品", "reason": "农化制品行业涨停，农业方向零星走强，催化剂未知", "seal_yi": null, "amount_yi": 1.63, "turnover_pct": 3.5, "time": "10:09 封板"},
+    {"category": "首板", "name": "长华集团", "boards": "首板", "theme": "汽车零部件/机器人", "reason": "物理AI/机器人异动（财联社收评）", "seal_yi": null, "amount_yi": 1.14, "turnover_pct": 2.47, "time": "10:14 封板"},
+    {"category": "首板", "name": "万向德农", "boards": "首板", "theme": "种植业", "reason": "种植业涨停，农业方向零星走强，催化剂未知", "seal_yi": null, "amount_yi": 2.99, "turnover_pct": 10.06, "time": "10:17 封板"},
+    {"category": "首板", "name": "鼎龙科技", "boards": "首板", "theme": "化学制品", "reason": "化学制品行业涨停，催化剂未知", "seal_yi": null, "amount_yi": 1.37, "turnover_pct": 13.25, "time": "10:30 封板"},
+    {"category": "首板", "name": "克来机电", "boards": "首板", "theme": "汽车零部件/机器人", "reason": "物理AI/机器人异动（财联社收评）", "seal_yi": null, "amount_yi": 0.95, "turnover_pct": 2.74, "time": "10:34 封板"},
+    {"category": "首板", "name": "风语筑", "boards": "首板", "theme": "数字媒体", "reason": "数字媒体行业涨停，盘中开板1次回封，催化剂未知", "seal_yi": null, "amount_yi": 12.06, "turnover_pct": 15.05, "time": "10:44 封板"},
+    {"category": "首板", "name": "凡拓数创", "boards": "首板", "theme": "数字媒体/物理AI", "reason": "物理AI/机器人异动20cm涨停（财联社收评），机构净买入第一（微博·龙虎榜），盘中开板3次回封", "seal_yi": null, "amount_yi": 14.9, "turnover_pct": 34.9, "time": "10:44 封板"},
+    {"category": "首板", "name": "金新农", "boards": "首板", "theme": "饲料/养殖", "reason": "饲料行业涨停，农业方向零星走强，催化剂未知", "seal_yi": null, "amount_yi": 2.42, "turnover_pct": 8.54, "time": "10:47 封板"},
+    {"category": "首板", "name": "骏亚科技", "boards": "首板", "theme": "元件/PCB", "reason": "PCB逆势活跃（财联社收评），盘中开板1次回封", "seal_yi": null, "amount_yi": 3.93, "turnover_pct": 8.6, "time": "10:51 封板"},
+    {"category": "首板", "name": "大东方", "boards": "首板", "theme": "一般零售/人气股", "reason": "前期人气股止跌反抽14天7板（财联社连板股分析），盘中开板3次回封", "seal_yi": null, "amount_yi": 11.44, "turnover_pct": 27.77, "time": "11:12 封板"},
+    {"category": "首板", "name": "华媒控股", "boards": "首板", "theme": "广告营销/AI漫剧", "reason": "AI漫剧震荡回升（财联社收评）", "seal_yi": null, "amount_yi": 1.63, "turnover_pct": 5.39, "time": "11:17 封板"},
+    {"category": "首板", "name": "满坤科技", "boards": "首板", "theme": "元件/PCB", "reason": "PCB逆势活跃（财联社收评）", "seal_yi": null, "amount_yi": 8.52, "turnover_pct": 18.78, "time": "11:20 封板"},
+    {"category": "首板", "name": "好当家", "boards": "首板", "theme": "渔业/水产养殖", "reason": "渔业涨停，水产养殖为涨幅榜第6行业，盘中开板2次回封，催化剂未知", "seal_yi": null, "amount_yi": 8.73, "turnover_pct": 22.54, "time": "11:26 封板"},
+    {"category": "首板", "name": "德龙汇能", "boards": "首板", "theme": "燃气", "reason": "燃气行业涨停，午后独苗，催化剂未知", "seal_yi": null, "amount_yi": 1.73, "turnover_pct": 2.94, "time": "13:00 封板"},
+    {"category": "炸板", "name": "北纬科技", "boards": "炸板", "theme": "通信服务", "reason": "通信服务行业炸板，全天换手51.95%、成交22.89亿，分歧极大", "seal_yi": null, "amount_yi": 22.89, "turnover_pct": 51.95, "time": null},
+    {"category": "炸板", "name": "安泰集团", "boards": "炸板", "theme": "焦炭", "reason": "焦炭行业炸板，换手24.62%，尾盘未能回封", "seal_yi": null, "amount_yi": 9.0, "turnover_pct": 24.62, "time": null},
+    {"category": "炸板", "name": "日发精机", "boards": "炸板", "theme": "通用设备", "reason": "通用设备行业炸板，换手18.11%", "seal_yi": null, "amount_yi": 7.86, "turnover_pct": 18.11, "time": null},
+    {"category": "炸板", "name": "高乐股份", "boards": "炸板", "theme": "文娱用品", "reason": "文娱用品行业炸板，催化剂未知", "seal_yi": null, "amount_yi": 6.18, "turnover_pct": 8.99, "time": null},
+    {"category": "炸板", "name": "华软科技", "boards": "炸板", "theme": "化学制品", "reason": "化学制品行业炸板，催化剂未知", "seal_yi": null, "amount_yi": 3.05, "turnover_pct": 10.91, "time": null},
+    {"category": "炸板", "name": "直真科技", "boards": "炸板", "theme": "软件开发", "reason": "软件开发行业炸板，催化剂未知", "seal_yi": null, "amount_yi": 3.0, "turnover_pct": 9.72, "time": null},
+    {"category": "炸板", "name": "大丰实业", "boards": "炸板", "theme": "专用设备", "reason": "专用设备行业炸板，催化剂未知", "seal_yi": null, "amount_yi": 2.17, "turnover_pct": 5.25, "time": null}
+  ],
+  "promotions": {
+    "yesterday_lianban": 5,
+    "promoted": ["真视通（3板→4板）", "盛剑科技（3板→4板）", "中京电子（1板→2板）"],
+    "broken": ["京蓝科技（2板断板）", "华升股份（2板断板）", "全筑股份（3板断板）"],
+    "rate": 60.0,
+    "verify": "收盘口径经 TuShare limit_list_d（11-19 与 11-20 涨停名单 limit_times 交叉验证）：昨日涨停23家中连板（limit_times≥2）共5家，今日晋级3家（真视通/盛剑科技晋级4板、中京电子1→2板，本口径计入首板晋级），晋级率3/5=60.0%；财联社连板股分析口径仅计已有连板股晋级（2/5=40%），差异在于是否计入中京电子首板晋级"
+  },
+  "close_news": [
+    {"tag": "归因", "source": "财联社", "title": "沪指盘中跌超2%后尾盘收窄，上证50尾盘翻红", "detail": "11月20日三大指数放量下跌，沪指盘中一度跌超2%失守3500点，尾盘跌幅收窄至-1.23%险守3500；上证50指数尾盘翻红，红利权重全天护盘"},
+    {"tag": "数据", "source": "财联社", "title": "上证50ETF成交超240亿刷新年内纪录", "detail": "上证50ETF（华夏）当日成交超240亿元，刷新2026年1月28日创下的214.5亿元纪录，资金借道ETF护盘权重"},
+    {"tag": "数据", "source": "财联社/中国新闻网", "title": "红利股集体创新高，银行年内累涨逾11%", "detail": "建设银行、工商银行、中信银行、长江电力盘中创历史新高，中国石油涨超4%；工商银行收涨3.3%，银行板块年内累计上涨逾11%"},
+    {"tag": "风险", "source": "新浪财经（引上证报）", "title": "BIS新规生效扰动半导体，封测领跌", "detail": "美国BIS 11月16日新规于11月19日生效：16/14nm及以下FinFET代工须列入\"approved IC designer\"名单方可代工，另有三星穿透严查代工客户传闻；集成电路封测板块大跌8.69%领跌两市"},
+    {"tag": "归因", "source": "长春新闻（引东财陈果）", "title": "海外波动引发A股调整", "detail": "东方财富证券陈果认为当日调整主因海外波动：美联储路径预期变化与美国AI资本开支担忧发酵，英伟达概念扰动A股情绪"},
+    {"tag": "提示", "source": "凤凰网财经", "title": "A股英伟达供应链直接敞口有限", "detail": "统计36家A股英伟达产业链公司，来自英伟达的采购收入占比普遍低于10%，直接业绩敞口有限，但情绪面扰动显著"},
+    {"tag": "数据", "source": "微博·龙虎榜", "title": "两市普跌：313涨/5236跌", "detail": "当日两市仅313家上涨、5236家下跌，跌停58家远超涨停28家；机构净买入前三为凡拓数创、中嘉博创、冰山冷热，净卖出洪都航空、粤芯半导体、襄阳轴承；资金抱团IT服务/元件/环保设备"},
+    {"tag": "归因", "source": "财联社", "title": "PCB逆势活跃成唯一集群", "detail": "大盘普跌中PCB板块逆势走强：中京电子2连板，超声电子、澳弘电子、满坤科技、骏亚科技、东晶电子等首板涨停，元件成为当日涨停最多的申万行业"},
+    {"tag": "催化", "source": "财联社", "title": "物理AI/机器人异动，AI漫剧回升", "detail": "克来机电、长华集团盘中异动涨停，凡拓数创20cm涨停；AI漫剧概念震荡回升，龙版传媒、华媒控股涨停"},
+    {"tag": "数据", "source": "财联社/TuShare", "title": "涨停梯队断档至4板，封板率80%", "detail": "当日28家涨停中连板仅3只（真视通/盛剑科技4板、中京电子2板），最高板降至4板；炸板7家、封板率80%（TuShare口径）；连板晋级率财联社口径40%（2/5），计入首板晋级为60%（3/5）"}
+  ],
+  "watchpoints": [
+    {"idx": 1, "cat": "主线跟踪", "text": "红利/银行连续创新高（建行/工行/中信行/长电），关注上证50ETF放量护盘（240亿纪录）的持续性，若权重退潮警惕指数二次探底3500"},
+    {"idx": 2, "cat": "主线跟踪", "text": "PCB为当日唯一逆势集群（中京电子2板+超声电子/澳弘/满坤/骏亚/东晶5只首板），观察明日中京电子能否晋级3板，断板则集群退潮"},
+    {"idx": 3, "cat": "只卖不买", "text": "真视通/盛剑科技4板为当前市场空间板，高度降至4板且两市5236家下跌，高位股按纪律只卖不买，防补跌"},
+    {"idx": 4, "cat": "风险监控", "text": "半导体受BIS新规+三星严查传闻双重压制（封测-8.69%领跌），关注利空是否蔓延至半导体设备/材料与AI算力链"},
+    {"idx": 5, "cat": "观望", "text": "北证50单日-4.85%、跌停58家远超涨停28家，情绪冰点，新题材首板（AI漫剧/机器人）次日溢价未知，控制仓位观望"},
+    {"idx": 6, "cat": "低吸观察", "text": "冰山冷热30.62亿巨量反包（机构净买入第三）、大东方14天7板止跌反抽，观察超跌人气股修复是否扩散，弱转强可低吸观察"},
+    {"idx": 7, "cat": "风险监控", "text": "炸板后分歧股（北纬科技换手52%炸板、安泰集团尾盘炸板）次日存在核按钮风险，规避高位放量炸板股"},
+    {"idx": 8, "cat": "数据", "text": "关注周末消息面：美联储官员表态、BIS名单扩容进展；上证50ETF成交额能否延续240亿级别"}
+  ]
+}
